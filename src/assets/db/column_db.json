@@ -1,0 +1,81 @@
+[
+  {
+    "name": "Stub glatki srednji",
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/columns%2Fglatki_srednji-1.png?alt=media&token=f0e44107-35d3-46fe-901f-3a2a1ec55bc2",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcolumns%2Fglatki-srednji-1-small.webp?alt=media&token=ae761592-8245-43ad-b3d6-98e61e5a403b",
+
+    "options": [
+      {
+        "length": 1.5,
+        "full_length": 2.1,
+        "price": 12
+      },
+      {
+        "length": 2.0,
+        "full_length": 2.8,
+        "price": 14
+      },
+
+      {
+        "length": 2.5,
+        "full_length": 3.3,
+        "price": 28
+      }
+    ]
+  },
+  {
+    "name": "Stub glatki završni",
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/columns%2Fglatki-zarvrsni-1.jpg?alt=media&token=f518f144-60ad-4664-9b67-b3080249d2c0",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcolumns%2Fglatki-zavrsni-1-small.webp?alt=media&token=49f5d830-3aa2-4a17-bd82-538056e37e53",
+
+    "options": [
+      {
+        "length": 1.5,
+        "full_length": 2.1,
+        "price": 14
+      },
+      {
+        "length": 2.0,
+        "full_length": 2.8,
+        "price": 16
+      }
+    ]
+  },
+  {
+    "name": "Stub ukrasni srednji i završni",
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/columns%2Fukrasni-srednji-1.jpg?alt=media&token=3e4cb76f-5442-4169-8014-7d61c7a0a296",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcolumns%2Fukrasni-srednji-1-small.webp?alt=media&token=b862149e-efbe-4b6a-a204-46fbd3650ee9",
+
+    "options": [
+      {
+        "length": 1.5,
+        "full_length": 2.1,
+        "price": 18
+      },
+      {
+        "length": 2.0,
+        "full_length": 2.8,
+        "price": 23
+      }
+    ]
+  },
+
+  {
+    "name": "Stub ukrasni srednji i završni",
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/columns%2Fukrasni-zavrsni-1.jpg?alt=media&token=63c900c1-a06c-4d23-ac05-61d3a11e42d4",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcolumns%2Fukrasni-zavrsni-1-small.webp?alt=media&token=83feef4a-b33a-430c-9710-2798240b197f",
+
+    "options": [
+      {
+        "length": 1.5,
+        "full_length": 2.1,
+        "price": 14
+      },
+      {
+        "length": 2.0,
+        "full_length": 2.8,
+        "price": 16
+      }
+    ]
+  }
+]

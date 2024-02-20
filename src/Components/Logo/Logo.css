@@ -1,0 +1,49 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: inherit;
+  height: 40px;
+}
+
+.logo .logo-image {
+  width: 40px;
+  height: 40px;
+  /* height: 100%; */
+  background-color: inherit;
+}
+.logo h2 {
+  font-weight: 800;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .logo {
+    height: 30px;
+  }
+  .logo .logo-image {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    height: 25px;
+  }
+  .logo .logo-image {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo {
+    height: 20px;
+  }
+  .logo .logo-image {
+    width: 20px;
+    height: 20px;
+  }
+}

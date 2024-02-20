@@ -1,0 +1,200 @@
+/* Rubik font*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800;900&display=swap");
+/*Poppins font*/
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Rubik:wght@400;700;800;900&display=swap'); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  list-style: none;
+
+  /*Disable any form of selection*/
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-touch-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+
+  /* overflow-x: hidden; */
+  /* font-family: "Poppins", sans-serif; */
+
+  /* GOOD BACKGROUND COLOR */
+  /* background: #222327; */
+
+  /* background: #f9f777; */
+  /* background:  rgb(222, 195, 172); */
+
+  /* background: rgb(236, 229, 34); */
+
+  color: black;
+}
+body {
+  min-height: 100vh;
+}
+
+body.sidebar-open {
+  overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #222327;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: yellow;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 500;
+
+  background-color: inherit;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 900;
+  background-color: inherit;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 800;
+  background-color: inherit;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  background-color: inherit;
+}
+a {
+  font-size: 15px;
+  font-weight: 500;
+  background-color: inherit;
+}
+.title {
+  text-align: center;
+  padding: 30px 0px;
+}
+
+@media (max-width: 1920px) {
+  p {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  h1 {
+    font-size: 50px;
+    font-weight: 900;
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  a {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 992px) {
+  h1 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .title {
+    padding: 20px 0px;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  h2 {
+    font-weight: 700;
+  }
+}
+@media (max-width: 540px) {
+  h3 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  a {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  h3 {
+    font-weight: 500;
+  }
+  .title {
+    padding: 15px 0px;
+  }
+}
+@media (max-width: 360px) {
+  h1 {
+    font-size: 25px;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 320px) {
+  p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: 900;
+  }
+  h2 {
+    font-size: 15px;
+    font-weight: 800;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  a {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .title {
+    padding: 10px 0px;
+  }
+}

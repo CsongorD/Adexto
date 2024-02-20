@@ -1,0 +1,268 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+
+  margin-top: 80px;
+}
+
+.pagination ul {
+  display: flex;
+  background-color: #bababa;
+  padding: 8px;
+  border-radius: 50px;
+  /* width: 430px; */
+}
+.pagination ul li {
+  /* color: #20b2aa; */
+  list-style: none;
+  /* line-height: 45px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  /* transition: all 0.1s linear; */
+  background-color: inherit;
+}
+
+.pagination ul li.numb {
+  border-radius: 100%;
+}
+.pagination ul li.dots {
+  font-size: 22px;
+  cursor: default;
+}
+
+.pagination ul li.numb,
+li.dots {
+  height: 45px;
+  width: 45px;
+  margin: 0 1px;
+}
+
+.pagination ul li.btn {
+  background-color: yellow;
+  border: 2px black solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  padding: 0 10px;
+}
+.pagination ul li.btn #btn-arrow {
+  width: 35px;
+  height: 35px;
+  background-color: inherit;
+}
+
+.pagination ul li.prev {
+  border-radius: 25px 5px 5px 25px;
+}
+
+.pagination ul li.next {
+  border-radius: 5px 25px 25px 5px;
+}
+
+.pagination ul li.active,
+.pagination ul li.numb:hover,
+.pagination ul li.btn:hover {
+  color: #fff;
+  fill: white;
+  background: #222327;
+}
+
+.pagination ul li.disabled,
+.pagination ul li.disabled:hover {
+  background-color: gray;
+  border: 2px gray solid;
+  color: white;
+  fill: white;
+  cursor: default;
+}
+
+/* .nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.pagination-btn {
+  border: 1px black solid;
+  text-decoration: none;
+  border-radius: 20px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination {
+  display: flex;
+  list-style-type: none;
+}
+
+.page-item a {
+  text-decoration: none;
+}
+.page-item {
+  border: 1px black solid;
+  text-decoration: none;
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+@media (max-width: 550px) {
+  .pagination ul li.numb,
+  li.dots {
+    height: 40px;
+    width: 40px;
+  }
+
+  .pagination ul li.btn {
+    width: 45px;
+  }
+  .pagination ul li.btn #btn-arrow {
+    width: 30px;
+    height: 30px;
+  }
+  .pagination {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .pagination ul li {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .pagination ul li.dots {
+    font-size: 18px;
+  }
+
+  .pagination ul li.numb,
+  li.dots {
+    height: 35px;
+    width: 35px;
+  }
+
+  .pagination ul li.btn {
+    width: 40px;
+    padding: 0 10px;
+    border: 1px black solid;
+  }
+  .pagination ul li.disabled,
+  .pagination ul li.disabled:hover {
+    border: 1px gray solid;
+  }
+  .pagination ul li.btn #btn-arrow {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (max-width: 370px) {
+  .pagination ul li {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .pagination ul li.dots {
+    font-size: 15px;
+  }
+
+  .pagination ul li.numb,
+  li.dots {
+    height: 30px;
+    width: 30px;
+  }
+
+  .pagination ul li.btn {
+    width: 35px;
+    padding: 0 10px;
+    border: 1px black solid;
+  }
+  .pagination ul li.disabled,
+  .pagination ul li.disabled:hover {
+    border: 1px gray solid;
+  }
+  .pagination ul li.btn #btn-arrow {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .pagination ul li {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .pagination ul li.dots {
+    font-size: 15px;
+  }
+
+  .pagination ul li.numb,
+  li.dots {
+    height: 25px;
+    width: 25px;
+  }
+
+  .pagination ul li.btn {
+    width: 30px;
+    padding: 0 8px;
+    border: 1px black solid;
+  }
+  .pagination ul li.disabled,
+  .pagination ul li.disabled:hover {
+    border: 1px gray solid;
+  }
+  .pagination ul li.btn #btn-arrow {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 270px) {
+  .pagination ul li {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .pagination ul {
+    padding: 5px;
+  }
+
+  .pagination ul li.dots {
+    font-size: 12px;
+  }
+
+  .pagination ul li.numb,
+  li.dots {
+    height: 20px;
+    width: 20px;
+  }
+
+  .pagination ul li.btn {
+    width: 25px;
+    padding: 0 8px;
+    border: 1px black solid;
+  }
+  .pagination ul li.disabled,
+  .pagination ul li.disabled:hover {
+    border: 1px gray solid;
+  }
+  .pagination ul li.btn #btn-arrow {
+    width: 20px;
+    height: 20px;
+  }
+}

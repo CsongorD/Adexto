@@ -1,0 +1,137 @@
+[
+  {
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/types%2F105.png?alt=media&token=51ef7c43-b999-4896-890e-2fa0892a53e7",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Ftypes%2F105-small.webp?alt=media&token=26f72735-6427-4567-b6d0-e56ea6bf3b10",
+    "number": 105,
+    "width": 2000,
+    "height": 500,
+    "weight": 72,
+    "price": 20
+  },
+  {
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/types%2F107.png?alt=media&token=e884fcca-e7e6-4a94-b16c-d7260b8d0982",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Ftypes%2F107-small.webp?alt=media&token=96f5baf4-90f2-4064-94ef-5d8748347376",
+    "number": 107,
+    "width": 2000,
+    "height": 500,
+    "weight": 75,
+    "price": 18
+  },
+  {
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/types%2F109.png?alt=media&token=bee5acca-7bd4-465e-b5bd-57c0baa59b85",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Ftypes%2F109-small.webp?alt=media&token=1b8f60e4-608a-4f83-8de8-79193b5a625b",
+    "number": 109,
+    "width": 2000,
+    "height": 500,
+    "weight": 72,
+    "price": 17
+  },
+  {
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/types%2F111.png?alt=media&token=9a55c9b8-515e-4de5-99b9-086a29f2dfdc",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Ftypes%2F111-small.webp?alt=media&token=50fc303a-636f-40f1-8e95-78cf2eeedc4e",
+    "number": 111,
+    "width": 2000,
+    "height": 500,
+    "weight": 76,
+    "price": 18
+  },
+  {
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/types%2F112.png?alt=media&token=a6a78779-0d81-4def-8f7b-222d9ee27e67",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Ftypes%2F112-small.webp?alt=media&token=8ed6ca8b-345d-479c-9878-d5fc8a214399",
+    "number": 112,
+    "width": 2000,
+    "height": 500,
+    "weight": 70,
+    "price": 14
+  },
+  {
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/types%2F201.png?alt=media&token=9287ce96-4c25-481c-9362-8f0e2012264f",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Ftypes%2F201-small.webp?alt=media&token=17c7efc4-0467-4132-817c-cf8cdd7fa680",
+    "number": 201,
+    "width": 2000,
+    "height": 620,
+    "weight": 52,
+    "price": 16
+  },
+  {
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/types%2F203.png?alt=media&token=223dff93-01aa-4656-81bf-6574dcd73bd7",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Ftypes%2F203-small.webp?alt=media&token=502ec4ad-13dc-40b9-929e-fd66bdf488e3",
+    "number": 203,
+    "width": 2000,
+    "height": 500,
+    "weight": 62,
+    "price": 16
+  },
+  {
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/types%2F206.png?alt=media&token=bb2670c3-6abe-4c53-99e5-574e22a9866f",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Ftypes%2F206-small.webp?alt=media&token=5151ecd7-e9df-4517-b0ae-0ee1c4df2e15",
+    "number": 206,
+    "width": 2000,
+    "height": 500,
+    "weight": 57,
+    "price": 18
+  },
+  {
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/types%2F207.png?alt=media&token=b42b01ab-b859-4b4c-a50f-3265abb27d4f",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Ftypes%2F207-small.webp?alt=media&token=9d6ff427-ec13-4d73-af4a-68115974a327",
+    "number": 207,
+    "width": 2000,
+    "height": 510,
+    "weight": 62,
+    "price": 18
+  },
+  {
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/types%2F301.png?alt=media&token=85867112-5c47-4856-a468-1e9baef31b00",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Ftypes%2F301-small.webp?alt=media&token=471e1d27-8d86-4098-8e0b-12114fa5839f",
+    "number": 301,
+    "width": 2000,
+    "height": 500,
+    "weight": 52,
+    "price": 16
+  },
+  {
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/types%2F302.png?alt=media&token=90b578c8-2c28-41ee-9e36-a05289e1ddac",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Ftypes%2F302-small.webp?alt=media&token=82b3fa85-3b0c-488b-a5b5-767db61e3d8c",
+    "number": 302,
+    "width": 2000,
+    "height": 600,
+    "weight": 60,
+    "price": 18
+  },
+  {
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/types%2F303.png?alt=media&token=170e6b4b-d620-4b20-be4b-848e0ec3259a",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Ftypes%2F303-small.webp?alt=media&token=68c3ffa7-9090-4827-832e-be5e134c5628",
+    "number": 303,
+    "width": 2000,
+    "height": 620,
+    "weight": 60,
+    "price": 18
+  },
+  {
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/types%2F304.png?alt=media&token=8a3b88a7-ea69-4dc1-8b7f-3656f7f3d131",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Ftypes%2F304-small.webp?alt=media&token=96c46780-745a-4a8b-9b9e-6926ca3df487",
+    "number": 304,
+    "width": 2000,
+    "height": 540,
+    "weight": 52,
+    "price": 18
+  },
+  {
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/types%2F306.png?alt=media&token=dd1c9608-a6e8-4273-ab57-e074db3f5447",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Ftypes%2F306-small.webp?alt=media&token=48da2763-4cfc-4123-bac0-65e7f190443d",
+    "number": 306,
+    "width": 2000,
+    "height": 630,
+    "weight": 72,
+    "price": 19
+  },
+  {
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/types%2F307.png?alt=media&token=722dcd24-5d05-439e-8107-9372303d80fc",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Ftypes%2F307-small.webp?alt=media&token=371b1419-ca39-40a3-b1b5-20ab3a2d9832",
+    "number": 307,
+    "width": 2000,
+    "height": 550,
+    "weight": 67,
+    "price": 19
+  }
+]
