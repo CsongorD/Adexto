@@ -11,6 +11,7 @@ function Characteristics() {
             <ImageComponent
               src={characteristic.path}
               alt={characteristic.text + "-logo"}
+              small={characteristic.small}
               loading={"lazy"}
             />
           </div>

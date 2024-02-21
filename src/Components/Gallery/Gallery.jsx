@@ -53,7 +53,8 @@ const Gallery = () => {
             >
               <ImageComponent
                 alt={"gallery-image-" + { index }}
-                src={image}
+                src={image.path}
+                small={image.small}
                 loading="lazy"
               />
             </div>
