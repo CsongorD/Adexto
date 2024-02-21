@@ -1,24 +1,27 @@
 [
   {
-    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/characteristics%2Fwarranty.svg?alt=media&token=0444b857-83a0-410b-927b-57493ab3cbb2",
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fcharacteristics%2Fwarranty.svg?alt=media&token=851dee49-73b1-42e3-b871-96a4069727f1",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcharacteristics%2Fwarranty-small.svg?alt=media&token=ef828cac-b6ac-4be7-b877-c81862e63bd3",
     "text": "25 GODINA GARANCIJA"
   },
   {
-    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/characteristics%2Fprice.svg?alt=media&token=f8dc778c-eacb-4396-958c-7b442dcab521",
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fcharacteristics%2Fprice.svg?alt=media&token=00970899-dc73-4985-9d9d-21bf5b3d6d13",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcharacteristics%2Fprice-small.svg?alt=media&token=33fb767b-0c79-4d8e-a10f-8418dec47c73",
     "text": "POVOLJNA CENA i ISPLATIVOST"
   },
   {
-    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/characteristics%2Fdurability.svg?alt=media&token=6fe5f61a-e035-4ba5-9a2d-d478a44d5fdb",
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fcharacteristics%2Fdurability.svg?alt=media&token=2d9b741c-6641-4aa6-a3c0-9eb661352230",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcharacteristics%2Fdurability-small.svg?alt=media&token=cb0d687e-7aaa-4bfe-ad7d-00fea0d2565b",
     "text": "IZDRŽLJIVOST i DUGOTRAJNOST"
   },
   {
-    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/characteristics%2Fmaintenance.svg?alt=media&token=6246e91e-d5b5-44d2-8dd9-f392d5b2a97e",
-
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fcharacteristics%2Fmaintenance.svg?alt=media&token=5345b62b-cd3a-4bf0-88e1-68da61af6f94",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcharacteristics%2Fmaintenance-small.svg?alt=media&token=37a18711-7a09-449e-96d5-b4775d6a89db",
     "text": "JEDNOSTAVNOST ODRŽAVANJA"
   },
   {
-    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/characteristics%2Fsecurity.svg?alt=media&token=8d06c4ae-6913-49be-be28-ff4ee01872bf",
-
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fcharacteristics%2Fsecurity.svg?alt=media&token=6b036a02-a3ac-470e-9459-353ddabe8e35",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcharacteristics%2Fsecurity-small.svg?alt=media&token=551a17d0-588e-4c84-83fe-2d30c95cff36",
     "text": "SIGURNOST i PRIVATNOST"
   }
 ]

@@ -1,9 +1,8 @@
 [
   {
     "name": "Stub glatki srednji",
-    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/columns%2Fglatki_srednji-1.png?alt=media&token=f0e44107-35d3-46fe-901f-3a2a1ec55bc2",
-    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcolumns%2Fglatki-srednji-1-small.webp?alt=media&token=ae761592-8245-43ad-b3d6-98e61e5a403b",
-
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fcolumns%2Fglatki-srednji-1.webp?alt=media&token=b112fffd-a8bf-4082-a2ae-9730d7178c3d",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcolumns%2Fglatki-srednji-1-small.webp?alt=media&token=4856bdec-44bf-4a27-8c59-5812fc654159",
     "options": [
       {
         "length": 1.5,
@@ -25,9 +24,8 @@
   },
   {
     "name": "Stub glatki završni",
-    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/columns%2Fglatki-zarvrsni-1.jpg?alt=media&token=f518f144-60ad-4664-9b67-b3080249d2c0",
-    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcolumns%2Fglatki-zavrsni-1-small.webp?alt=media&token=49f5d830-3aa2-4a17-bd82-538056e37e53",
-
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fcolumns%2Fglatki-zavrsni-1.webp?alt=media&token=6ce9eb8e-9e15-457c-ac3b-aefd703d3041",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcolumns%2Fglatki-zavrsni-1-small.webp?alt=media&token=1512fa03-2d18-4233-80b8-9a77d50434d8",
     "options": [
       {
         "length": 1.5,
@@ -42,10 +40,9 @@
     ]
   },
   {
-    "name": "Stub ukrasni srednji i završni",
-    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/columns%2Fukrasni-srednji-1.jpg?alt=media&token=3e4cb76f-5442-4169-8014-7d61c7a0a296",
-    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcolumns%2Fukrasni-srednji-1-small.webp?alt=media&token=b862149e-efbe-4b6a-a204-46fbd3650ee9",
-
+    "name": "Stub ukrasni srednji",
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fcolumns%2Fukrasni-srednji-1.webp?alt=media&token=91357a60-2e40-470b-874a-89f011230e86",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcolumns%2Fukrasni-srednji-1-small.webp?alt=media&token=a314cc09-4cae-46e3-873a-bd4470663dab",
     "options": [
       {
         "length": 1.5,
@@ -59,12 +56,10 @@
       }
     ]
   },
-
   {
-    "name": "Stub ukrasni srednji i završni",
-    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/columns%2Fukrasni-zavrsni-1.jpg?alt=media&token=63c900c1-a06c-4d23-ac05-61d3a11e42d4",
-    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcolumns%2Fukrasni-zavrsni-1-small.webp?alt=media&token=83feef4a-b33a-430c-9710-2798240b197f",
-
+    "name": "Stub ukrasni završni",
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fcolumns%2Fukrasni-zavrsni-1.webp?alt=media&token=c45ac8a1-a510-4563-9c57-7f0dcdd2eff3",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcolumns%2Fukrasni-zavrsni-1-small.webp?alt=media&token=9f21b9d5-e237-4fb8-8857-4d79956788ce",
     "options": [
       {
         "length": 1.5,
