@@ -36,7 +36,6 @@ const ModelList = ({ models, paginate, currentPage, loading }) => {
       setImageIndex(imageIndex + 1);
     }
   }
-
   const currentImage = modelImages[imageIndex];
 
   return (
@@ -50,7 +49,8 @@ const ModelList = ({ models, paginate, currentPage, loading }) => {
 
         <div className="image-slider-img">
           <ImageComponent
-            src={currentImage}
+            src={currentImage.path}
+            small={currentImage.small}
             alt={"img-" + { modelNumber }}
             loading="lazy"
           />
