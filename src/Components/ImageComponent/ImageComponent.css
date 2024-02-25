@@ -19,7 +19,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  animation: pulse 2.5 infinite;
+  animation: pulse 2.5s infinite;
 }
 .blur-load.loaded::before {
   content: none;
@@ -45,4 +45,8 @@
 .blur-load > img {
   opacity: 0;
   transition: opacity 200ms ease-in-out;
+}
+
+.blur-load.loaded {
+  /* background-image: none !important; */
 }
