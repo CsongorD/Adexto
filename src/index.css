@@ -44,7 +44,12 @@ body.sidebar-open {
 }
 
 body::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 7px;
+  height: 7px;
+}
+
+body::-webkit-scrollbar-corner {
+  background-color: #222327;
 }
 
 body::-webkit-scrollbar-track {
