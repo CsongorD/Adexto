@@ -9,7 +9,7 @@ function Characteristics() {
         <div className="characteristic" key={index}>
           <div className="characteristic-image">
             <ImageComponent
-              src={characteristic.path}
+              src={characteristic.small}
               alt={characteristic.text + "-logo"}
               small={characteristic.small}
               loading={"lazy"}
