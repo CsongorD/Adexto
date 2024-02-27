@@ -78,8 +78,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
             ></box-icon>
           </li>
         )}
-        {/* <li className="numb active">{firstNumber}</li>
-        <li className="dots">...</li> */}
+
         {numbers.map((num, i) => {
           if (num === currentPage) {
             return (
@@ -106,8 +105,6 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
           }
         })}
 
-        {/* <li className="dots">...</li>
-        <li className="numb">{lastNumber}</li> */}
         {currentPage === lastNumber ? (
           <li className="btn next disabled">
             <box-icon
