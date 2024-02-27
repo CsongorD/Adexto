@@ -42,11 +42,9 @@ const TypesPage = () => {
           <p className="section-text">Info</p>
         </div>
       </div>
-
       <TypeTable ref={typeSection} />
       <ColumnTable ref={columnSection} />
       <PriceInfo ref={infoSection} />
-
       <Footer />
     </div>
   );
