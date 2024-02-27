@@ -1,31 +1,30 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./ImageComponent.css";
 
-const ImageComponent = ({ src, alt, loading, className, small }) => {
+const ImageComponent = ({ src, alt, loading = "lazy", small }) => {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
 
-  useEffect(() => {
-    const img = new Image();
-    img.onload = () => {
-      setImageIsLoaded(true);
-    };
-
-    img.src = src;
-  }, [src]);
+  function handleLoad() {
+    setImageIsLoaded(true);
+  }
 
   return (
     <div
       className={"blur-load " + (imageIsLoaded ? "loaded" : "")}
       style={
-        // imageIsLoaded
-        //   ? {}
-        //   :
-        {
-          backgroundImage: `url(${small})`,
-        }
+        imageIsLoaded
+          ? { backgroundImage: "none" }
+          : { backgroundImage: `url(${small})` }
       }
     >
-      <img src={src} alt={alt} loading={loading} />
+      <img
+        src={src}
+        alt={alt}
+        loading={loading}
+        onLoad={() => {
+          handleLoad();
+        }}
+      />
     </div>
   );
 };
