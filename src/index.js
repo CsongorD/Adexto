@@ -3,11 +3,6 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 // import reportWebVitals from "./reportWebVitals";
-// import HomePage from "./Pages/HomePage/HomePage";
-// import ModelsPage from "./Pages/ModelsPage/ModelsPage";
-// import TypesPage from "./Pages/TypesPage/TypesPage";
-// import ContactPage from "./Pages/ContactPage/ContactPage";
-// import GalleryPage from "./Pages/GalleryPage/GalleryPage";
 import Loading from "./Components/Loading/Loading";
 
 const HomePage = lazy(() => import("./Pages/HomePage/HomePage"));
