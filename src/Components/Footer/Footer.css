@@ -23,7 +23,7 @@
   background-color: inherit;
 }
 .footer .footer-container p {
-  color: grey;
+  color: #b3b3b3;
   font-size: 15px;
 }
 
@@ -92,9 +92,6 @@
   .footer h3 {
     padding-top: 20px;
   }
-  /* .footer .footer-container .info-container .icon {
-    display: none;
-  } */
 }
 @media (max-width: 460px) {
   .footer .footer-container {
