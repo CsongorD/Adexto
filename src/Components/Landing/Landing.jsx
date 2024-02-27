@@ -25,31 +25,6 @@ const Landing = () => {
       </div>
       <FenceModel />
     </div>
-
-    // <div className="landing">
-    //   <div className="icons">
-    //     <a href="tel:+381 66-8822 339">
-    //       <BsTelephone className="icon" />
-    //     </a>
-    //     <a href="mailto:info@adexto.com">
-    //       <MdMailOutline className="icon" />
-    //     </a>
-    //     <a
-    //       href="https://www.youtube.com/channel/UCTaba6A16VpO8JnXnQfso1w"
-    //       target="#"
-    //     >
-    //       <BsYoutube className="icon" />
-    //     </a>
-    //   </div>
-
-    /* <div className="scroll-down">
-        <a href="/">
-          <i>
-            <box-icon type="solid" name="down-arrow" color="white"></box-icon>
-          </i>
-        </a>
-      </div> */
-    // </div>
   );
 };
 
