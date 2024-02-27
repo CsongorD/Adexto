@@ -9,38 +9,32 @@ import Footer from "../../Components/Footer/Footer";
 const models = require("../../assets/db/model_db.json");
 
 const ModelsPage = () => {
-  const [posts /*, setPosts*/] = useState(models);
-  const [loading /*, setLoading*/] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage /*, setPostsPerPage*/] = useState(1);
+  const postsPerPage = 1;
+  const totalPosts = models.length;
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+
+  const currentPost = models.slice(indexOfFirstPost, indexOfLastPost)[0];
 
   const paginate = (pageNumber) => {
-    if (pageNumber > 0 && pageNumber <= posts.length) {
+    if (pageNumber > 0 && pageNumber <= models.length) {
       setCurrentPage(pageNumber);
     }
-    // else {
-    //   setCurrentPage(1);
-    // }
   };
-
-  // console.log("Current PAGE: " + currentPage);
 
   return (
     <div className="models-page">
       <Header />
       <Pagination
         postsPerPage={postsPerPage}
-        totalPosts={posts.length}
+        totalPosts={totalPosts}
         paginate={paginate}
         currentPage={currentPage}
       />
       <ModelList
-        models={currentPosts}
-        loading={loading}
+        model={currentPost}
         paginate={paginate}
         currentPage={currentPage}
       />
