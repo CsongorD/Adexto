@@ -14,28 +14,25 @@
   object-position: center;
   object-fit: cover;
 }
-
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
 .blur-load::before {
   content: "";
   position: absolute;
   inset: 0;
+  background: white;
   animation: pulse 2.5s infinite;
 }
 .blur-load.loaded::before {
   content: none;
   animation: none;
-}
-
-@keyframes pulse {
-  0% {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  50% {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-  100% {
-    background-color: rgba(255, 255, 255, 0);
-  }
 }
 
 .blur-load.loaded > img {
@@ -45,8 +42,4 @@
 .blur-load > img {
   opacity: 0;
   transition: opacity 200ms ease-in-out;
-}
-
-.blur-load.loaded {
-  /* background-image: none !important; */
 }
