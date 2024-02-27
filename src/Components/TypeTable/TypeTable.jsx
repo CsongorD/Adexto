@@ -3,8 +3,7 @@ import "./TypeTable.css";
 import { forwardRef } from "react";
 const types = require("../../assets/db/type_db.json");
 
-// eslint-disable-next-line no-empty-pattern
-const TypeTable = ({}, ref) => {
+const TypeTable = forwardRef((_props, ref) => {
   return (
     <div className="type-table" ref={ref}>
       <h1 className="title">PLOČE</h1>
@@ -20,7 +19,7 @@ const TypeTable = ({}, ref) => {
                   src={type.path}
                   small={type.small}
                   alt={"type-" + type.number}
-                  loading="lazy"
+                  loading={index < 6 ? "eager" : "lazy"}
                 />
               </div>
               <p className="type-height">{type.height + "mm"}</p>
@@ -34,6 +33,6 @@ const TypeTable = ({}, ref) => {
       </div>
     </div>
   );
-};
+});
 
-export default forwardRef(TypeTable);
+export default TypeTable;

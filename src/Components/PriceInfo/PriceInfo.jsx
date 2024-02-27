@@ -1,8 +1,7 @@
 import "./PriceInfo.css";
 import { forwardRef } from "react";
 
-// eslint-disable-next-line no-empty-pattern
-const PriceInfo = ({}, ref) => {
+const PriceInfo = forwardRef((_props, ref) => {
   return (
     <div className="price-info-container" ref={ref}>
       <h1 className="title">INFO</h1>
@@ -29,6 +28,6 @@ const PriceInfo = ({}, ref) => {
       </div>
     </div>
   );
-};
+});
 
-export default forwardRef(PriceInfo);
+export default PriceInfo;
