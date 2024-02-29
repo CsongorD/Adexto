@@ -59,7 +59,7 @@ const ModelList = ({ model, paginate, currentPage }) => {
             src={currentImagePath}
             small={currentImageSmall}
             alt={"img-" + modelNumber}
-            loading={"lazy"}
+            loading={modelNumber === "1" ? "eager" : "lazy"}
           />
         </div>
         <div className="image-slider-btn next" onClick={() => showNextImage()}>
