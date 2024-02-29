@@ -5,7 +5,9 @@
   list-style-type: none;
   background-color: inherit;
 }
-
+.navbar-container {
+  background-color: inherit;
+}
 .navbar li {
   margin-left: 50px;
   background-color: inherit;

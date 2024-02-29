@@ -17,7 +17,7 @@ const Navbar = () => {
   let c = isOpen ? "open" : "";
 
   return (
-    <div>
+    <div className="navbar-container">
       <div className="menu-icon-container" onClick={() => toggleSidebar()}>
         {isOpen ? (
           <box-icon id="menu-icon" name="x"></box-icon>
