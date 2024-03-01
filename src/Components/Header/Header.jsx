@@ -2,7 +2,7 @@ import "./Header.css";
 import Navbar from "../Navbar/Navbar";
 import Logo from "../Logo/Logo";
 
-import logo from "../../assets/db/logo_db.json";
+import logo from "../../data/logo_db.json";
 
 const Header = () => {
   return (

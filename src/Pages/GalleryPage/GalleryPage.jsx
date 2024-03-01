@@ -1,19 +1,6 @@
-import "./GalleryPage.css";
-
-import Header from "../../Components/Header/Header";
-import Gallery from "../../Components/Gallery/Gallery";
-import Footer from "../../Components/Footer/Footer";
-
-import gallery from "../../assets/db/gallery_db.json";
-
+import GalleryLayout from "../../layouts/GalleryLayout/GalleryLayout";
 const GalleryPage = () => {
-  return (
-    <div className="gallery-page">
-      <Header />
-      <Gallery gallery={gallery} />
-      <Footer />
-    </div>
-  );
+  return <GalleryLayout />;
 };
 
 export default GalleryPage;
