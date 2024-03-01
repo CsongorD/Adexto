@@ -1,12 +1,12 @@
-import { useState } from "react";
 import "./ModelsPage.css";
+import { useState } from "react";
 
 import Header from "../../Components/Header/Header";
 import Pagination from "../../Components/Pagination/Pagination";
 import ModelList from "../../Components/ModelList/ModelList";
 import Footer from "../../Components/Footer/Footer";
 
-const models = require("../../assets/db/model_db.json");
+import models from "../../assets/db/model_db.json";
 
 const ModelsPage = () => {
   const [currentPage, setCurrentPage] = useState(1);

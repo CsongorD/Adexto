@@ -8,6 +8,9 @@ import ColumnTable from "../../Components/ColumnTable/ColumnTable";
 import PriceInfo from "../../Components/PriceInfo/PriceInfo";
 import Footer from "../../Components/Footer/Footer";
 
+import columns from "../../assets/db/column_db.json";
+import types from "../../assets/db/type_db.json";
+
 const TypesPage = () => {
   const typeSection = useRef();
   const columnSection = useRef();
@@ -42,8 +45,8 @@ const TypesPage = () => {
           <p className="section-text">Info</p>
         </div>
       </div>
-      <TypeTable ref={typeSection} />
-      <ColumnTable ref={columnSection} />
+      <TypeTable types={types} ref={typeSection} />
+      <ColumnTable columns={columns} ref={columnSection} />
       <PriceInfo ref={infoSection} />
       <Footer />
     </div>
