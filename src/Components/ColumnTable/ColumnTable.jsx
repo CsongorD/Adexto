@@ -1,9 +1,8 @@
-import ImageComponent from "../ImageComponent/ImageComponent";
 import "./ColumnTable.css";
 import { forwardRef } from "react";
+import ImageComponent from "../ImageComponent/ImageComponent";
 
-const columns = require("../../assets/db/column_db.json");
-const ColumnTable = forwardRef((_props, ref) => {
+const ColumnTable = forwardRef(({ columns }, ref) => {
   return (
     <div className="column-table" ref={ref}>
       <h1 className="title">STUBOVI</h1>

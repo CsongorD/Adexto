@@ -1,24 +1,12 @@
 import "./Gallery.css";
 import ImageComponent from "../ImageComponent/ImageComponent";
-import { useEffect, useState } from "react";
 
-const Gallery = () => {
-  const [posts, setPosts] = useState();
-
-  useEffect(() => {
-    fetchPosts();
-  }, []);
-
-  function fetchPosts() {
-    const asd = require("../../assets/db/gallery_db.json");
-    setPosts(asd);
-  }
-
+const Gallery = ({ gallery }) => {
   return (
     <div className="gallery">
       <h1 className="title">GALERIJA</h1>
       <div className="gallery-container">
-        {posts?.map((image, index) => (
+        {gallery?.map((image, index) => (
           <div key={index} className="img-container">
             <ImageComponent
               alt={"gallery-image-" + index}

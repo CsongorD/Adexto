@@ -1,9 +1,8 @@
-import ImageComponent from "../ImageComponent/ImageComponent";
 import "./TypeTable.css";
 import { forwardRef } from "react";
-const types = require("../../assets/db/type_db.json");
+import ImageComponent from "../ImageComponent/ImageComponent";
 
-const TypeTable = forwardRef((_props, ref) => {
+const TypeTable = forwardRef(({ types }, ref) => {
   return (
     <div className="type-table" ref={ref}>
       <h1 className="title">PLOČE</h1>
@@ -13,7 +12,6 @@ const TypeTable = forwardRef((_props, ref) => {
             <div key={index} className="type">
               <h2 className="type-number">{type.number}</h2>
               <p className="type-weight">{type.weight + "KG"}</p>
-
               <div className="type-img">
                 <ImageComponent
                   src={type.path}

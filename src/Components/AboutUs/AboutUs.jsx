@@ -1,9 +1,7 @@
-import ImageComponent from "../ImageComponent/ImageComponent";
 import "./AboutUs.css";
+import ImageComponent from "../ImageComponent/ImageComponent";
 
-const medals = require("../../assets/db/medal_db.json");
-
-const AboutUs = () => {
+const AboutUs = ({ medals }) => {
   return (
     <div className="about-us">
       <div className="medal-list">
