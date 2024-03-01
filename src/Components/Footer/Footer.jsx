@@ -1,6 +1,7 @@
 import "./Footer.css";
 import "boxicons";
-const Footer = function Footer() {
+
+const Footer = () => {
   return (
     <footer className="footer">
       <h3>ADEXTO D.O.O</h3>

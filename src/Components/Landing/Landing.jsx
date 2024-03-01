@@ -1,5 +1,6 @@
 import "./Landing.css";
 import "boxicons";
+
 import FenceModel from "../FenceModel/FenceModel";
 import { NavLink } from "react-router-dom";
 

@@ -1,5 +1,4 @@
 import "./ContactPage.css";
-
 import Header from "../../Components/Header/Header";
 import ContactCard from "../../Components/ContactCard/ContactCard";
 import GoogleMaps from "../../Components/GoogleMaps/GoogleMaps";

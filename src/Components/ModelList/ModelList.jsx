@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
-
 import "./ModelList.css";
+import { useEffect, useState } from "react";
 import ImageComponent from "../ImageComponent/ImageComponent";
 
 const ModelList = ({ model, paginate, currentPage }) => {

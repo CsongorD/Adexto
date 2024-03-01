@@ -1,5 +1,5 @@
-import { useState } from "react";
 import "./ImageComponent.css";
+import { useState } from "react";
 
 const ImageComponent = ({ src, alt, loading = "lazy", small }) => {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
@@ -24,6 +24,7 @@ const ImageComponent = ({ src, alt, loading = "lazy", small }) => {
         onLoad={() => {
           handleLoad();
         }}
+        fetchpriority={loading === "lazy" ? "low" : "high"}
       />
     </div>
   );
