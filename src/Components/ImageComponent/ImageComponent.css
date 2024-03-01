@@ -16,7 +16,7 @@
   background-color: inherit;
   display: block;
   object-position: center;
-  object-fit: cover;
+  object-fit: fill;
 }
 @keyframes pulse {
   0%,

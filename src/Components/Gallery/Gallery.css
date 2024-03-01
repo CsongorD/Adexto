@@ -17,11 +17,9 @@
 }
 
 .img-container {
-  /* width: 100%;
-  min-height: 280px;
-  height: 100%; */
-  width: 400px;
-  height: 250px;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  height: auto;
   padding: 5px;
   background-color: white;
   border: 3px black solid;
