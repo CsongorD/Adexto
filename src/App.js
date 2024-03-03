@@ -8,7 +8,7 @@ import GalleryPage from "./pages/GalleryPage/GalleryPage";
 
 import RootLayout from "./layouts/RootLayout/RootLayout";
 
-import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+// import NotFoundPage frsom "./pages/NotFoundPage/NotFoundPage";
 
 const router = createBrowserRouter([
   {
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
       { path: "/cenovnik", element: <TypesPage /> },
       { path: "/galerija", element: <GalleryPage /> },
       { path: "/kontakt", element: <ContactPage /> },
-      { path: "**", element: <NotFoundPage /> },
+      // { path: "**", element: <NotFoundPage /> },
     ],
   },
 ]);
