@@ -1,13 +1,18 @@
 import "./ContactLayout.css";
-import ContactCard from "../../components/ContactCard/ContactCard";
-import GoogleMaps from "../../components/GoogleMaps/GoogleMaps";
+import { lazy, Suspense } from "react";
+const ContactCard = lazy(() =>
+  import("../../components/ContactCard/ContactCard")
+);
+const GoogleMaps = lazy(() => import("../../components/GoogleMaps/GoogleMaps"));
 
 const ContactLayout = () => {
   return (
     <div className="contact-page">
       <div className="contact-us-container">
-        <ContactCard />
-        <GoogleMaps />
+        <Suspense fallback={<div>Loadding</div>}>
+          <ContactCard />
+          <GoogleMaps />
+        </Suspense>
       </div>
     </div>
   );
