@@ -12,6 +12,8 @@
 # firebase
 /.firebase
 storage.rules
+.firebaserc
+firebase.json
 
 # production
 /build
