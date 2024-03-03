@@ -24,10 +24,7 @@
   border-radius: 100px;
   padding: 0px 8px;
   margin-bottom: 3px;
-  /* color: black; */
-  /* background-color: yellow; */
   border: 3px solid yellow;
-  /* transform: rotateX(360deg); */
   transition: transform 0.5s ease;
 }
 
@@ -82,7 +79,7 @@
     background-color: #222327;
     /* backdrop-filter: blur(10px); */
   }
-  .open {
+  .navbar.open {
     transform: translateX(0%);
     overflow: hidden;
   }
