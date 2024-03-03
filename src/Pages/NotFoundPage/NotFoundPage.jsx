@@ -1,7 +1,7 @@
-import "./NotFoundPage.css";
+import NotFoundLayout from "../../layouts/NotFoundLayout/NotFoundLayout";
 
 const NotFoundPage = () => {
-  return <div className="error-container">Not Found 404</div>;
+  return <NotFoundLayout />;
 };
 
 export default NotFoundPage;
