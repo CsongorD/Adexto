@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+// import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import HomePage from "./pages/HomePage/HomePage";
 import ModelsPage from "./pages/ModelsPage/ModelsPage";
 import TypesPage from "./pages/TypesPage/TypesPage";
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
       { path: "/cenovnik", element: <TypesPage /> },
       { path: "/galerija", element: <GalleryPage /> },
       { path: "/kontakt", element: <ContactPage /> },
-      { path: "*", element: <NotFoundPage /> },
+      // { path: "*", element: <NotFoundPage /> },
     ],
   },
 ]);
