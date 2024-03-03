@@ -2,12 +2,12 @@ import React from "react";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
-import HomePage from "./Pages/HomePage/HomePage";
-import ModelsPage from "./Pages/ModelsPage/ModelsPage";
-import TypesPage from "./Pages/TypesPage/TypesPage";
-import ContactPage from "./Pages/ContactPage/ContactPage";
-import GalleryPage from "./Pages/GalleryPage/GalleryPage";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+import HomePage from "./pages/HomePage/HomePage";
+import ModelsPage from "./pages/ModelsPage/ModelsPage";
+import TypesPage from "./pages/TypesPage/TypesPage";
+import ContactPage from "./pages/ContactPage/ContactPage";
+import GalleryPage from "./pages/GalleryPage/GalleryPage";
 
 import RootLayout from "./layouts/RootLayout/RootLayout";
 
