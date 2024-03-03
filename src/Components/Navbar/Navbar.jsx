@@ -27,27 +27,43 @@ const Navbar = () => {
       </div>
       <ul className={"navbar " + c}>
         <li>
-          <NavLink className="nav-btn" to="/">
+          <NavLink className="nav-btn" to="/" onClick={() => toggleSidebar()}>
             Naslovna
           </NavLink>
         </li>
         <li>
-          <NavLink className="nav-btn" to="/cenovnik">
+          <NavLink
+            className="nav-btn"
+            to="/cenovnik"
+            onClick={() => toggleSidebar()}
+          >
             Cenovnik
           </NavLink>
         </li>
         <li>
-          <NavLink className="nav-btn" to="/betonske-ograde">
+          <NavLink
+            className="nav-btn"
+            to="/betonske-ograde"
+            onClick={() => toggleSidebar()}
+          >
             Modeli
           </NavLink>
         </li>
         <li>
-          <NavLink className="nav-btn" to="/galerija">
+          <NavLink
+            className="nav-btn"
+            to="/galerija"
+            onClick={() => toggleSidebar()}
+          >
             Galerija
           </NavLink>
         </li>
         <li>
-          <NavLink className="nav-btn" to="/kontakt">
+          <NavLink
+            className="nav-btn"
+            to="/kontakt"
+            onClick={() => toggleSidebar()}
+          >
             Kontakt
           </NavLink>
         </li>
