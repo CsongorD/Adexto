@@ -11,7 +11,7 @@ const Landing = () => {
         <div className="landing-text">
           <h1>ADEXTO D.O.O</h1>
           <p>
-            Firma <b>ADEXTO</b> nudi vam betonske ograde sa ugradjnom vrhunskog
+            Firma <b>ADEXTO</b> nudi vam betonske ograde sa ugradnjom vrhunskog
             kvaliteta i velikim izborom dezena.
           </p>
 
