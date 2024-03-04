@@ -1,11 +1,11 @@
-import "./ModelsLayout.css";
+import "./ModelsPage.css";
 import { useState } from "react";
 import models from "../../data/model_db.json";
 
 import Pagination from "../../components/Pagination/Pagination";
 import ModelList from "../../components/ModelList/ModelList";
 
-const ModelsLayout = () => {
+const ModelsPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 1;
   const totalPosts = models.length;
@@ -38,4 +38,4 @@ const ModelsLayout = () => {
   );
 };
 
-export default ModelsLayout;
+export default ModelsPage;

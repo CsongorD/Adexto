@@ -1,4 +1,4 @@
-import "./TypeLayout.css";
+import "./TypesPage.css";
 
 import { useRef } from "react";
 
@@ -9,7 +9,7 @@ import PriceInfo from "../../components/PriceInfo/PriceInfo";
 import TypeTable from "../../components/TypeTable/TypeTable";
 import ColumnTable from "../../components/ColumnTable/ColumnTable";
 
-const TypeLayout = () => {
+const TypesPage = () => {
   const typeSection = useRef();
   const columnSection = useRef();
   const infoSection = useRef();
@@ -49,4 +49,4 @@ const TypeLayout = () => {
   );
 };
 
-export default TypeLayout;
+export default TypesPage;

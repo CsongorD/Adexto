@@ -1,4 +1,4 @@
-import "./HomeLayout.css";
+import "./HomePage.css";
 
 import medals from "../../data/medal_db.json";
 import characteristics from "../../data/characteristic_db.json";
@@ -7,7 +7,7 @@ import Landing from "../../components/Landing/Landing";
 import Characteristics from "../../components/Characteristics/Characteristics";
 import AboutUs from "../../components/AboutUs/AboutUs";
 
-const HomeLayout = () => {
+const HomePage = () => {
   return (
     <div className="home-page">
       <Landing />
@@ -17,4 +17,4 @@ const HomeLayout = () => {
   );
 };
 
-export default HomeLayout;
+export default HomePage;
