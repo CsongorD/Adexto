@@ -1,13 +1,13 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
-import HomePage from "./pages/HomePage/HomePage";
-import ModelsPage from "./pages/ModelsPage/ModelsPage";
-import TypesPage from "./pages/TypesPage/TypesPage";
-import ContactPage from "./pages/ContactPage/ContactPage";
-import GalleryPage from "./pages/GalleryPage/GalleryPage";
-
 import RootLayout from "./layouts/RootLayout/RootLayout";
+
+import NotFoundPage from "./pages/NotFoundPage";
+import HomePage from "./pages/HomePage";
+import ModelsPage from "./pages/ModelsPage";
+import TypesPage from "./pages/TypesPage";
+import ContactPage from "./pages/ContactPage";
+import GalleryPage from "./pages/GalleryPage";
 
 const router = createBrowserRouter([
   {
@@ -24,8 +24,5 @@ const router = createBrowserRouter([
   },
 ]);
 
-function App() {
-  return <RouterProvider router={router} />;
-}
-
+const App = () => <RouterProvider router={router} />;
 export default App;
