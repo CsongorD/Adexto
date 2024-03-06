@@ -6,14 +6,26 @@ import characteristics from "../../data/characteristic_db.json";
 import Landing from "../../components/Landing/Landing";
 import Characteristics from "../../components/Characteristics/Characteristics";
 import AboutUs from "../../components/AboutUs/AboutUs";
+import { Helmet } from "react-helmet-async";
 
 const HomePage = () => {
   return (
-    <div className="home-page">
-      <Landing />
-      <Characteristics characteristics={characteristics} />
-      <AboutUs medals={medals} />
-    </div>
+    <>
+      <Helmet>
+        <title>Adexto</title>
+        <meta
+          name="description"
+          content="ADEXTO nudi vam betonske ograde sa ugradjnom vrhunskog
+          kvaliteta i velikim izborom dezena."
+        />
+        <link rel="canonical" href="/" />
+      </Helmet>
+      <div className="home-page">
+        <Landing />
+        <Characteristics characteristics={characteristics} />
+        <AboutUs medals={medals} />
+      </div>
+    </>
   );
 };
 
