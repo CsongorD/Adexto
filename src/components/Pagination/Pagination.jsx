@@ -1,4 +1,6 @@
 import "./Pagination.css";
+import NextIcon from "../Icons/NextIcon";
+import PrevIcon from "../Icons/PrevIcon";
 
 const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
   const pageNumbers = [];
@@ -63,19 +65,11 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
       <ul>
         {currentPage === firstNumber ? (
           <li className="btn prev disabled">
-            <box-icon
-              id="btn-arrow"
-              name="chevron-left"
-              type="solid"
-            ></box-icon>
+            <PrevIcon />
           </li>
         ) : (
           <li className="btn prev" onClick={showPrevModel}>
-            <box-icon
-              id="btn-arrow"
-              name="chevron-left"
-              type="solid"
-            ></box-icon>
+            <PrevIcon />
           </li>
         )}
 
@@ -107,19 +101,11 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
 
         {currentPage === lastNumber ? (
           <li className="btn next disabled">
-            <box-icon
-              id="btn-arrow"
-              name="chevron-right"
-              type="solid"
-            ></box-icon>
+            <NextIcon />
           </li>
         ) : (
           <li className="btn next" onClick={showNextModel}>
-            <box-icon
-              id="btn-arrow"
-              name="chevron-right"
-              type="solid"
-            ></box-icon>
+            <NextIcon />
           </li>
         )}
       </ul>

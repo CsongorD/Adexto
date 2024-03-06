@@ -1,10 +1,9 @@
-import "boxicons";
 import "./Logo.css";
 import { NavLink } from "react-router-dom";
 
 const Logo = ({ logo }) => {
   return (
-    <NavLink className={"logo"} to={"/"}>
+    <NavLink className="logo" to="/">
       <div className="logo-image">
         <img src={logo[0].path} alt="adexto-logo" />
       </div>

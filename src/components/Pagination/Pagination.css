@@ -52,7 +52,7 @@ li.dots {
   width: 50px;
   padding: 0 10px;
 }
-.pagination ul li.btn #btn-arrow {
+.pagination ul li.btn #arrow-icon {
   width: 35px;
   height: 35px;
   background-color: inherit;
@@ -93,7 +93,7 @@ li.dots {
   .pagination ul li.btn {
     width: 45px;
   }
-  .pagination ul li.btn #btn-arrow {
+  .pagination ul li.btn #arrow-icon {
     width: 30px;
     height: 30px;
   }
@@ -127,7 +127,7 @@ li.dots {
   .pagination ul li.disabled:hover {
     border: 1px gray solid;
   }
-  .pagination ul li.btn #btn-arrow {
+  .pagination ul li.btn #arrow-icon {
     width: 25px;
     height: 25px;
   }
@@ -157,7 +157,7 @@ li.dots {
   .pagination ul li.disabled:hover {
     border: 1px gray solid;
   }
-  .pagination ul li.btn #btn-arrow {
+  .pagination ul li.btn #arrow-icon {
     width: 20px;
     height: 20px;
   }
@@ -187,7 +187,7 @@ li.dots {
   .pagination ul li.disabled:hover {
     border: 1px gray solid;
   }
-  .pagination ul li.btn #btn-arrow {
+  .pagination ul li.btn #arrow-icon {
     width: 15px;
     height: 15px;
   }
@@ -221,7 +221,7 @@ li.dots {
   .pagination ul li.disabled:hover {
     border: 1px gray solid;
   }
-  .pagination ul li.btn #btn-arrow {
+  .pagination ul li.btn #arrow-icon {
     width: 20px;
     height: 20px;
   }

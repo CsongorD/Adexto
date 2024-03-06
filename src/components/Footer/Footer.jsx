@@ -1,5 +1,7 @@
 import "./Footer.css";
-import "boxicons";
+import PhoneIcon from "../Icons/PhoneIcon";
+import MailIcon from "../Icons/MailIcon";
+import LocationIcon from "../Icons/LocationIcon";
 
 const Footer = () => {
   return (
@@ -8,7 +10,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="info-container">
           <div className="icon-container">
-            <box-icon id="icon" name="map"></box-icon>
+            <LocationIcon />
           </div>
           <div className="info-text">
             <p className="footer-title">Lokacija</p>
@@ -18,7 +20,7 @@ const Footer = () => {
 
         <div className="info-container">
           <div className="icon-container">
-            <box-icon id="icon" name="phone"></box-icon>
+            <PhoneIcon />
           </div>
 
           <div className="info-text">
@@ -29,7 +31,7 @@ const Footer = () => {
 
         <div className="info-container">
           <div className="icon-container">
-            <box-icon id="icon" name="envelope"></box-icon>
+            <MailIcon />
           </div>
           <div className="info-text">
             <p className="footer-title">Mail</p>

@@ -9,6 +9,10 @@ import PriceInfo from "../../components/PriceInfo/PriceInfo";
 import TypeTable from "../../components/TypeTable/TypeTable";
 import ColumnTable from "../../components/ColumnTable/ColumnTable";
 
+import PlateIcon from "../../components/Icons/PlateIcon";
+import ColumnIcon from "../../components/Icons/ColumnIcon";
+import InfoIcon from "../../components/Icons/InfoIcon";
+
 const TypesPage = () => {
   const typeSection = useRef();
   const columnSection = useRef();
@@ -26,19 +30,15 @@ const TypesPage = () => {
     <div className="types-page">
       <div className="section-scroller">
         <div className="section-btn" onClick={() => handleClick(typeSection)}>
-          <box-icon id="section-icon" name="building"></box-icon>
+          <PlateIcon />
           <p className="section-text">Ploče</p>
         </div>
         <div className="section-btn" onClick={() => handleClick(columnSection)}>
-          <box-icon
-            id="section-icon"
-            name="bar-chart-alt-2"
-            type="solid"
-          ></box-icon>
+          <ColumnIcon />
           <p className="section-text">Stubovi</p>
         </div>
         <div className="section-btn" onClick={() => handleClick(infoSection)}>
-          <box-icon id="section-icon" name="info-circle"></box-icon>
+          <InfoIcon />
           <p className="section-text">Info</p>
         </div>
       </div>

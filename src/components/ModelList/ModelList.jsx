@@ -1,6 +1,8 @@
 import "./ModelList.css";
 import { useEffect, useState } from "react";
 import ImageComponent from "../ImageComponent/ImageComponent";
+import NextIcon from "../Icons/NextIcon";
+import PrevIcon from "../Icons/PrevIcon";
 
 const ModelList = ({ model, paginate, currentPage }) => {
   const [imageIndex, setImageIndex] = useState(0);
@@ -51,7 +53,7 @@ const ModelList = ({ model, paginate, currentPage }) => {
       <h1 className="title">Model {modelNumber}</h1>
       <div className="image-slider">
         <div className="image-slider-btn prev" onClick={() => showPrevImage()}>
-          <box-icon id="arrow-btn" name="chevron-left" type="solid"></box-icon>
+          <PrevIcon />
         </div>
         <div className="image-slider-img">
           <ImageComponent
@@ -62,7 +64,7 @@ const ModelList = ({ model, paginate, currentPage }) => {
           />
         </div>
         <div className="image-slider-btn next" onClick={() => showNextImage()}>
-          <box-icon id="arrow-btn" type="solid" name="chevron-right"></box-icon>
+          <NextIcon />
         </div>
       </div>
     </div>

@@ -1,8 +1,8 @@
 import "./Landing.css";
-import "boxicons";
+import { NavLink } from "react-router-dom";
 
 import FenceModel from "../FenceModel/FenceModel";
-import { NavLink } from "react-router-dom";
+import PlayIcon from "../Icons/PlayIcon";
 
 const Landing = () => {
   return (
@@ -19,7 +19,7 @@ const Landing = () => {
             Cenovnik
           </NavLink>
           <NavLink className="nav-btn btn-transparent" to="/betonske-ograde">
-            <box-icon name="play" id="play-icon"></box-icon>
+            <PlayIcon />
             Modeli
           </NavLink>
         </div>

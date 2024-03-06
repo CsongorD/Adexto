@@ -53,7 +53,7 @@
 
   background-color: #222327;
 }
-.image-slider-btn #arrow-btn {
+.image-slider-btn #arrow-icon {
   width: 40px;
   height: 40px;
   background-color: inherit;
@@ -105,7 +105,7 @@
     padding: 10px;
     width: 100%;
   }
-  .image-slider-btn #arrow-btn {
+  .image-slider-btn #arrow-icon {
     width: 25px;
     height: 25px;
     background-color: inherit;
@@ -136,7 +136,7 @@
     border-radius: 0%;
   }
 
-  .image-slider-btn #arrow-btn {
+  .image-slider-btn #arrow-icon {
     width: 40px;
     height: 40px;
   }
@@ -152,7 +152,7 @@
     height: 200px;
   }
 
-  .image-slider-btn #arrow-btn {
+  .image-slider-btn #arrow-icon {
     width: 30px;
     height: 30px;
   }
@@ -167,7 +167,7 @@
   .image-slider-img {
     height: 100px;
   }
-  .image-slider-btn #arrow-btn {
+  .image-slider-btn #arrow-icon {
     width: 20px;
     height: 20px;
   }

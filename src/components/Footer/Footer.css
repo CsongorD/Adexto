@@ -27,7 +27,9 @@
   font-size: 15px;
 }
 
-.footer .footer-container .info-container .icon-container #icon {
+.footer .footer-container .info-container .icon-container #location-icon,
+.footer .footer-container .info-container .icon-container #mail-icon,
+.footer .footer-container .info-container .icon-container #phone-icon {
   fill: yellow;
   display: flex;
   align-items: center;
@@ -107,7 +109,9 @@
   .footer h3 {
     font-size: 17px;
   }
-  .footer .footer-container .info-container .icon-container #icon {
+  .footer .footer-container .info-container .icon-container #phone-icon,
+  .footer .footer-container .info-container .icon-container #location-icon,
+  .footer .footer-container .info-container .icon-container #mail-icon {
     width: 40px;
     height: 40px;
   }
@@ -134,7 +138,9 @@
   .footer .footer-container p {
     font-size: 10px;
   }
-  .footer .footer-container .info-container .icon-container #icon {
+  .footer .footer-container .info-container .icon-container #location-icon,
+  .footer .footer-container .info-container .icon-container #phone-icon,
+  .footer .footer-container .info-container .icon-container #mail-icon {
     width: 30px;
     height: 30px;
   }
