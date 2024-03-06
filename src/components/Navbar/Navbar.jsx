@@ -10,6 +10,9 @@ const Navbar = () => {
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
+  const closeSidebar = () => {
+    setIsOpen(false);
+  };
   if (isOpen) {
     document.body.classList.add("sidebar-open");
   } else {
@@ -24,7 +27,7 @@ const Navbar = () => {
       </div>
       <ul className={"navbar " + c}>
         <li>
-          <NavLink className="nav-btn" to="/" onClick={() => toggleSidebar()}>
+          <NavLink className="nav-btn" to="/" onClick={() => closeSidebar()}>
             Naslovna
           </NavLink>
         </li>
@@ -32,7 +35,7 @@ const Navbar = () => {
           <NavLink
             className="nav-btn"
             to="/cenovnik"
-            onClick={() => toggleSidebar()}
+            onClick={() => closeSidebar()}
           >
             Cenovnik
           </NavLink>
@@ -41,7 +44,7 @@ const Navbar = () => {
           <NavLink
             className="nav-btn"
             to="/betonske-ograde"
-            onClick={() => toggleSidebar()}
+            onClick={() => closeSidebar()}
           >
             Modeli
           </NavLink>
@@ -50,7 +53,7 @@ const Navbar = () => {
           <NavLink
             className="nav-btn"
             to="/galerija"
-            onClick={() => toggleSidebar()}
+            onClick={() => closeSidebar()}
           >
             Galerija
           </NavLink>
@@ -59,7 +62,7 @@ const Navbar = () => {
           <NavLink
             className="nav-btn"
             to="/kontakt"
-            onClick={() => toggleSidebar()}
+            onClick={() => closeSidebar()}
           >
             Kontakt
           </NavLink>
