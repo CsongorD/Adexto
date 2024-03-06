@@ -1,7 +1,8 @@
 import "./Navbar.css";
 import { useState } from "react";
-
 import { NavLink } from "react-router-dom";
+import MenuIcon from "../Icons/MenuIcon";
+import CloseIcon from "../Icons/CloseIcon";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,11 +20,7 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <div className="menu-icon-container" onClick={() => toggleSidebar()}>
-        {isOpen ? (
-          <box-icon id="menu-icon" name="x"></box-icon>
-        ) : (
-          <box-icon id="menu-icon" name="menu"></box-icon>
-        )}
+        {isOpen ? <CloseIcon /> : <MenuIcon />}
       </div>
       <ul className={"navbar " + c}>
         <li>
