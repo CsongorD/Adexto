@@ -18,7 +18,7 @@
   padding: 10px 8%;
 }
 
-.footer h3 {
+.footer .footer-main-title {
   color: white;
   background-color: inherit;
 }
@@ -95,7 +95,7 @@
     color: white;
   }
 
-  .footer h3 {
+  .footer .footer-main-title {
     padding-top: 20px;
   }
 }
@@ -106,7 +106,7 @@
 }
 
 @media (max-width: 400px) {
-  .footer h3 {
+  .footer .footer-main-title {
     font-size: 17px;
   }
   .footer .footer-container .info-container .icon-container #phone-icon,
@@ -128,7 +128,7 @@
 }
 
 @media (max-width: 300px) {
-  .footer h3 {
+  .footer .footer-main-title {
     font-size: 15px;
   }
 
