@@ -43,7 +43,7 @@ const Navbar = () => {
         <li>
           <NavLink
             className="nav-btn"
-            to="/betonske-ograde"
+            to="/modeli"
             onClick={() => closeSidebar()}
           >
             Modeli
