@@ -1,11 +1,23 @@
 import "./GalleryPage.css";
 import gallery from "../../data/gallery_db.json";
 import Gallery from "../../components/Gallery/Gallery";
+import { Helmet } from "react-helmet-async";
+
 const GalleryPage = () => {
   return (
-    <div className="gallery-page">
-      <Gallery gallery={gallery} />
-    </div>
+    <>
+      <Helmet>
+        <title>Galerija</title>
+        <meta
+          name="description"
+          content="Vidite galeriju...................................."
+        />
+        <link rel="canonical" href="/galerija" />
+      </Helmet>
+      <div className="gallery-page">
+        <Gallery gallery={gallery} />
+      </div>
+    </>
   );
 };
 

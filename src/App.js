@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <HomePage /> },
       {
-        path: "/betonske-ograde",
+        path: "/modeli",
         element: (
           <Suspense fallback={<Loading />}>
             <ModelsPage />

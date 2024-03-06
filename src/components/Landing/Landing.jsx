@@ -18,7 +18,7 @@ const Landing = () => {
           <NavLink className="nav-btn" to="/cenovnik">
             Cenovnik
           </NavLink>
-          <NavLink className="nav-btn btn-transparent" to="/betonske-ograde">
+          <NavLink className="nav-btn btn-transparent" to="/modeli">
             <PlayIcon />
             Modeli
           </NavLink>

@@ -12,6 +12,7 @@ import ColumnTable from "../../components/ColumnTable/ColumnTable";
 import PlateIcon from "../../components/Icons/PlateIcon";
 import ColumnIcon from "../../components/Icons/ColumnIcon";
 import InfoIcon from "../../components/Icons/InfoIcon";
+import { Helmet } from "react-helmet-async";
 
 const TypesPage = () => {
   const typeSection = useRef();
@@ -27,25 +28,38 @@ const TypesPage = () => {
   };
 
   return (
-    <div className="types-page">
-      <div className="section-scroller">
-        <div className="section-btn" onClick={() => handleClick(typeSection)}>
-          <PlateIcon />
-          <p className="section-text">Ploče</p>
+    <>
+      <Helmet>
+        <title>Cenovnik</title>
+        <meta
+          name="description"
+          content="Cenovnik..........................................."
+        />
+        <link rel="canonical" href="/cenovnik" />
+      </Helmet>
+      <div className="types-page">
+        <div className="section-scroller">
+          <div className="section-btn" onClick={() => handleClick(typeSection)}>
+            <PlateIcon />
+            <p className="section-text">Ploče</p>
+          </div>
+          <div
+            className="section-btn"
+            onClick={() => handleClick(columnSection)}
+          >
+            <ColumnIcon />
+            <p className="section-text">Stubovi</p>
+          </div>
+          <div className="section-btn" onClick={() => handleClick(infoSection)}>
+            <InfoIcon />
+            <p className="section-text">Info</p>
+          </div>
         </div>
-        <div className="section-btn" onClick={() => handleClick(columnSection)}>
-          <ColumnIcon />
-          <p className="section-text">Stubovi</p>
-        </div>
-        <div className="section-btn" onClick={() => handleClick(infoSection)}>
-          <InfoIcon />
-          <p className="section-text">Info</p>
-        </div>
+        <TypeTable types={types} ref={typeSection} />
+        <ColumnTable columns={columns} ref={columnSection} />
+        <PriceInfo ref={infoSection} />
       </div>
-      <TypeTable types={types} ref={typeSection} />
-      <ColumnTable columns={columns} ref={columnSection} />
-      <PriceInfo ref={infoSection} />
-    </div>
+    </>
   );
 };
 

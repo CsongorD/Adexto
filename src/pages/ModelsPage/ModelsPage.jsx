@@ -4,6 +4,7 @@ import models from "../../data/model_db.json";
 
 import Pagination from "../../components/Pagination/Pagination";
 import ModelList from "../../components/ModelList/ModelList";
+import { Helmet } from "react-helmet-async";
 
 const ModelsPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -22,19 +23,29 @@ const ModelsPage = () => {
   };
 
   return (
-    <div className="models-page">
-      <Pagination
-        postsPerPage={postsPerPage}
-        totalPosts={totalPosts}
-        paginate={paginate}
-        currentPage={currentPage}
-      />
-      <ModelList
-        model={currentPost}
-        paginate={paginate}
-        currentPage={currentPage}
-      />
-    </div>
+    <>
+      <Helmet>
+        <title>Modeli</title>
+        <meta
+          name="description"
+          content="Vidite nase modeli.................................."
+        />
+        <link rel="canonical" href="/modeli" />
+      </Helmet>
+      <div className="models-page">
+        <Pagination
+          postsPerPage={postsPerPage}
+          totalPosts={totalPosts}
+          paginate={paginate}
+          currentPage={currentPage}
+        />
+        <ModelList
+          model={currentPost}
+          paginate={paginate}
+          currentPage={currentPage}
+        />
+      </div>
+    </>
   );
 };
 

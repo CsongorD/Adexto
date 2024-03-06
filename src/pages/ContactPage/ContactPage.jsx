@@ -1,15 +1,27 @@
 import "./ContactPage.css";
 import ContactCard from "../../components/ContactCard/ContactCard";
 import GoogleMaps from "../../components/GoogleMaps/GoogleMaps";
+import { Helmet } from "react-helmet-async";
 
 const ContactPage = () => {
   return (
-    <div className="contact-page">
-      <div className="contact-us-container">
-        <ContactCard />
-        <GoogleMaps />
+    <>
+      <Helmet>
+        <title>Contact</title>
+        <meta
+          name="description"
+          content="Kontaktirajte nas na: ................................"
+        />
+        <link rel="canonical" href="/kontakt" />
+      </Helmet>
+
+      <div className="contact-page">
+        <div className="contact-us-container">
+          <ContactCard />
+          <GoogleMaps />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
