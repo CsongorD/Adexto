@@ -6,7 +6,7 @@ import LocationIcon from "../Icons/LocationIcon";
 const Footer = () => {
   return (
     <footer className="footer">
-      <h3>ADEXTO D.O.O</h3>
+      <p className="footer-main-title">ADEXTO D.O.O</p>
       <div className="footer-container">
         <div className="info-container">
           <div className="icon-container">
