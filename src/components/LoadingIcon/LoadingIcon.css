@@ -1,0 +1,18 @@
+#svg g {
+  height: 100%;
+  width: 100%;
+  stroke: #fff;
+  fill-opacity: 0;
+  stroke-width: 15px;
+  stroke-dasharray: 5000;
+  animation: draw infinite 3.5s ease-in-out;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 5000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

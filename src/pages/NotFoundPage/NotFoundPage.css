@@ -1,8 +1,33 @@
 .error-container {
-  min-height: calc(100vh - 80px);
+  height: 100vh;
   width: 100%;
 
+  background-color: #222327;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
+}
+.btn-cont {
+  border: 2px white solid;
+  padding: 10px;
+  border-radius: 25px;
+}
+.nav-btn {
+  color: white;
+}
+.error-container .icon-container {
+  width: 100px;
+  height: 100px;
+}
+.error-container h1,
+h2 {
+  color: white;
+}
+
+.header {
+  display: none;
+}
+.footer {
+  display: none;
 }
