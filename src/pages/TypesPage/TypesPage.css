@@ -36,7 +36,9 @@
   font-weight: 500;
 }
 
-.section-scroller .section-btn #section-icon {
+.section-scroller .section-btn #plate-icon,
+.section-scroller .section-btn #info-icon,
+.section-scroller .section-btn #column-icon {
   width: 25px;
   height: 25px;
   background-color: inherit;
