@@ -4,7 +4,7 @@ import { Suspense, lazy } from "react";
 import RootLayout from "./layouts/RootLayout/RootLayout";
 import Loading from "./components/Loading/Loading";
 
-import HomePage from "./pages/HomePage/HomePage";
+const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
 const ModelsPage = lazy(() => import("./pages/ModelsPage/ModelsPage"));
 const TypesPage = lazy(() => import("./pages/TypesPage/TypesPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage/ContactPage"));
@@ -16,7 +16,14 @@ const router = createBrowserRouter([
     path: "/",
     element: <RootLayout />,
     children: [
-      { path: "/", element: <HomePage /> },
+      {
+        path: "/",
+        element: (
+          <Suspense fallback={<Loading />}>
+            <HomePage />
+          </Suspense>
+        ),
+      },
       {
         path: "/modeli",
         element: (
