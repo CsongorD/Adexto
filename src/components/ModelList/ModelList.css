@@ -58,12 +58,23 @@
   height: 40px;
   background-color: inherit;
 }
-.image-slider-btn:hover {
+
+.image-slider-btn:active {
   background-color: white;
   fill: black;
   cursor: pointer;
   box-shadow: none;
   border: 1px dashed black;
+}
+
+@media (hover: hover) {
+  .image-slider-btn:hover {
+    background-color: white;
+    fill: black;
+    cursor: pointer;
+    box-shadow: none;
+    border: 1px dashed black;
+  }
 }
 
 @media (max-width: 850px) {

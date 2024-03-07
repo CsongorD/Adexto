@@ -6,6 +6,7 @@
   text-decoration: none;
   list-style: none;
 
+  -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -21,7 +22,6 @@
 
   /* background: #f9f777; */
   /* background: rgb(222, 195, 172); */
-
   /* background: rgb(236, 229, 34); */
 
   color: black;
