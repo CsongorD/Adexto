@@ -1,79 +1,42 @@
-.text-style {
-  line-height: 56px;
-}
-
 .landing-container {
   width: 100%;
-  height: 100%;
+  /* margin-top: 80px; */
   min-height: calc(100vh - 80px);
-  margin-top: 80px;
+  /* height: 100%; */
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.icons {
-  top: 50%;
-  padding: 0 7%;
-  transform: translateY(50%);
+.landing-container .landing-text-container {
   display: flex;
+  align-items: flex-start;
+  justify-content: center;
   flex-direction: column;
-  z-index: 4;
+
+  padding: 30px;
+  width: 40%;
+  /* height: auto; */
+  /* border: 2px solid red; */
 }
 
-.icons .icon {
-  margin: 5px 0;
-  transition: all 0.5s ease;
-}
-
-.icons .icon:hover {
-  transform: translateY(-5px);
-}
-.landing-text .nav-btn #play-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.landing-text {
-  width: 500px;
-}
-.landing-text-container {
-  width: 600px;
-  height: 600px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.landing-object {
-  width: 300px;
-  height: 300px;
-  background-color: rgb(88, 88, 88);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border: 1px black solid;
-  border-radius: 150px;
-}
-
-.landing-text h1 {
+.landing-container .landing-text-container .landing-title {
   margin: 0 0 45px;
   line-height: 1.3;
 }
-.landing-text h4 {
-  margin-bottom: 10px;
-  line-height: 1.3;
-}
 
-.landing-text p {
+.landing-container .landing-text-container .landing-text {
   line-height: 1.9;
   margin-bottom: 40px;
 }
 
-.landing-text .nav-btn {
+.landing-container .landing-text-container .landing-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-container .landing-text-container .landing-buttons .nav-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -90,14 +53,14 @@
   text-decoration: none;
   vertical-align: middle;
 }
-
-.landing-text .nav-btn:hover {
+.landing-container .landing-text-container .landing-buttons .nav-btn:hover {
   background: transparent;
   border: 1px solid black;
   color: black;
   transform: translateX(8px);
 }
-.landing-text .btn-transparent {
+
+.landing-container .landing-text-container .landing-buttons .btn-transparent {
   background: transparent;
   border: 1px solid black;
   color: black;
@@ -105,78 +68,74 @@
   text-align: center;
 }
 
-.landing-text .nav-btn .icon {
-  vertical-align: middle;
-  margin-right: 5px;
-  height: 15px;
+.landing-container
+  .landing-text-container
+  .landing-buttons
+  .nav-btn
+  #play-icon {
+  width: 20px;
+  height: 20px;
 }
 
-@media (max-width: 1200px) {
-  .landing-text-container {
-    width: 500px;
-    height: 500px;
-    padding-left: 20px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .landing-text-container {
-    width: 400px;
-    height: 400px;
-  }
-}
 @media (max-width: 800px) {
   .landing-container {
     flex-direction: column;
+    justify-content: flex-start;
   }
-  .landing-text-container {
-    height: 300px;
-    padding-left: 0px;
-  }
-  .landing-text {
-    width: 400px;
+  .landing-container .landing-text-container {
+    width: 80%;
   }
 }
 
 @media (max-width: 450px) {
-  .landing-text {
+  .landing-text-container {
     width: 100%;
     padding: 10px;
   }
-  .landing-text-container {
-    width: 100%;
-  }
 }
 
-@media (max-width: 300px) {
-  .landing-text .nav-btn {
+@media (max-width: 350px) {
+  .landing-container .landing-text-container {
+    width: 100%;
+  }
+  .landing-container .landing-text-container .landing-buttons .nav-btn {
     padding: 8px 20px;
   }
-  .landing-text .nav-btn #play-icon {
+  .landing-container .landing-text-container {
+    padding: 20px;
+  }
+  .landing-container .landing-text-container .landing-title {
+    margin-bottom: 25px;
+  }
+  .landing-container .landing-text-container .landing-text {
+    margin-bottom: 20px;
+  }
+  .landing-container
+    .landing-text-container
+    .landing-buttons
+    .nav-btn
+    #play-icon {
     width: 16px;
     height: 16px;
   }
 
-  .landing-text h1 {
-    margin: 0 0 20px;
-  }
-
-  .landing-text p {
-    margin-bottom: 25px;
-  }
-  .landing-text .btn-transparent {
+  .landing-container .landing-text-container .landing-buttons .btn-transparent {
     margin-left: 15px;
     text-align: center;
   }
 }
 
 @media (max-width: 250px) {
-  .landing-text {
+  .landing-container .landing-text-container {
     padding: 10px;
   }
 }
-@media (max-width: 225px) {
-  .landing-text .btn-transparent {
+@media (max-width: 230px) {
+  .landing-container .landing-text-container .landing-buttons {
+    flex-direction: column;
+  }
+
+  .landing-container .landing-text-container .landing-buttons .btn-transparent {
     margin-left: 0;
     margin-top: 10px;
   }
