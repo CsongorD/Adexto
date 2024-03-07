@@ -12,7 +12,7 @@ const ContactPage = () => {
           name="description"
           content="Kontaktirajte nas na: ................................"
         />
-        <link rel="canonical" href="/kontakt" />
+        <link rel="canonical" href="https://adexto.web.app/kontakt" />
       </Helmet>
 
       <div className="contact-page">
