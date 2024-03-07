@@ -30,7 +30,7 @@ const ModelsPage = () => {
           name="description"
           content="Vidite nase modeli.................................."
         />
-        <link rel="canonical" href="/modeli" />
+        <link rel="canonical" href="https://adexto.web.app/modeli" />
       </Helmet>
       <div className="models-page">
         <Pagination

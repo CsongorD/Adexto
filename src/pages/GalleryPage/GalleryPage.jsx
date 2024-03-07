@@ -12,7 +12,7 @@ const GalleryPage = () => {
           name="description"
           content="Vidite galeriju...................................."
         />
-        <link rel="canonical" href="/galerija" />
+        <link rel="canonical" href="https://adexto.web.app//galerija" />
       </Helmet>
       <div className="gallery-page">
         <Gallery gallery={gallery} />

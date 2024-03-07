@@ -35,7 +35,7 @@ const TypesPage = () => {
           name="description"
           content="Cenovnik..........................................."
         />
-        <link rel="canonical" href="/cenovnik" />
+        <link rel="canonical" href="https://adexto.web.app/cenovnik" />
       </Helmet>
       <div className="types-page">
         <div className="section-scroller">
