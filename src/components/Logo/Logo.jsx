@@ -1,7 +1,11 @@
+import ErrorComponent from "../ErrorComponent/ErrorComponent";
 import "./Logo.css";
 import { NavLink } from "react-router-dom";
 
 const Logo = ({ logo }) => {
+  if (!logo) {
+    return <ErrorComponent text={"logo"} />;
+  }
   return (
     <NavLink className="logo" to="/">
       <div className="logo-image">

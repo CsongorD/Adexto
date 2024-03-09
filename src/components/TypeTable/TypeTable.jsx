@@ -1,8 +1,12 @@
 import "./TypeTable.css";
 import { forwardRef } from "react";
 import ImageComponent from "../ImageComponent/ImageComponent";
+import ErrorComponent from "../ErrorComponent/ErrorComponent";
 
 const TypeTable = forwardRef(({ types }, ref) => {
+  if (!types) {
+    return <ErrorComponent text={"types"} />;
+  }
   return (
     <div className="type-table" ref={ref}>
       <h1 className="title">PLOČE</h1>
