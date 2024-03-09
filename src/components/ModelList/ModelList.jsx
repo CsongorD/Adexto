@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import ImageComponent from "../ImageComponent/ImageComponent";
 import NextIcon from "../Icons/NextIcon";
 import PrevIcon from "../Icons/PrevIcon";
+import ErrorComponent from "../ErrorComponent/ErrorComponent";
 
 const ModelList = ({ model, paginate, currentPage }) => {
   const [imageIndex, setImageIndex] = useState(0);
@@ -19,7 +20,7 @@ const ModelList = ({ model, paginate, currentPage }) => {
   }, [currentPage, model, isPrev]);
 
   if (!mod || !mod.images || !mod.model) {
-    return <div>Model data is missing!</div>;
+    return <ErrorComponent text={"models"} />;
   }
 
   if (mod.images.length === 0) {

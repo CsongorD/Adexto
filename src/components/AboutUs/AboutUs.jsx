@@ -1,34 +1,28 @@
 import "./AboutUs.css";
 import ImageComponent from "../ImageComponent/ImageComponent";
+import ErrorComponent from "../ErrorComponent/ErrorComponent";
 
 const AboutUs = ({ medals }) => {
+  if (!medals) {
+    return <ErrorComponent text={"medals"} />;
+  }
+
+  let firstThree = medals.slice(0, 3);
+  let lastThree = medals.slice(3, 6);
+
   return (
     <div className="about-us">
       <div className="medal-list">
-        <div className="medal">
-          <ImageComponent
-            src={medals[0].path}
-            small={medals[0].small}
-            alt="medal"
-            loading={"lazy"}
-          />
-        </div>
-        <div className="medal">
-          <ImageComponent
-            src={medals[1].path}
-            small={medals[1].small}
-            alt="medal"
-            loading={"lazy"}
-          />
-        </div>
-        <div className="medal">
-          <ImageComponent
-            src={medals[2].path}
-            small={medals[2].small}
-            alt="medal"
-            loading={"lazy"}
-          />
-        </div>
+        {firstThree.map((medal, index) => (
+          <div className="medal" key={index}>
+            <ImageComponent
+              src={medal.path}
+              small={medal.small}
+              alt="medal"
+              loading={"lazy"}
+            />
+          </div>
+        ))}
       </div>
       <div className="about-us-container">
         <h1>INFORMACIJE O NAMA</h1>
@@ -51,30 +45,16 @@ const AboutUs = ({ medals }) => {
         </p>
       </div>
       <div className="medal-list">
-        <div className="medal">
-          <ImageComponent
-            src={medals[3].path}
-            small={medals[3].small}
-            alt="medal"
-            loading={"lazy"}
-          />
-        </div>
-        <div className="medal">
-          <ImageComponent
-            src={medals[4].path}
-            small={medals[4].small}
-            alt="medal"
-            loading={"lazy"}
-          />
-        </div>
-        <div className="medal">
-          <ImageComponent
-            src={medals[5].path}
-            small={medals[5].small}
-            alt="medal"
-            loading={"lazy"}
-          />
-        </div>
+        {lastThree.map((medal, index) => (
+          <div className="medal" key={index}>
+            <ImageComponent
+              src={medal.path}
+              small={medal.small}
+              alt="medal"
+              loading={"lazy"}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -1,7 +1,11 @@
 import "./Gallery.css";
 import ImageComponent from "../ImageComponent/ImageComponent";
+import ErrorComponent from "../ErrorComponent/ErrorComponent";
 
 const Gallery = ({ gallery }) => {
+  if (!gallery) {
+    return <ErrorComponent text={"gallery"} />;
+  }
   return (
     <div className="gallery">
       <h1 className="title">GALERIJA</h1>

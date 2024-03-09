@@ -1,7 +1,11 @@
 import "./Characteristics.css";
 import ImageComponent from "../ImageComponent/ImageComponent";
+import ErrorComponent from "../ErrorComponent/ErrorComponent";
 
 const Characteristics = ({ characteristics }) => {
+  if (!characteristics) {
+    return <ErrorComponent text={"characteristics"} />;
+  }
   return (
     <div className="characteristic-container">
       {characteristics.map((characteristic, index) => (
