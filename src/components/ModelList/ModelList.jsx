@@ -9,9 +9,9 @@ const ModelList = ({ model, paginate, currentPage }) => {
   const [imageIndex, setImageIndex] = useState(0);
   const [mod, setMod] = useState(null);
   const [isPrev, setIsPrev] = useState(false);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     setMod(model);
-
     if (isPrev) {
       setImageIndex(model.images.length - 1);
     } else {
@@ -33,20 +33,33 @@ const ModelList = ({ model, paginate, currentPage }) => {
   let currentImagePath = currentImage.path;
   let currentImageSmall = currentImage.small;
 
+  function handleLoad() {
+    setLoading(false);
+  }
+
   function showPrevImage() {
-    if (imageIndex === 0) {
-      paginate(currentPage - 1);
-      setIsPrev(true);
-    } else {
-      setImageIndex((prevIndex) => prevIndex - 1);
+    if (!loading && !(modelNumber == 1 && imageIndex === 0)) {
+      if (imageIndex === 0) {
+        paginate(currentPage - 1);
+        setIsPrev(true);
+      } else {
+        setImageIndex((prevIndex) => prevIndex - 1);
+      }
+      setLoading(true);
     }
   }
   function showNextImage() {
-    if (imageIndex === modelImages.length - 1) {
-      paginate(currentPage + 1);
-      setIsPrev(false);
-    } else {
-      setImageIndex((prevIndex) => prevIndex + 1);
+    if (
+      !loading &&
+      !(modelNumber == 155 && imageIndex === model.images.length - 1)
+    ) {
+      if (imageIndex === modelImages.length - 1) {
+        paginate(currentPage + 1);
+        setIsPrev(false);
+      } else {
+        setImageIndex((prevIndex) => prevIndex + 1);
+      }
+      setLoading(true);
     }
   }
   return (
@@ -62,6 +75,7 @@ const ModelList = ({ model, paginate, currentPage }) => {
             small={currentImageSmall}
             alt={"img-" + modelNumber}
             loading={modelNumber === "1" ? "eager" : "lazy"}
+            onLoad={() => handleLoad()}
           />
         </div>
         <div className="image-slider-btn next" onClick={() => showNextImage()}>
