@@ -1,7 +1,13 @@
 import "./ImageComponent.css";
 import { useState } from "react";
 
-const ImageComponent = ({ src, alt, loading = "lazy", small }) => {
+const ImageComponent = ({
+  src,
+  alt,
+  loading = "lazy",
+  small,
+  onLoad = () => {},
+}) => {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
 
   function handleLoad() {
@@ -23,6 +29,7 @@ const ImageComponent = ({ src, alt, loading = "lazy", small }) => {
         loading={loading}
         onLoad={() => {
           handleLoad();
+          onLoad();
         }}
         fetchpriority={loading === "lazy" ? "low" : "high"}
       />
