@@ -1,7 +1,6 @@
 import "./GoogleMaps.css";
 import { useEffect, useState } from "react";
-import Spinner from "../Spinner/Spinner";
-
+import LoadingIcon from "../LoadingIcon/LoadingIcon";
 const GoogleMaps = () => {
   const [loading, setLoading] = useState(true);
   const [link, setLink] = useState("");
@@ -23,7 +22,7 @@ const GoogleMaps = () => {
   return (
     <div className="map-container">
       {loading ? (
-        <Spinner />
+        <LoadingIcon />
       ) : (
         <iframe
           className="maps"

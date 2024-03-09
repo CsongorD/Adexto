@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import "./FenceModel.css";
 
 import Spline from "@splinetool/react-spline";
-import Spinner from "../../components/Spinner/Spinner";
-
+import LoadingIcon from "../../components/LoadingIcon/LoadingIcon";
 const FenceModel = () => {
   const [model, setModel] = useState();
   const [loading, setLoading] = useState(true);
@@ -18,7 +17,7 @@ const FenceModel = () => {
   return (
     <div className="model">
       {loading ? (
-        <Spinner />
+        <LoadingIcon />
       ) : (
         <Spline scene={model} onLoad={() => handleLoad()} />
       )}
