@@ -1,4 +1,5 @@
 import "./Footer.css";
+import FooterItem from "../FooterItem/FooterItem";
 import PhoneIcon from "../Icons/PhoneIcon";
 import MailIcon from "../Icons/MailIcon";
 import LocationIcon from "../Icons/LocationIcon";
@@ -6,38 +7,19 @@ import LocationIcon from "../Icons/LocationIcon";
 const Footer = () => {
   return (
     <footer className="footer">
-      <p className="footer-main-title">ADEXTO D.O.O</p>
+      <p className="footer-title">ADEXTO D.O.O</p>
       <div className="footer-container">
-        <div className="info-container">
-          <div className="icon-container">
-            <LocationIcon />
-          </div>
-          <div className="info-text">
-            <p className="footer-title">Lokacija</p>
-            <p>Servo Mihalja BB, 23206 Zrenjanin (Mužlja)</p>
-          </div>
-        </div>
-
-        <div className="info-container">
-          <div className="icon-container">
-            <PhoneIcon />
-          </div>
-
-          <div className="info-text">
-            <p className="footer-title">Telefon</p>
-            <p>+381 66 8822 339</p>
-          </div>
-        </div>
-
-        <div className="info-container">
-          <div className="icon-container">
-            <MailIcon />
-          </div>
-          <div className="info-text">
-            <p className="footer-title">Mail</p>
-            <p>info@adexto.com</p>
-          </div>
-        </div>
+        <FooterItem
+          icon={<LocationIcon />}
+          title="Lokacija"
+          info="Servo Mihalja BB, 23206 Zrenjanin (Mužlja)"
+        />
+        <FooterItem
+          icon={<PhoneIcon />}
+          title="Telefon"
+          info="+381 66 8822 339"
+        />
+        <FooterItem icon={<MailIcon />} title="Mail" info="info@adexto.com" />
       </div>
     </footer>
   );

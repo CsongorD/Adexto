@@ -1,51 +1,45 @@
-.section-scroller {
+.section-scroller-container {
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 40px;
-
-  /* width: 100px; */
   height: 100vh;
   position: fixed;
+  top: 0;
+  left: 0;
 }
 
-.section-scroller .section-btn {
+.section-scroller-container .section-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 10px;
+  width: 140px;
+  background-color: #222327;
   text-decoration: none;
   list-style-type: none;
   cursor: pointer;
-
-  background-color: #222327;
-  color: white;
-  fill: white;
-
-  padding: 7px 10px;
-  width: 140px;
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 5px;
-
-  border-radius: 0px 50px 50px 0px;
+  border-radius: 0 50px 50px 0;
 }
-.section-scroller .section-btn .section-text {
-  color: white;
 
+.section-scroller-container .section-button .section-text {
+  color: white;
   font-size: 23px;
   font-weight: 500;
 }
 
-.section-scroller .section-btn #plate-icon,
-.section-scroller .section-btn #info-icon,
-.section-scroller .section-btn #column-icon {
+.section-scroller-container .section-button #plate-icon,
+.section-scroller-container .section-button #info-icon,
+.section-scroller-container .section-button #column-icon {
   width: 25px;
   height: 25px;
   background-color: inherit;
+  fill: white;
 }
 
 @media (max-width: 880px) {
-  .section-scroller {
+  .section-scroller-container {
     display: none;
   }
 }

@@ -1,18 +1,35 @@
-import ErrorComponent from "../ErrorComponent/ErrorComponent";
 import "./Logo.css";
 import { NavLink } from "react-router-dom";
+import useImages from "../../hooks/useImages";
+import Image from "../Image/Image";
+import ImageLoading from "../ImageLoading/ImageLoading";
+import ErrorComponent from "../ErrorComponent/ErrorComponent";
 
-const Logo = ({ logo }) => {
-  if (!logo) {
-    return <ErrorComponent text={"logo"} />;
+const Logo = () => {
+  const [logo, error] = useImages("logo");
+
+  if (error) {
+    return <ErrorComponent error={error.message} />;
   }
+
   return (
-    <NavLink className="logo" to="/">
-      <div className="logo-image">
-        <img src={logo[0].path} alt="adexto-logo" />
-      </div>
-      <h2>ADEXTO</h2>
-    </NavLink>
+    <div className="logo-container">
+      <NavLink className="logo" to="/">
+        {!logo ? (
+          <ImageLoading />
+        ) : (
+          <div className="logo-image">
+            <Image
+              src={logo[0].path}
+              small={logo[0].small}
+              alt="adexto-logo"
+              loading="eager"
+            />
+          </div>
+        )}
+        <h2>ADEXTO</h2>
+      </NavLink>
+    </div>
   );
 };
 export default Logo;

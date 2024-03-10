@@ -5,7 +5,7 @@ import Header from "../../components/Header/Header";
 
 const RootLayout = () => {
   return (
-    <div className="layout">
+    <div className="root-layout">
       <Header />
       <Outlet />
       <Footer />

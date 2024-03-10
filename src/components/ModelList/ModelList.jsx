@@ -1,37 +1,30 @@
 import "./ModelList.css";
 import { useEffect, useState } from "react";
-import ImageComponent from "../ImageComponent/ImageComponent";
-import NextIcon from "../Icons/NextIcon";
-import PrevIcon from "../Icons/PrevIcon";
-import ErrorComponent from "../ErrorComponent/ErrorComponent";
+import ImageSlider from "../ImageSlider/ImageSlider";
+import LoadingIcon from "../LoadingIcon/LoadingIcon";
 
 const ModelList = ({ model, paginate, currentPage }) => {
   const [imageIndex, setImageIndex] = useState(0);
-  const [mod, setMod] = useState(null);
+  const [currentModel, setCurrentModel] = useState(null);
   const [isPrev, setIsPrev] = useState(false);
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    setMod(model);
-    if (isPrev) {
-      setImageIndex(model.images.length - 1);
-    } else {
-      setImageIndex(0);
-    }
+    setCurrentModel(model);
+    setImageIndex(isPrev ? model.images.length - 1 : 0);
   }, [currentPage, model, isPrev]);
 
-  if (!mod || !mod.images || !mod.model) {
-    return <ErrorComponent text={"models"} />;
+  if (!currentModel || !model) {
+    return <LoadingIcon />;
   }
-
-  if (mod.images.length === 0) {
+  if (currentModel.images.length === 0) {
     return <div>No images found for this model!</div>;
   }
 
-  let modelNumber = mod?.model;
-  let modelImages = mod?.images;
+  let modelNumber = currentModel.model;
+  let modelImages = currentModel.images;
   let currentImage = modelImages[imageIndex];
-  let currentImagePath = currentImage.path;
-  let currentImageSmall = currentImage.small;
+  const { path: currentImagePath, small: currentImageSmall } = currentImage;
 
   function handleLoad() {
     setLoading(false);
@@ -63,25 +56,16 @@ const ModelList = ({ model, paginate, currentPage }) => {
     }
   }
   return (
-    <div className="models-container">
+    <div className="model-list">
       <h1 className="title">Model {modelNumber}</h1>
-      <div className="image-slider">
-        <div className="image-slider-btn prev" onClick={() => showPrevImage()}>
-          <PrevIcon />
-        </div>
-        <div className="image-slider-img">
-          <ImageComponent
-            src={currentImagePath}
-            small={currentImageSmall}
-            alt={"img-" + modelNumber}
-            loading={modelNumber === "1" ? "eager" : "lazy"}
-            onLoad={() => handleLoad()}
-          />
-        </div>
-        <div className="image-slider-btn next" onClick={() => showNextImage()}>
-          <NextIcon />
-        </div>
-      </div>
+      <ImageSlider
+        showPrevImage={showPrevImage}
+        currentImagePath={currentImagePath}
+        currentImageSmall={currentImageSmall}
+        modelNumber={modelNumber}
+        handleLoad={handleLoad}
+        showNextImage={showNextImage}
+      />
     </div>
   );
 };

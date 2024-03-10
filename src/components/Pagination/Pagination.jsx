@@ -3,31 +3,27 @@ import NextIcon from "../Icons/NextIcon";
 import PrevIcon from "../Icons/PrevIcon";
 
 const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
-  const pageNumbers = [];
-
-  for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
-    pageNumbers.push(i);
-  }
+  const totalPages = Math.ceil(totalPosts / postsPerPage);
+  const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
   const firstNumber = pageNumbers[0];
   const lastNumber = pageNumbers[pageNumbers.length - 1];
+  let isFirstPage = currentPage === firstNumber;
+  let isLastPage = currentPage === lastNumber;
 
   function showNextModel() {
-    if (currentPage < pageNumbers.length) {
+    if (!isLastPage) {
       paginate(currentPage + 1);
     }
   }
   function showPrevModel() {
-    if (currentPage > 1) {
+    if (!isFirstPage) {
       paginate(currentPage - 1);
     }
   }
 
-  let numbers = getPaginationRange(
-    pageNumbers.length,
-    currentPage,
-    postsPerPage,
-    1
-  );
+  function getRange(start, end) {
+    return Array.from({ length: end - start }, (_, i) => start + i);
+  }
 
   function getPaginationRange(totalPage, page, limit, siblings) {
     let totalPageNumberInArray = 5 + siblings;
@@ -53,61 +49,41 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
       return [1, "...", ...middleRange, "...", totalPage];
     }
   }
-  function getRange(start, end) {
-    let result = [];
-    for (let i = start; i < end; i++) {
-      result.push(i);
-    }
-    return result;
-  }
+  let numbers = getPaginationRange(
+    pageNumbers.length,
+    currentPage,
+    postsPerPage,
+    1
+  );
+
   return (
     <div className="pagination">
       <ul>
-        {currentPage === firstNumber ? (
-          <li className="btn prev disabled">
-            <PrevIcon />
-          </li>
-        ) : (
-          <li className="btn prev" onClick={showPrevModel}>
-            <PrevIcon />
-          </li>
-        )}
-
-        {numbers.map((num, i) => {
-          if (num === currentPage) {
-            return (
-              <li
-                key={num}
-                className="numb active"
-                onClick={() => paginate(num)}
-              >
-                {num}
-              </li>
-            );
-          } else if (num === "...") {
-            return (
-              <li key={"dots " + i} className="dots">
-                {num}
-              </li>
-            );
-          } else {
-            return (
-              <li key={num} className="numb" onClick={() => paginate(num)}>
-                {num}
-              </li>
-            );
-          }
+        <li
+          className={`btn prev${isFirstPage ? " disabled" : ""}`}
+          onClick={showPrevModel}
+        >
+          <PrevIcon />
+        </li>
+        {numbers.map((number, index) => {
+          const isActive = number === currentPage;
+          const isDots = number === "...";
+          return (
+            <li
+              key={isDots ? `dots-${index}` : number}
+              className={isDots ? "dots" : `numb${isActive ? " active" : ""}`}
+              onClick={() => !isDots && paginate(number)}
+            >
+              {number}
+            </li>
+          );
         })}
-
-        {currentPage === lastNumber ? (
-          <li className="btn next disabled">
-            <NextIcon />
-          </li>
-        ) : (
-          <li className="btn next" onClick={showNextModel}>
-            <NextIcon />
-          </li>
-        )}
+        <li
+          className={`btn next${isLastPage ? " disabled" : ""}`}
+          onClick={showNextModel}
+        >
+          <NextIcon />
+        </li>
       </ul>
     </div>
   );
