@@ -1,0 +1,35 @@
+.medal-container {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1 / 1;
+}
+
+.medal-container img {
+  background-color: inherit;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 900px) {
+  .medal-container {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 760px) {
+  .medal-container {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (max-width: 320px) {
+  .medal-container {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 220px) {
+  .medal-container {
+    width: 40px;
+    height: 40px;
+  }
+}
