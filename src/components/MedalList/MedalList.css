@@ -1,0 +1,22 @@
+.medal-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 10px;
+}
+@media (max-width: 850px) {
+  .medal-list {
+    padding: 5px;
+  }
+}
+@media (max-width: 680px) {
+  .medal-list {
+    flex-direction: row;
+    padding: 20px;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+}
