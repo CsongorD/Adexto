@@ -1,7 +1,6 @@
 import "./GalleryPage.css";
-import gallery from "../../data/gallery_db.json";
-import Gallery from "../../components/Gallery/Gallery";
 import { Helmet } from "react-helmet-async";
+import Gallery from "../../components/Gallery/Gallery";
 
 const GalleryPage = () => {
   return (
@@ -14,8 +13,8 @@ const GalleryPage = () => {
         />
         <link rel="canonical" href="https://adexto.web.app//galerija" />
       </Helmet>
-      <div className="gallery-page">
-        <Gallery gallery={gallery} />
+      <div className="gallery-page page-margin-top">
+        <Gallery />
       </div>
     </>
   );

@@ -1,8 +1,8 @@
 import { Suspense, lazy, useEffect, useState } from "react";
 import "./FenceModel.css";
-
-const Spline = lazy(() => import("@splinetool/react-spline"));
 import LoadingIcon from "../../components/LoadingIcon/LoadingIcon";
+const Spline = lazy(() => import("@splinetool/react-spline"));
+
 const FenceModel = () => {
   const [model, setModel] = useState();
   const [loading, setLoading] = useState(true);
@@ -15,7 +15,7 @@ const FenceModel = () => {
     setLoading(false);
   }
   return (
-    <div className="model">
+    <div className="fence-model-container">
       {loading ? (
         <LoadingIcon />
       ) : (

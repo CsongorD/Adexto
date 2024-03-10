@@ -1,29 +1,26 @@
 import "./AboutUs.css";
-import ImageComponent from "../ImageComponent/ImageComponent";
+import useImages from "../../hooks/useImages";
+import MedalList from "../MedalList/MedalList";
+import ImageLoading from "../ImageLoading/ImageLoading";
 import ErrorComponent from "../ErrorComponent/ErrorComponent";
 
-const AboutUs = ({ medals }) => {
-  if (!medals) {
-    return <ErrorComponent text={"medals"} />;
+const AboutUs = () => {
+  const [medals, error] = useImages("medal");
+  if (error) {
+    return <ErrorComponent error={error.message} />;
   }
+  const renderMedalList = (medals, sliceStart, sliceEnd) => {
+    if (!medals) {
+      return <ImageLoading />;
+    }
 
-  let firstThree = medals.slice(0, 3);
-  let lastThree = medals.slice(3, 6);
+    const slicedMedals = medals.slice(sliceStart, sliceEnd);
+    return <MedalList medals={slicedMedals} />;
+  };
 
   return (
     <div className="about-us">
-      <div className="medal-list">
-        {firstThree.map((medal, index) => (
-          <div className="medal" key={index}>
-            <ImageComponent
-              src={medal.path}
-              small={medal.small}
-              alt="medal"
-              loading={"lazy"}
-            />
-          </div>
-        ))}
-      </div>
+      {renderMedalList(medals, 0, 3)}
       <div className="about-us-container">
         <h1>INFORMACIJE O NAMA</h1>
         <p>
@@ -44,18 +41,7 @@ const AboutUs = ({ medals }) => {
           asortiman naših proizvoda, i trudimo se da budemo uvek još bolji.
         </p>
       </div>
-      <div className="medal-list">
-        {lastThree.map((medal, index) => (
-          <div className="medal" key={index}>
-            <ImageComponent
-              src={medal.path}
-              small={medal.small}
-              alt="medal"
-              loading={"lazy"}
-            />
-          </div>
-        ))}
-      </div>
+      {renderMedalList(medals, 3, 6)}
     </div>
   );
 };

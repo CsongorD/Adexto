@@ -1,26 +1,22 @@
 import "./TypesPage.css";
 
 import { useRef } from "react";
+import { Helmet } from "react-helmet-async";
 
-import columns from "../../data/column_db.json";
-import types from "../../data/type_db.json";
-
-import PriceInfo from "../../components/PriceInfo/PriceInfo";
 import TypeTable from "../../components/TypeTable/TypeTable";
 import ColumnTable from "../../components/ColumnTable/ColumnTable";
+import PriceInfo from "../../components/PriceInfo/PriceInfo";
 
 import PlateIcon from "../../components/Icons/PlateIcon";
 import ColumnIcon from "../../components/Icons/ColumnIcon";
 import InfoIcon from "../../components/Icons/InfoIcon";
-import { Helmet } from "react-helmet-async";
 
 const TypesPage = () => {
-  const typeSection = useRef();
-  const columnSection = useRef();
-  const infoSection = useRef();
+  const typeSectionRef = useRef();
+  const columnSectionRef = useRef();
+  const infoSectionRef = useRef();
 
-  const handleClick = (elementRef) => {
-    console.log(elementRef);
+  const scrollToSection = (elementRef) => {
     window.scrollTo({
       top: elementRef.current?.offsetTop - 80,
       behavior: "smooth",
@@ -37,27 +33,33 @@ const TypesPage = () => {
         />
         <link rel="canonical" href="https://adexto.web.app/cenovnik" />
       </Helmet>
-      <div className="types-page">
-        <div className="section-scroller">
-          <div className="section-btn" onClick={() => handleClick(typeSection)}>
+      <div className="types-page page-margin-top">
+        <div className="section-scroller-container">
+          <div
+            className="section-button"
+            onClick={() => scrollToSection(typeSectionRef)}
+          >
             <PlateIcon />
             <p className="section-text">Ploče</p>
           </div>
           <div
-            className="section-btn"
-            onClick={() => handleClick(columnSection)}
+            className="section-button"
+            onClick={() => scrollToSection(columnSectionRef)}
           >
             <ColumnIcon />
             <p className="section-text">Stubovi</p>
           </div>
-          <div className="section-btn" onClick={() => handleClick(infoSection)}>
+          <div
+            className="section-button"
+            onClick={() => scrollToSection(infoSectionRef)}
+          >
             <InfoIcon />
             <p className="section-text">Info</p>
           </div>
         </div>
-        <TypeTable types={types} ref={typeSection} />
-        <ColumnTable columns={columns} ref={columnSection} />
-        <PriceInfo ref={infoSection} />
+        <TypeTable ref={typeSectionRef} />
+        <ColumnTable ref={columnSectionRef} />
+        <PriceInfo ref={infoSectionRef} />
       </div>
     </>
   );

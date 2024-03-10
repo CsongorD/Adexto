@@ -1,22 +1,17 @@
-import "./ImageComponent.css";
+import "./Image.css";
 import { useState } from "react";
 
-const ImageComponent = ({
-  src,
-  alt,
-  loading = "lazy",
-  small,
-  onLoad = () => {},
-}) => {
+const Image = ({ src, alt, loading = "lazy", small, onLoad = () => {} }) => {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
 
   function handleLoad() {
     setImageIsLoaded(true);
+    onLoad();
   }
 
   return (
     <div
-      className={"blur-load " + (imageIsLoaded ? "loaded" : "")}
+      className={`blur-load ${imageIsLoaded ? "loaded" : ""}`}
       style={
         imageIsLoaded
           ? { backgroundImage: "none" }
@@ -27,14 +22,11 @@ const ImageComponent = ({
         src={src}
         alt={alt}
         loading={loading}
-        onLoad={() => {
-          handleLoad();
-          onLoad();
-        }}
+        onLoad={handleLoad}
         fetchpriority={loading === "lazy" ? "low" : "high"}
       />
     </div>
   );
 };
 
-export default ImageComponent;
+export default Image;

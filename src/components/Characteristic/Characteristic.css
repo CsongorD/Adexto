@@ -1,0 +1,35 @@
+.characteristic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+  padding: 10px;
+  height: 180px;
+  width: 180px;
+  background-color: inherit;
+}
+.characteristic-container .characteristic-image {
+  width: 100px;
+  height: 100px;
+  background-color: inherit;
+}
+
+.characteristic-container .characteristic-image .blur-load img {
+  object-fit: fill;
+}
+
+.characteristic-container p {
+  background-color: inherit;
+}
+@media (max-width: 320px) {
+  .characteristic-container p {
+    font-size: 15px;
+  }
+  .characteristic-container {
+    padding: 5px;
+    gap: 5px;
+    width: 140px;
+  }
+}

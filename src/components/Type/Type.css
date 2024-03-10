@@ -1,0 +1,154 @@
+.type-container {
+  display: grid;
+  grid-template-areas:
+    "tnumber . twidth ."
+    ". . wsizer ."
+    "theight hsizer timage ."
+    ". . tweight ."
+    " . . . tprice";
+  align-items: center;
+  padding: 10px;
+  height: 300px;
+  border: 4px solid black;
+  background-color: white;
+}
+
+.type-container > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.type-container .type-width {
+  grid-area: twidth;
+}
+
+.type-container .width-sizer {
+  grid-area: wsizer;
+  width: 100%;
+  height: 10px;
+  border: 1px dashed black;
+  border-bottom: 0px;
+  margin: 4px 0;
+}
+.type-container .type-height {
+  grid-area: theight;
+}
+
+.type-container .height-sizer {
+  grid-area: hsizer;
+  width: 10px;
+  height: 100%;
+  border: 1px dashed black;
+  border-right: 0px;
+  margin: 0 4px;
+}
+.type-container .type-image {
+  grid-area: timage;
+  width: 400px;
+  aspect-ratio: 3 / 1;
+
+  border: 1px solid black;
+}
+.type-container .type-number {
+  grid-area: tnumber;
+}
+.type-container .type-price {
+  grid-area: tprice;
+  flex-wrap: nowrap;
+}
+
+.type-container .type-weight {
+  grid-area: tweight;
+}
+
+@media (max-width: 600px) {
+  .type-container .type-image {
+    width: 300px;
+  }
+
+  .type-container {
+    height: auto;
+  }
+
+  .type-container .type-height {
+    transform: rotate(-90deg);
+  }
+}
+@media (max-width: 460px) {
+  .type-container .type-image {
+    width: 250px;
+  }
+
+  .type-container {
+    height: auto;
+    margin: 5px;
+  }
+}
+@media (max-width: 420px) {
+  .type-container {
+    border: 2px solid black;
+  }
+}
+
+@media (max-width: 400px) {
+  .type-container .type-image {
+    width: 200px;
+  }
+
+  .type-container {
+    height: auto;
+    margin: 5px;
+    border: 2px solid black;
+  }
+}
+
+@media (max-width: 350px) {
+  .type-container .type-image {
+    width: 150px;
+  }
+
+  .type-container {
+    height: auto;
+    margin: 3px;
+    border: 2px solid black;
+    padding: 5px;
+  }
+
+  .type-container .height-sizer {
+    width: 5px;
+  }
+  .type-container .width-sizer {
+    height: 5px;
+  }
+}
+
+@media (max-width: 280px) {
+  .type-container .type-image {
+    width: 120px;
+  }
+
+  .type-container {
+    height: auto;
+    margin: 3px;
+    border: 2px solid black;
+    padding: 5px;
+  }
+
+  .type-container .height-sizer {
+    width: 5px;
+  }
+  .type-container .width-sizer {
+    height: 5px;
+  }
+}
+
+@media (max-width: 230px) {
+  .type-container {
+    width: 100%;
+  }
+
+  .type-container .type-image {
+    width: 100px;
+  }
+}

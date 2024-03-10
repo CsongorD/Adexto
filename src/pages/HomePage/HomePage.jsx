@@ -1,12 +1,11 @@
 import "./HomePage.css";
-
-import medals from "../../data/medal_db.json";
-import characteristics from "../../data/characteristic_db.json";
+import { Suspense, lazy } from "react";
+import { Helmet } from "react-helmet-async";
+import Loading from "../../components/Loading/Loading";
 
 import Landing from "../../components/Landing/Landing";
-import Characteristics from "../../components/Characteristics/Characteristics";
+import Characteristics from "../../components/CharacteristicList/CharacteristicList";
 import AboutUs from "../../components/AboutUs/AboutUs";
-import { Helmet } from "react-helmet-async";
 
 const HomePage = () => {
   return (
@@ -20,10 +19,12 @@ const HomePage = () => {
         />
         <link rel="canonical" href="https://adexto.web.app/" />
       </Helmet>
-      <div className="home-page">
+      <div className="home-page page-margin-top">
         <Landing />
-        <Characteristics characteristics={characteristics} />
-        <AboutUs medals={medals} />
+        <Suspense fallback={<Loading />}>
+          <Characteristics />
+          <AboutUs />
+        </Suspense>
       </div>
     </>
   );

@@ -1,27 +1,27 @@
 .navbar {
+  background-color: inherit;
+}
+.navbar .navbar-container {
   display: flex;
   align-items: center;
   justify-content: center;
   list-style-type: none;
   background-color: inherit;
 }
-.navbar-container {
-  background-color: inherit;
-}
-.navbar li {
+.navbar .navbar-container li {
   margin-left: 30px;
   background-color: inherit;
   display: flex;
 }
 
-.navbar .nav-btn {
+.navbar .navbar-container .nav-btn {
   color: white;
   font-size: 1.1rem;
   background-color: inherit;
   padding: 0px 8px;
 }
 
-.navbar .active {
+.navbar .navbar-container .active {
   border-radius: 100px;
   /* margin-bottom: 3px; */
   /* color: black; */
@@ -31,11 +31,11 @@
   transition: transform 0.5s ease;
 }
 
-.navbar .nav-btn.active::after {
+.navbar .navbar-container .nav-btn.active::after {
   border-bottom: 0px;
 }
 
-.navbar .nav-btn::after {
+.navbar .navbar-container .nav-btn::after {
   content: "";
   display: block;
   border-bottom: 3px solid yellow;
@@ -44,15 +44,15 @@
   transition: transform 0.4s ease;
   transform-origin: center;
 }
-.navbar .nav-btn:hover::after {
+.navbar .navbar-container .nav-btn:hover::after {
   transform: scaleX(1);
 }
-.menu-icon-container {
+.navbar .menu-icon-container {
   display: none;
 }
 
 @media (max-width: 800px) {
-  .navbar {
+  .navbar .navbar-container {
     position: fixed;
     inset: 0 0 0 0;
 
@@ -77,23 +77,23 @@
     background-color: #222327;
     /* backdrop-filter: blur(10px); */
   }
-  .open {
+  .navbar .open {
     transform: translateX(0%);
     overflow: hidden;
   }
 
-  .navbar li {
+  .navbar .navbar-container li {
     margin: 0px;
   }
-  .navbar .nav-btn {
+  .navbar .navbar-container .nav-btn {
     font-size: 25px;
   }
 
-  .navbar .nav-btn::after {
+  .navbar .navbar-container .nav-btn::after {
     display: none;
   }
 
-  .menu-icon-container {
+  .navbar .menu-icon-container {
     display: block;
     position: relative;
 
@@ -104,14 +104,14 @@
     fill: white;
     background-color: transparent;
   }
-  .menu-icon-container #menu-icon,
-  .menu-icon-container #close-icon {
+  .navbar .menu-icon-container #menu-icon,
+  .navbar .menu-icon-container #close-icon {
     height: 100%;
     width: 100%;
   }
 }
 @media (max-width: 320px) {
-  .menu-icon-container {
+  .navbar .menu-icon-container {
     height: 1.5rem;
     width: 1.5rem;
   }

@@ -1,8 +1,6 @@
 .landing-container {
   width: 100%;
-  /* margin-top: 80px; */
   min-height: calc(100vh - 80px);
-  /* height: 100%; */
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -13,11 +11,8 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-
   padding: 30px;
   width: 40%;
-  /* height: auto; */
-  /* border: 2px solid red; */
 }
 
 .landing-container .landing-text-container .landing-title {
@@ -40,30 +35,29 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   color: white;
   background: #222327;
   border: 1px solid black;
   padding: 12px 30px;
   line-height: 1.4;
-
   border-radius: 30px;
   text-transform: uppercase;
   transition: all 0.55s ease;
   text-decoration: none;
   vertical-align: middle;
 }
-.landing-container .landing-text-container .landing-buttons .nav-btn:hover {
-  background: transparent;
-  border: 1px solid black;
-  color: black;
-  transform: translateX(8px);
-}
-
+.landing-container .landing-text-container .landing-buttons .nav-btn:hover,
 .landing-container .landing-text-container .landing-buttons .btn-transparent {
   background: transparent;
   border: 1px solid black;
   color: black;
+}
+
+.landing-container .landing-text-container .landing-buttons .nav-btn:hover {
+  transform: translateX(8px);
+}
+
+.landing-container .landing-text-container .landing-buttons .btn-transparent {
   margin-left: 20px;
   text-align: center;
 }
@@ -96,14 +90,12 @@
 
 @media (max-width: 350px) {
   .landing-container .landing-text-container {
-    width: 100%;
+    padding: 20px;
   }
   .landing-container .landing-text-container .landing-buttons .nav-btn {
     padding: 8px 20px;
   }
-  .landing-container .landing-text-container {
-    padding: 20px;
-  }
+
   .landing-container .landing-text-container .landing-title {
     margin-bottom: 25px;
   }

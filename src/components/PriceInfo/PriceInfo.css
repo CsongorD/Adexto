@@ -1,11 +1,11 @@
-.price-info-container {
+.price-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 20px;
 }
 
-.price-info-box {
+.price-info .price-info-container {
   border: 4px black solid;
   padding: 20px;
   display: flex;
@@ -16,7 +16,7 @@
   background-color: white;
 }
 
-.price-info-text {
+.price-info .price-info-container .price-info-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -26,87 +26,84 @@
 }
 
 @media (max-width: 1100px) {
-  .price-info-box {
+  .price-info .price-info-container {
     width: 700px;
   }
-  .price-info-text {
+  .price-info .price-info-container .price-info-text {
     width: 500px;
     line-height: 25px;
   }
 }
 @media (max-width: 1000px) {
-  .price-info-box {
+  .price-info .price-info-container {
     width: 600px;
   }
-  .price-info-text {
+  .price-info .price-info-container .price-info-text {
     width: 500px;
   }
 }
 @media (max-width: 900px) {
-  .price-info-box {
+  .price-info .price-info-container {
     width: 500px;
   }
-  .price-info-text {
+  .price-info .price-info-container .price-info-text {
     width: 450px;
   }
 }
 
 @media (max-width: 530px) {
-  .price-info-box {
+  .price-info .price-info-container {
     width: 400px;
     padding: 10px;
   }
-  .price-info-text {
+  .price-info .price-info-container .price-info-text {
     width: 350px;
     line-height: 20px;
   }
 }
 
 @media (max-width: 420px) {
-  .price-info-box {
+  .price-info .price-info-container {
     width: 350px;
     border: 2px solid black;
   }
-  .price-info-text {
+  .price-info .price-info-container .price-info-text {
     width: 100%;
     line-height: 20px;
   }
 }
 
 @media (max-width: 370px) {
-  .price-info-box {
+  .price-info .price-info-container {
     width: 300px;
     border: 2px black solid;
   }
-  .price-info-text {
+  .price-info .price-info-container .price-info-text {
     width: 100%;
-    /* line-height: 15px; */
   }
 
-  .price-info-text {
+  .price-info .price-info-container .price-info-text {
     letter-spacing: normal;
   }
 }
 @media (max-width: 310px) {
-  .price-info-box {
+  .price-info .price-info-container {
     width: 270px;
   }
-  .price-info-text {
+  .price-info .price-info-container .price-info-text {
     width: 100%;
-    /* line-height: 10px; */
   }
 }
 
 @media (max-width: 280px) {
-  .price-info-container {
+  .price-info {
     padding: 5px;
   }
-  .price-info-box {
+  .price-info .price-info-container {
     width: 100%;
     padding: 5px;
   }
-  .price-info-text {
+  .price-info .price-info-container .price-info-text {
     width: 100%;
-    /* line-height: 10px; */
   }
 }

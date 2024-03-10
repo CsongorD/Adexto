@@ -3,9 +3,9 @@ import { forwardRef } from "react";
 
 const PriceInfo = forwardRef((_props, ref) => {
   return (
-    <div className="price-info-container" ref={ref}>
+    <div className="price-info" ref={ref}>
       <h1 className="title">INFO</h1>
-      <div className="price-info-box">
+      <div className="price-info-container">
         <div className="price-info-text">
           <p>1. Ugradnja ograde (1.5m visine) 7€ 1m dužni</p>
           <p>2. Ugradnja ograde (2.0m visine) 9€ 1m dužni</p>

@@ -1,33 +1,31 @@
-.error-container {
+.not-found-page {
   height: 100vh;
   width: 100%;
-
   background-color: #222327;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-.btn-cont {
+.not-found-page .redirect-button-container {
   border: 2px white solid;
   padding: 10px;
   border-radius: 25px;
 }
-.nav-btn {
+.not-found-page .redirect-button-container .nav-btn {
   color: white;
 }
-.error-container .icon-container {
+.not-found-page .loading-logo-container {
   width: 100px;
   height: 100px;
 }
-.error-container h1,
-h2 {
+.not-found-page h1,
+.not-found-page h2 {
   color: white;
 }
 
-.header {
-  display: none;
-}
+/* Hide header and footer */
+.header,
 .footer {
   display: none;
 }

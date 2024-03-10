@@ -1,0 +1,25 @@
+.characteristic-list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px;
+  background-color: #bababa;
+}
+
+@media (max-width: 900px) {
+  .characteristic-list {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 440px) {
+  .characteristic-list {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 200px) {
+  .characteristic-list {
+    padding: 10px;
+  }
+}

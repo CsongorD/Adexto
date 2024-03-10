@@ -1,5 +1,6 @@
 import "./ErrorComponent.css";
-const ErrorComponent = ({ text }) => {
-  return <div className="error">No {text} found.</div>;
+
+const ErrorComponent = ({ error }) => {
+  return <div className="error-container">Error: {error}</div>;
 };
 export default ErrorComponent;
