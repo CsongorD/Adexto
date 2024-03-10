@@ -1,0 +1,24 @@
+.column-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3rem;
+  padding: 20px;
+}
+
+@media (max-width: 1400px) {
+  .column-list {
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .column-list {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .column-list {
+    padding: 5px;
+  }
+}
