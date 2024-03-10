@@ -3,11 +3,9 @@ import { Suspense, lazy } from "react";
 import { Helmet } from "react-helmet-async";
 import Loading from "../../components/Loading/Loading";
 
-const Landing = lazy(() => import("../../components/Landing/Landing"));
-const Characteristics = lazy(() =>
-  import("../../components/CharacteristicList/CharacteristicList")
-);
-const AboutUs = lazy(() => import("../../components/AboutUs/AboutUs"));
+import Landing from "../../components/Landing/Landing";
+import Characteristics from "../../components/CharacteristicList/CharacteristicList";
+import AboutUs from "../../components/AboutUs/AboutUs";
 
 const HomePage = () => {
   return (
@@ -22,8 +20,8 @@ const HomePage = () => {
         <link rel="canonical" href="https://adexto.web.app/" />
       </Helmet>
       <div className="home-page page-margin-top">
+        <Landing />
         <Suspense fallback={<Loading />}>
-          <Landing />
           <Characteristics />
           <AboutUs />
         </Suspense>
