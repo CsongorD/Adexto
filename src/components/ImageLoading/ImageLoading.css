@@ -1,0 +1,12 @@
+.image-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+.image-loading-container {
+  width: 50px;
+  height: 50px;
+  fill: black;
+}
