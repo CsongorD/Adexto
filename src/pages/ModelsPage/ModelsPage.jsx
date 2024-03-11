@@ -1,6 +1,4 @@
-import "./ModelsPage.css";
 import { useState } from "react";
-import { Helmet } from "react-helmet-async";
 import useImages from "../../hooks/useImages";
 import Pagination from "../../components/Pagination/Pagination";
 import ModelList from "../../components/ModelList/ModelList";
@@ -16,45 +14,40 @@ const ModelsPage = () => {
   if (error) {
     return <ErrorComponent error={error.message} />;
   }
+
   if (!models) {
-    return <ImageLoading />;
+    return (
+      <div style={{ width: "100%", height: "100vh" }}>
+        <ImageLoading />
+      </div>
+    );
   }
 
-  const totalPosts = models.length;
-  const indexOfLastPost = currentPage * MODELS_PER_PAGE;
-  const indexOfFirstPost = indexOfLastPost - MODELS_PER_PAGE;
-  const currentPost = models.slice(indexOfFirstPost, indexOfLastPost)[0];
+  const totalModels = models?.length;
+  const indexOfLastModel = currentPage * MODELS_PER_PAGE;
+  const indexOfFirstModel = indexOfLastModel - MODELS_PER_PAGE;
+
+  const currentModel = models?.slice(indexOfFirstModel, indexOfLastModel)[0];
 
   const handlePagination = (pageNumber) => {
-    if (pageNumber > 0 && pageNumber <= totalPosts) {
+    if (pageNumber > 0 && pageNumber <= totalModels) {
       setCurrentPage(pageNumber);
     }
   };
-
   return (
-    <>
-      <Helmet>
-        <title>Modeli</title>
-        <meta
-          name="description"
-          content="Vidite nase modeli.................................."
-        />
-        <link rel="canonical" href="https://adexto.web.app/modeli" />
-      </Helmet>
-      <div className="models-page page-margin-top">
-        <Pagination
-          postsPerPage={MODELS_PER_PAGE}
-          totalPosts={totalPosts}
-          paginate={handlePagination}
-          currentPage={currentPage}
-        />
-        <ModelList
-          model={currentPost}
-          paginate={handlePagination}
-          currentPage={currentPage}
-        />
-      </div>
-    </>
+    <div className="models-page page-margin-top">
+      <Pagination
+        modelsPerPage={MODELS_PER_PAGE}
+        totalModels={totalModels}
+        paginate={handlePagination}
+        currentPage={currentPage}
+      />
+      <ModelList
+        model={currentModel}
+        paginate={handlePagination}
+        currentPage={currentPage}
+      />
+    </div>
   );
 };
 
