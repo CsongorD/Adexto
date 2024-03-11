@@ -23,6 +23,7 @@
 .landing-container .landing-text-container .landing-text {
   line-height: 1.9;
   margin-bottom: 40px;
+  max-width: 85%;
 }
 
 .landing-container .landing-text-container .landing-buttons {
@@ -80,11 +81,14 @@
     width: 80%;
   }
 }
-
+@media (max-width: 490px) {
+  .landing-container .landing-text-container {
+    width: 90%;
+  }
+}
 @media (max-width: 450px) {
-  .landing-text-container {
+  .landing-container .landing-text-container {
     width: 100%;
-    padding: 10px;
   }
 }
 

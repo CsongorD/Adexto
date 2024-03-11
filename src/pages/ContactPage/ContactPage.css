@@ -1,9 +1,8 @@
 .contact-page {
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   padding: 33px;
 }
 @media (max-width: 500px) {

@@ -2,8 +2,8 @@ import "./Pagination.css";
 import NextIcon from "../Icons/NextIcon";
 import PrevIcon from "../Icons/PrevIcon";
 
-const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
-  const totalPages = Math.ceil(totalPosts / postsPerPage);
+const Pagination = ({ modelsPerPage, totalModels, paginate, currentPage }) => {
+  const totalPages = Math.ceil(totalModels / modelsPerPage);
   const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
   const firstNumber = pageNumbers[0];
   const lastNumber = pageNumbers[pageNumbers.length - 1];
@@ -25,7 +25,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
     return Array.from({ length: end - start }, (_, i) => start + i);
   }
 
-  function getPaginationRange(totalPage, page, limit, siblings) {
+  function getPaginationRange(totalPage, page, siblings) {
     let totalPageNumberInArray = 5 + siblings;
     if (totalPageNumberInArray >= totalPage) {
       return getRange(1, totalPage + 1);
@@ -49,10 +49,10 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
       return [1, "...", ...middleRange, "...", totalPage];
     }
   }
-  let numbers = getPaginationRange(
+  let paginationNumbers = getPaginationRange(
     pageNumbers.length,
     currentPage,
-    postsPerPage,
+    modelsPerPage,
     1
   );
 
@@ -65,7 +65,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
         >
           <PrevIcon />
         </li>
-        {numbers.map((number, index) => {
+        {paginationNumbers.map((number, index) => {
           const isActive = number === currentPage;
           const isDots = number === "...";
           return (

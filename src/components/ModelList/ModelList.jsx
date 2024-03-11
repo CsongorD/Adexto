@@ -24,7 +24,6 @@ const ModelList = ({ model, paginate, currentPage }) => {
   let modelNumber = currentModel.model;
   let modelImages = currentModel.images;
   let currentImage = modelImages[imageIndex];
-  const { path: currentImagePath, small: currentImageSmall } = currentImage;
 
   function handleLoad() {
     setLoading(false);
@@ -59,11 +58,10 @@ const ModelList = ({ model, paginate, currentPage }) => {
     <div className="model-list">
       <h1 className="title">Model {modelNumber}</h1>
       <ImageSlider
-        showPrevImage={showPrevImage}
-        currentImagePath={currentImagePath}
-        currentImageSmall={currentImageSmall}
+        currentImage={currentImage}
         modelNumber={modelNumber}
         handleLoad={handleLoad}
+        showPrevImage={showPrevImage}
         showNextImage={showNextImage}
       />
     </div>

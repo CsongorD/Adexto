@@ -16,7 +16,7 @@ const GalleryList = () => {
   }
   return (
     <div className="gallery-list">
-      {gallery.map((image, index) => (
+      {gallery?.map((image, index) => (
         <GalleryImage image={image} key={index} index={index} />
       ))}
     </div>

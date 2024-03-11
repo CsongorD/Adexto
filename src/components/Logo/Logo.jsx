@@ -20,8 +20,8 @@ const Logo = () => {
         ) : (
           <div className="logo-image">
             <Image
-              src={logo[0].path}
-              small={logo[0].small}
+              src={logo[0]?.path}
+              small={logo[0]?.small}
               alt="adexto-logo"
               loading="eager"
             />

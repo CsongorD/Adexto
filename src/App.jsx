@@ -3,13 +3,13 @@ import { Suspense, lazy } from "react";
 
 import RootLayout from "./layouts/RootLayout/RootLayout";
 import Loading from "./components/Loading/Loading";
-import HomePage from "./pages/HomePage/HomePage";
 
-const ModelsPage = lazy(() => import("./pages/ModelsPage/ModelsPage"));
-const TypesPage = lazy(() => import("./pages/TypesPage/TypesPage"));
-const ContactPage = lazy(() => import("./pages/ContactPage/ContactPage"));
-const GalleryPage = lazy(() => import("./pages/GalleryPage/GalleryPage"));
-const NotFoundPage = lazy(() => import("./pages/NotFoundPage/NotFoundPage"));
+import HomeLayout from "./layouts/HomeLayout";
+const ModelsLayout = lazy(() => import("./layouts/ModelsLayout"));
+const TypesLayout = lazy(() => import("./layouts/TypesLayout"));
+const ContactLayout = lazy(() => import("./layouts/ContactLayout"));
+const GalleryLayout = lazy(() => import("./layouts/GalleryLayout"));
+const NotFoundLayout = lazy(() => import("./pages/NotFoundPage/NotFoundPage"));
 
 const router = createBrowserRouter([
   {
@@ -18,13 +18,13 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <HomePage />,
+        element: <HomeLayout />,
       },
       {
         path: "/modeli",
         element: (
           <Suspense fallback={<Loading />}>
-            <ModelsPage />
+            <ModelsLayout />
           </Suspense>
         ),
       },
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
         path: "/cenovnik",
         element: (
           <Suspense fallback={<Loading />}>
-            <TypesPage />
+            <TypesLayout />
           </Suspense>
         ),
       },
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
         path: "/galerija",
         element: (
           <Suspense fallback={<Loading />}>
-            <GalleryPage />
+            <GalleryLayout />
           </Suspense>
         ),
       },
@@ -48,7 +48,7 @@ const router = createBrowserRouter([
         path: "/kontakt",
         element: (
           <Suspense fallback={<Loading />}>
-            <ContactPage />
+            <ContactLayout />
           </Suspense>
         ),
       },
@@ -56,7 +56,7 @@ const router = createBrowserRouter([
         path: "*",
         element: (
           <Suspense fallback={<Loading />}>
-            <NotFoundPage />
+            <NotFoundLayout />
           </Suspense>
         ),
       },
