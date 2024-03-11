@@ -1,7 +1,7 @@
 #svg g {
   height: 100%;
   width: 100%;
-  stroke: #000000;
+  stroke: white;
   fill-opacity: 0;
   stroke-width: 15px;
   stroke-dasharray: 5000;

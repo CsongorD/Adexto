@@ -39,6 +39,7 @@
   }
   .column-image {
     width: 350px;
+    height: auto;
   }
 }
 @media (max-width: 460px) {

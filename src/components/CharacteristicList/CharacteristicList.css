@@ -12,9 +12,19 @@
     flex-wrap: wrap;
   }
 }
+@media (max-width: 630px) {
+  .characteristic-list {
+    padding: 30px;
+  }
+}
 @media (max-width: 440px) {
   .characteristic-list {
     padding: 25px;
+  }
+}
+@media (max-width: 410px) {
+  .characteristic-list {
+    padding: 15px;
   }
 }
 
