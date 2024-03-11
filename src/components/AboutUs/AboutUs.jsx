@@ -14,7 +14,7 @@ const AboutUs = () => {
       return <ImageLoading />;
     }
 
-    const slicedMedals = medals.slice(sliceStart, sliceEnd);
+    const slicedMedals = medals?.slice(sliceStart, sliceEnd);
     return <MedalList medals={slicedMedals} />;
   };
 
