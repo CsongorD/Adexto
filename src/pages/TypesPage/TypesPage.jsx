@@ -27,21 +27,21 @@ const TypesPage = () => {
           onClick={() => scrollToSection(typeSectionRef)}
         >
           <PlateIcon />
-          <p className="section-text">Ploče</p>
+          <h3 className="section-text">Ploče</h3>
         </div>
         <div
           className="section-button"
           onClick={() => scrollToSection(columnSectionRef)}
         >
           <ColumnIcon />
-          <p className="section-text">Stubovi</p>
+          <h3 className="section-text">Stubovi</h3>
         </div>
         <div
           className="section-button"
           onClick={() => scrollToSection(infoSectionRef)}
         >
           <InfoIcon />
-          <p className="section-text">Info</p>
+          <h3 className="section-text">Info</h3>
         </div>
       </div>
       <TypeTable ref={typeSectionRef} />

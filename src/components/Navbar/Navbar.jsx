@@ -1,9 +1,8 @@
 import "./Navbar.css";
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
 import MenuIcon from "../Icons/MenuIcon";
 import CloseIcon from "../Icons/CloseIcon";
-
+import NavButton from "../NavButton/NavButton";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -22,38 +21,53 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
-  let open = isOpen ? "open" : "";
+  let open = isOpen ? " open" : "";
 
   return (
     <div className="navbar">
       <div className="menu-icon-container" onClick={toggleSidebar}>
         {isOpen ? <CloseIcon /> : <MenuIcon />}
       </div>
-      <ul className={"navbar-container " + open}>
+      <ul className={"navbar-container" + open}>
         <li>
-          <NavLink className="nav-btn" to="/" onClick={closeSidebar}>
-            Naslovna
-          </NavLink>
+          <NavButton
+            className={"nav-btn"}
+            to="/"
+            text={"Naslovna"}
+            onClick={closeSidebar}
+          />
         </li>
         <li>
-          <NavLink className="nav-btn" to="/cenovnik" onClick={closeSidebar}>
-            Cenovnik
-          </NavLink>
+          <NavButton
+            className={"nav-btn"}
+            to="/cenovnik"
+            text={"Cenovnik"}
+            onClick={closeSidebar}
+          />
         </li>
         <li>
-          <NavLink className="nav-btn" to="/modeli" onClick={closeSidebar}>
-            Modeli
-          </NavLink>
+          <NavButton
+            className={"nav-btn"}
+            to="/modeli"
+            text={"Modeli"}
+            onClick={closeSidebar}
+          />
         </li>
         <li>
-          <NavLink className="nav-btn" to="/galerija" onClick={closeSidebar}>
-            Galerija
-          </NavLink>
+          <NavButton
+            className={"nav-btn"}
+            to="/galerija"
+            text={"Galerija"}
+            onClick={closeSidebar}
+          />
         </li>
         <li>
-          <NavLink className="nav-btn" to="/kontakt" onClick={closeSidebar}>
-            Kontakt
-          </NavLink>
+          <NavButton
+            className={"nav-btn"}
+            to="/kontakt"
+            text={"Kontakt"}
+            onClick={closeSidebar}
+          />
         </li>
       </ul>
     </div>

@@ -120,19 +120,17 @@
     text-align: center;
   }
 }
-
-@media (max-width: 250px) {
-  .landing-container .landing-text-container {
-    padding: 10px;
-  }
-}
-@media (max-width: 230px) {
+@media (max-width: 280px) {
   .landing-container .landing-text-container .landing-buttons {
     flex-direction: column;
   }
-
   .landing-container .landing-text-container .landing-buttons .btn-transparent {
     margin-left: 0;
     margin-top: 10px;
+  }
+}
+@media (max-width: 250px) {
+  .landing-container .landing-text-container {
+    padding: 10px;
   }
 }

@@ -20,24 +20,14 @@
   object-fit: fill;
 }
 
-.characteristic-container p {
-  background-color: inherit;
-}
-
 @media (max-width: 430px) {
   .characteristic-container .characteristic-image {
     width: 80px;
     height: 80px;
   }
-  .characteristic-container {
-    height: 130px;
-  }
 }
 
 @media (max-width: 320px) {
-  .characteristic-container p {
-    font-size: 15px;
-  }
   .characteristic-container {
     padding: 5px;
     gap: 5px;
@@ -58,8 +48,5 @@
   .characteristic-container .characteristic-image {
     width: 60px;
     height: 60px;
-  }
-  .characteristic-container p {
-    font-size: 12px;
   }
 }

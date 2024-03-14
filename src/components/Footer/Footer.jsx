@@ -7,7 +7,7 @@ import LocationIcon from "../Icons/LocationIcon";
 const Footer = () => {
   return (
     <footer className="footer">
-      <p className="footer-title">ADEXTO D.O.O</p>
+      <h3 className="footer-title">ADEXTO D.O.O</h3>
       <div className="footer-container">
         <FooterItem
           icon={<LocationIcon />}

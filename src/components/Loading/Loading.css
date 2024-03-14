@@ -11,17 +11,20 @@
   min-height: 100vh;
   width: 100%;
   height: 100%;
-  background: #222327;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
   overflow: hidden;
 }
 .loading .loading-logo-container {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
+}
+.loading .loading-logo-container #svg g {
+  stroke: #535353;
 }
 
 .loading .logo-name {
-  color: #fff;
-  font-size: 25px;
+  color: #535353;
   letter-spacing: 10px;
   text-transform: uppercase;
   margin-left: 20px;
