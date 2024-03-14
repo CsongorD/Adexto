@@ -13,11 +13,11 @@ const Column = ({ column }) => {
         <h3>DUŽINE:</h3>
         {options.map((option, index) => (
           <div key={index} className="column-length">
-            <h3>
+            <p>
               {`${option.length.toFixed(1)}m (ukupna dužina: ${
                 option.full_length
               }m) => ${option.price}€`}
-            </h3>
+            </p>
           </div>
         ))}
       </div>
