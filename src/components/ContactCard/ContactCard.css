@@ -15,7 +15,7 @@
 .contact-card .contact-info,
 .contact-card .open-hours,
 .contact-card .additional-info {
-  width: 400px;
+  width: 450px;
   text-align: start;
   padding: 5px;
   padding-bottom: 15px;
@@ -29,7 +29,6 @@
 .contact-card p,
 .contact-card h2 {
   margin: 0;
-  background-color: inherit;
 }
 
 .contact-card .card-title {
