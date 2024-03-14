@@ -1,6 +1,6 @@
 import { Suspense, lazy, useEffect, useState } from "react";
 import "./FenceModel.css";
-import LoadingIcon from "../../components/LoadingIcon/LoadingIcon";
+import ImageLoading from "../../components/ImageLoading/ImageLoading";
 const Spline = lazy(() => import("@splinetool/react-spline"));
 
 const FenceModel = () => {
@@ -17,10 +17,10 @@ const FenceModel = () => {
   return (
     <div className="fence-model-container">
       {loading ? (
-        <LoadingIcon />
+        <ImageLoading />
       ) : (
-        <Suspense fallbac={<LoadingIcon />}>
-          <Spline scene={model} onLoad={() => handleLoad()} />
+        <Suspense fallback={<ImageLoading />}>
+          <Spline scene={model} />
         </Suspense>
       )}
     </div>
