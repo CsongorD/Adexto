@@ -1,19 +1,26 @@
 import "./NotFoundPage.css";
-import { NavLink } from "react-router-dom";
 import LoadingIcon from "../../components/LoadingIcon/LoadingIcon";
+import NavButton from "../../components/NavButton/NavButton";
 
 const NotFoundPage = () => {
   return (
     <div className="not-found-page">
-      <div className="loading-logo-container">
-        <LoadingIcon />
+      <div className="not-found-header">
+        <div className="loading-logo-container">
+          <LoadingIcon />
+        </div>
+        <h1>ADEXTO</h1>
       </div>
-      <h1>404</h1>
-      <h2>NOT FOUND</h2>
-      <div className="redirect-button-container">
-        <NavLink className="nav-btn" to="/" reloadDocument="true">
-          GO BACK
-        </NavLink>
+      <div className="not-found-main">
+        <p className="not-found-number">404</p>
+        <p className="not-found-text">
+          Sorry, we're not able to find what you were looking for.
+        </p>
+
+        <NavButton className={"nav-btn"} to={"/"} text={"Naslovna"} />
+      </div>
+      <div className="not-found-footer">
+        <p>@2024 Adexto Error Page. All rights reserved</p>
       </div>
     </div>
   );
