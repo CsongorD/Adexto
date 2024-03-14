@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 import FenceModel from "../FenceModel/FenceModel";
 import PlayIcon from "../Icons/PlayIcon";
-
+import NavButton from "../NavButton/NavButton";
 const Landing = () => {
   return (
     <div className="landing-container">
@@ -14,13 +14,19 @@ const Landing = () => {
           kvaliteta i velikim izborom dezena.
         </p>
         <div className="landing-buttons">
-          <NavLink className="nav-btn" to="/cenovnik">
-            Cenovnik
-          </NavLink>
-          <NavLink className="nav-btn btn-transparent" to="/modeli">
-            <PlayIcon />
-            Modeli
-          </NavLink>
+          <NavButton className={"nav-btn"} to="/cenovnik" text={"Cenovnik"} />
+          <NavButton
+            className="nav-btn btn-transparent"
+            to="/modeli"
+            text={
+              <>
+                <PlayIcon />
+                Modeli
+              </>
+            }
+          />
+
+          <NavLink></NavLink>
         </div>
       </div>
       <FenceModel />
