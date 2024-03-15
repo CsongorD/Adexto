@@ -44,8 +44,8 @@ const TypesPage = () => {
           <h3 className="section-text">Info</h3>
         </div>
       </div>
-      <TypeTable ref={typeSectionRef} />
-      <ColumnTable ref={columnSectionRef} />
+      {/* <TypeTable ref={typeSectionRef} /> */}
+      {/* <ColumnTable ref={columnSectionRef} /> */}
       <PriceInfo ref={infoSectionRef} />
     </div>
   );
