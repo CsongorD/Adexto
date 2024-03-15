@@ -13,9 +13,9 @@ const NotFoundPage = () => {
       </div>
       <div className="not-found-main">
         <p className="not-found-number">404</p>
-        <p className="not-found-text">
+        <h3 className="not-found-text">
           Sorry, we're not able to find what you were looking for.
-        </p>
+        </h3>
 
         <NavButton className={"nav-btn"} to={"/"} text={"Naslovna"} />
       </div>
