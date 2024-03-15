@@ -25,8 +25,6 @@ const Landing = () => {
               </>
             }
           />
-
-          <NavLink></NavLink>
         </div>
       </div>
       <FenceModel />
