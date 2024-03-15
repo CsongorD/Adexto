@@ -8,8 +8,7 @@ const HomeLayout = () => {
         <title>Adexto</title>
         <meta
           name="description"
-          content="ADEXTO nudi vam betonske ograde sa ugradjnom vrhunskog
-        kvaliteta i velikim izborom dezena."
+          content="Naslovna..............................................."
         />
         <link rel="canonical" href="https://adexto.web.app/" />
       </Helmet>
