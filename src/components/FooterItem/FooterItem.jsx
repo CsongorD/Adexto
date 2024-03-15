@@ -5,8 +5,8 @@ const FooterItem = ({ icon, title, info }) => {
     <div className="info-container">
       <div className="icon-container">{icon}</div>
       <div className="info-text">
-        <h3 className="footer-info-title">{title}</h3>
-        <p>{info}</p>
+        <p className="footer-info-title">{title}</p>
+        <p className="footer-info">{info}</p>
       </div>
     </div>
   );

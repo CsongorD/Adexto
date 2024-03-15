@@ -5,29 +5,30 @@
   background-color: inherit;
   color: white;
 
-  width: 100%;
+  width: auto;
   height: auto;
   /* border: 2px solid white; */
 }
 
-.info-container .info-text p {
+.info-container .info-text .footer-info {
   color: #b3b3b3;
   text-align: start;
-  /* font-size: 15px; */
+  font-size: 1rem;
 }
 
 .info-container .icon-container #location-icon,
 .info-container .icon-container #mail-icon,
 .info-container .icon-container #phone-icon {
   fill: yellow;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   width: 40px;
   height: 40px;
   background-color: inherit;
 }
 .info-container .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: inherit;
 }
 
@@ -35,8 +36,8 @@
   color: white;
   width: 100%;
   text-align: start;
-  /* font-size: 17px; */
-  /* font-weight: 500; */
+  font-size: 18px;
+  font-weight: 500;
   margin-bottom: 6px;
 }
 
@@ -54,6 +55,12 @@
     padding: 10px;
   }
 }
+@media (max-width: 500px) {
+  .info-container .info-text .footer-info-title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
 @media (max-width: 400px) {
   .info-container .icon-container #location-icon,
   .info-container .icon-container #phone-icon,
@@ -65,5 +72,17 @@
 @media (max-width: 300px) {
   .info-container {
     padding: 5px;
+  }
+  .info-container .info-text .footer-info {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 180px) {
+  .info-container .icon-container {
+    display: none;
+  }
+  .info-container .info-text {
+    padding: 0;
   }
 }

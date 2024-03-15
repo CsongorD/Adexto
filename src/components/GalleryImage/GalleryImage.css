@@ -8,6 +8,7 @@
 
 @media (max-width: 250px) {
   .gallery-image-container {
-    padding: 5px;
+    padding: 3px;
+    border: 2px solid black;
   }
 }
