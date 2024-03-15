@@ -18,3 +18,9 @@
     transition: all 0.2s ease;
   }
 }
+
+@media (max-width: 130px) {
+  .header {
+    padding: 5px;
+  }
+}

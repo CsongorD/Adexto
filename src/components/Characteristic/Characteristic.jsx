@@ -8,7 +8,7 @@ const Characteristic = ({ characteristic }) => {
       <div className="characteristic-image">
         <Image src={path} alt={text + "-logo"} small={small} loading={"lazy"} />
       </div>
-      <h3>{text}</h3>
+      <p>{text}</p>
     </div>
   );
 };

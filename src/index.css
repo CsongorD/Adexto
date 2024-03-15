@@ -192,7 +192,9 @@ a {
 
 @media (max-width: 110px) {
   :root {
+    --fs-h1: 0.7rem;
     --fs-h3: 0.6rem;
+    --fs-h2: 0.9rem;
     --fs-p: 0.5rem;
   }
 }
