@@ -7,7 +7,7 @@
   grid-gap: 3rem;
   width: 100%;
 }
-@media (max-width: 1500px) {
+@media (max-width: 1520px) {
   .type-list {
     grid-template-columns: 1fr;
   }

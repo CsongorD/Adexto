@@ -18,7 +18,7 @@ const TypeList = () => {
   return (
     <div className="type-list">
       {types?.map((type, index) => (
-        <Type type={type} key={index} />
+        <Type type={type} key={index} index={index} />
       ))}
     </div>
   );
