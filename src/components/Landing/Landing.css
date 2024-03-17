@@ -29,38 +29,30 @@
 .landing-container .landing-text-container .landing-buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 .landing-container .landing-text-container .landing-buttons .nav-btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  background: #222327;
-  border: 1px solid black;
-  padding: 12px 30px;
-  line-height: 1.4;
+  background-color: #222327;
+  border: 1px solid #222327;
   border-radius: 30px;
+  padding: 15px 25px;
   text-transform: uppercase;
   transition: all 0.55s ease;
-  text-decoration: none;
-  vertical-align: middle;
 }
 .landing-container .landing-text-container .landing-buttons .nav-btn:hover,
 .landing-container .landing-text-container .landing-buttons .btn-transparent {
-  background: transparent;
-  border: 1px solid black;
+  background-color: transparent;
   color: black;
 }
 
 .landing-container .landing-text-container .landing-buttons .nav-btn:hover {
   transform: translateX(8px);
-}
-
-.landing-container .landing-text-container .landing-buttons .btn-transparent {
-  margin-left: 20px;
-  text-align: center;
 }
 
 .landing-container
@@ -97,7 +89,7 @@
     padding: 20px;
   }
   .landing-container .landing-text-container .landing-buttons .nav-btn {
-    padding: 8px 20px;
+    padding: 10px 20px;
   }
 
   .landing-container .landing-text-container .landing-title {
@@ -114,23 +106,20 @@
     width: 16px;
     height: 16px;
   }
-
-  .landing-container .landing-text-container .landing-buttons .btn-transparent {
-    margin-left: 15px;
-    text-align: center;
-  }
 }
 @media (max-width: 280px) {
   .landing-container .landing-text-container .landing-buttons {
     flex-direction: column;
-  }
-  .landing-container .landing-text-container .landing-buttons .btn-transparent {
-    margin-left: 0;
-    margin-top: 10px;
+    gap: 10px;
   }
 }
 @media (max-width: 250px) {
   .landing-container .landing-text-container {
     padding: 10px;
+  }
+}
+@media (max-width: 150px) {
+  .landing-container .landing-text-container .landing-buttons .nav-btn {
+    padding: 5px 15px;
   }
 }
