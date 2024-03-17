@@ -21,7 +21,7 @@ const ImageSlider = ({
           src={path}
           small={small}
           alt={"img-" + modelNumber}
-          loading={modelNumber === "1" ? "eager" : "lazy"}
+          loading="eager"
           onLoad={handleLoad}
         />
       </div>
