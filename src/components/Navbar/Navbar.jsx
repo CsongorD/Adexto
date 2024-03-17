@@ -28,48 +28,38 @@ const Navbar = () => {
       <div className="menu-icon-container" onClick={toggleSidebar}>
         {isOpen ? <CloseIcon /> : <MenuIcon />}
       </div>
-      <ul className={"navbar-container" + open}>
-        <li>
-          <NavButton
-            className={"nav-btn"}
-            to="/"
-            text={"Naslovna"}
-            onClick={closeSidebar}
-          />
-        </li>
-        <li>
-          <NavButton
-            className={"nav-btn"}
-            to="/cenovnik"
-            text={"Cenovnik"}
-            onClick={closeSidebar}
-          />
-        </li>
-        <li>
-          <NavButton
-            className={"nav-btn"}
-            to="/modeli"
-            text={"Modeli"}
-            onClick={closeSidebar}
-          />
-        </li>
-        <li>
-          <NavButton
-            className={"nav-btn"}
-            to="/galerija"
-            text={"Galerija"}
-            onClick={closeSidebar}
-          />
-        </li>
-        <li>
-          <NavButton
-            className={"nav-btn"}
-            to="/kontakt"
-            text={"Kontakt"}
-            onClick={closeSidebar}
-          />
-        </li>
-      </ul>
+      <div className={"navbar-container" + open}>
+        <NavButton
+          className={"nav-btn"}
+          to="/"
+          text={"Naslovna"}
+          onClick={closeSidebar}
+        />
+        <NavButton
+          className={"nav-btn"}
+          to="/cenovnik"
+          text={"Cenovnik"}
+          onClick={closeSidebar}
+        />
+        <NavButton
+          className={"nav-btn"}
+          to="/modeli"
+          text={"Modeli"}
+          onClick={closeSidebar}
+        />
+        <NavButton
+          className={"nav-btn"}
+          to="/galerija"
+          text={"Galerija"}
+          onClick={closeSidebar}
+        />
+        <NavButton
+          className={"nav-btn"}
+          to="/kontakt"
+          text={"Kontakt"}
+          onClick={closeSidebar}
+        />
+      </div>
     </div>
   );
 };
