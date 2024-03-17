@@ -10,10 +10,11 @@ const ColumnList = () => {
   if (error) {
     return <ErrorComponent error={error.message} />;
   }
+  if (!columns) {
+    return <ImageLoading />;
+  }
 
-  return !columns ? (
-    <ImageLoading />
-  ) : (
+  return (
     <div className="column-list">
       {columns?.map((column, index) => (
         <Column column={column} key={index} />
