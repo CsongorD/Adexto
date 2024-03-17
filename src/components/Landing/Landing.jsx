@@ -14,14 +14,14 @@ const Landing = () => {
           kvaliteta i velikim izborom dezena.
         </p>
         <div className="landing-buttons">
-          <NavButton className={"nav-btn"} to="/cenovnik" text={"Cenovnik"} />
+          <NavButton className={"nav-btn"} to="/cenovnik" text={"CENOVNIK"} />
           <NavButton
             className="nav-btn btn-transparent"
             to="/modeli"
             text={
               <>
                 <PlayIcon />
-                Modeli
+                MODELI
               </>
             }
           />
