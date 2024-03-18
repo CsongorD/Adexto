@@ -1,7 +1,8 @@
 .type-table {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   width: 100%;
+  min-height: 95vh;
 }

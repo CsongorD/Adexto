@@ -3,8 +3,9 @@
   display: flex;
   text-align: center;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   color: black;
+  min-height: 25vh;
 }
 .about-us-container {
   width: 650px;

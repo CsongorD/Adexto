@@ -3,6 +3,7 @@
   grid-template-columns: auto auto;
   gap: 3rem;
   padding: 20px;
+  height: 100%;
 }
 
 @media (max-width: 1400px) {

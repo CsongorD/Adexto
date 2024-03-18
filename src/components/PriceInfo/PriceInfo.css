@@ -2,8 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   padding-bottom: 20px;
   width: 100%;
+  min-height: 15vh;
 }
 
 .price-info .price-info-container {
