@@ -49,6 +49,7 @@
 .type-container .type-image {
   grid-area: timage;
   width: clamp(50px, 60vw, 400px);
+  aspect-ratio: 16 / 5;
   display: flex;
   align-items: center;
   justify-content: center;
