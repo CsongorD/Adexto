@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  padding: 40px;
-  padding-top: 20px;
+  width: 100%;
+  min-height: 15vh;
 }
 
 .image-slider-image {
