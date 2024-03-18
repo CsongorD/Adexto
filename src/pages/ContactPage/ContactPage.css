@@ -6,7 +6,6 @@
   padding: 33px;
   gap: 10px;
   min-height: 20vh;
-  border: 15px solid red;
 }
 @media (max-width: 500px) {
   .contact-page {
