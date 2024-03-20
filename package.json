@@ -6,13 +6,13 @@
   "type": "module",
   "dependencies": {
     "@splinetool/react-spline": "^2.2.6",
-    "@splinetool/runtime": "^1.0.66",
+    "@splinetool/runtime": "^1.0.72",
     "boxicons": "^2.1.4",
-    "firebase": "^10.8.0",
+    "firebase": "^10.9.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.4",
-    "react-router-dom": "^6.22.0",
+    "react-router-dom": "^6.22.3",
     "vite-plugin-env-compatible": "^2.0.1"
   },
   "scripts": {
@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^5.1.5",
+    "vite": "^5.2.2",
     "vite-plugin-svgr": "^4.2.0"
   }
 }
