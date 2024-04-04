@@ -5,6 +5,7 @@ const GalleryLayout = () => {
   return (
     <>
       <Helmet>
+        <meta property="og:site_name" content="Adexto" />
         <title>Galerija</title>
         <meta
           name="description"

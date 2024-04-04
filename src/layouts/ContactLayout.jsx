@@ -5,6 +5,7 @@ const ContactLayout = () => {
   return (
     <>
       <Helmet>
+        <meta property="og:site_name" content="Adexto" />
         <title>Kontakt</title>
         <meta
           name="description"

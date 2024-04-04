@@ -5,6 +5,7 @@ const ModelsLayout = () => {
   return (
     <>
       <Helmet>
+        <meta property="og:site_name" content="Adexto" />
         <title>Modeli</title>
         <meta
           name="description"

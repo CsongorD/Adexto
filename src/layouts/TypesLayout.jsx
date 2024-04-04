@@ -5,6 +5,7 @@ const TypesLayout = () => {
   return (
     <>
       <Helmet>
+        <meta property="og:site_name" content="Adexto" />
         <title>Cenovnik</title>
         <meta
           name="description"
