@@ -5,6 +5,7 @@ const HomeLayout = () => {
   return (
     <>
       <Helmet>
+      <meta property="og:site_name" content="Adexto" />
         <title>Adexto</title>
         <meta
           name="description"

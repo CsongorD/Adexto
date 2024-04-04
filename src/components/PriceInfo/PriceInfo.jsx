@@ -9,8 +9,6 @@ const PriceInfo = forwardRef((_props, ref) => {
         <div className="price-info-text">
           <p>1. Ugradnja ograde (1.5m visine) 7€ 1m dužni</p>
           <p>2. Ugradnja ograde (2.0m visine) 9€ 1m dužni</p>
-          <p>3. Ugradnja ograde (2.5m visine) 13€ 1m dužni</p>
-          <p>4. Ugradnja montažnog objekta 14€ 1m dužni</p>
         </div>
         <br />
         <div className="price-info-text">
