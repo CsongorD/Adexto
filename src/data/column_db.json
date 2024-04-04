@@ -40,9 +40,9 @@
     ]
   },
   {
-    "name": "Stub ukrasni srednji",
-    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fcolumns%2Fukrasni-srednji-1.webp?alt=media&token=565f0bb5-745f-449b-8ce2-7c8ccac0c8e3",
-    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcolumns%2Fukrasni-srednji-1-small.webp?alt=media&token=ff77ef86-d91c-49da-a099-48ec1a81ba97",
+    "name": "Stub ukrasni",
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fcolumns%2Fukrasni-zavrsni-1.webp?alt=media&token=42c4dae2-0806-4304-b14b-56c60843e603",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcolumns%2Fukrasni-zavrsni-1-small.webp?alt=media&token=4700181d-f7bd-425f-ae7e-5e3d8ca37d98",
     "options": [
       {
         "length": 1.5,
@@ -53,23 +53,6 @@
         "length": 2.0,
         "full_length": 2.8,
         "price": 23
-      }
-    ]
-  },
-  {
-    "name": "Stub ukrasni završni",
-    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fcolumns%2Fukrasni-zavrsni-1.webp?alt=media&token=42c4dae2-0806-4304-b14b-56c60843e603",
-    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcolumns%2Fukrasni-zavrsni-1-small.webp?alt=media&token=4700181d-f7bd-425f-ae7e-5e3d8ca37d98",
-    "options": [
-      {
-        "length": 1.5,
-        "full_length": 2.1,
-        "price": 14
-      },
-      {
-        "length": 2.0,
-        "full_length": 2.8,
-        "price": 16
       }
     ]
   }
