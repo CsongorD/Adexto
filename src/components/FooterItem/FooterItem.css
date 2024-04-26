@@ -58,6 +58,9 @@
     font-size: 16px;
     font-weight: 500;
   }
+  .info-container {
+    min-height: 50px;
+  }
 }
 @media (max-width: 400px) {
   .info-container .icon-container #location-icon,
