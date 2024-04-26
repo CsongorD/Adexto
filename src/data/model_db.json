@@ -385,37 +385,7 @@
       }
     ]
   },
-  {
-    "model": "20",
-    "images": [
-      {
-        "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fmodels%2F20.webp?alt=media&token=e03c851a-6232-4a4f-800c-c494427b6643",
-        "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fmodels%2F20-small.webp?alt=media&token=68798b2f-ce76-461a-ab53-504ea537d0ec"
-      },
 
-      {
-        "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fmodels%2F20-1.webp?alt=media&token=660cfc24-9183-441c-8788-890131015096",
-        "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fmodels%2F20-1-small.webp?alt=media&token=dfcb1873-c71f-4d1c-bfc4-884988d82f72"
-      },
-      {
-        "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fmodels%2F20-2.webp?alt=media&token=a345a936-c64b-4c77-b06c-d39ae0ecfe55",
-        "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fmodels%2F20-2-small.webp?alt=media&token=4a192af3-211c-42b0-8262-afff21b9c10b"
-      }
-    ]
-  },
-  {
-    "model": "21",
-    "images": [
-      {
-        "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fmodels%2F21.webp?alt=media&token=3f9f07c6-f349-4aae-93ff-54b547efad78",
-        "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fmodels%2F21-small.webp?alt=media&token=6560218f-a8a4-4001-a377-add3eb468171"
-      },
-      {
-        "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fmodels%2F21-1.webp?alt=media&token=0ce4df80-d450-4701-8729-78f863efc171",
-        "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fmodels%2F21-1-small.webp?alt=media&token=890df6a3-3691-493b-b6e5-0c77c247dafd"
-      }
-    ]
-  },
   {
     "model": "23",
     "images": [
@@ -451,23 +421,6 @@
       {
         "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fmodels%2F23-7.webp?alt=media&token=65752cac-1675-4d53-9e0e-cf62466be75f",
         "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fmodels%2F23-7-small.webp?alt=media&token=efb8417c-ce4d-4f60-9f6a-c0f4177991d6"
-      }
-    ]
-  },
-  {
-    "model": "28",
-    "images": [
-      {
-        "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fmodels%2F28.webp?alt=media&token=4e9710e2-f6b9-493c-a47a-9ec520602f65",
-        "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fmodels%2F28-small.webp?alt=media&token=5affff67-c7f9-42cc-bd62-30da9733edf6"
-      },
-      {
-        "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fmodels%2F28-1.webp?alt=media&token=e60744b3-9186-455d-937a-e2f774d72282",
-        "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fmodels%2F28-1-small.webp?alt=media&token=751021cb-999f-4104-a4f6-9bfa320a5e13"
-      },
-      {
-        "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fmodels%2F28-2.webp?alt=media&token=61d72a50-13ae-494d-94cf-6c970be1275b",
-        "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fmodels%2F28-2-small.webp?alt=media&token=fa5d236c-29cb-4830-8dae-8d999d4c346a"
       }
     ]
   },
@@ -687,15 +640,6 @@
     ]
   },
   {
-    "model": "40",
-    "images": [
-      {
-        "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fmodels%2F40.webp?alt=media&token=5d0611e4-2d90-4091-9174-874d235e3da2",
-        "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fmodels%2F40-small.webp?alt=media&token=a6b2819f-0c0f-4fab-83a8-f6f425d17737"
-      }
-    ]
-  },
-  {
     "model": "42",
     "images": [
       {
@@ -807,15 +751,6 @@
     ]
   },
   {
-    "model": "49",
-    "images": [
-      {
-        "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fmodels%2F49.webp?alt=media&token=40c48ef5-a585-4a8f-8e16-3e9c05acda93",
-        "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fmodels%2F49-small.webp?alt=media&token=930de237-db2d-4f67-badd-409c85e54780"
-      }
-    ]
-  },
-  {
     "model": "50",
     "images": [
       {
@@ -870,44 +805,6 @@
       {
         "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fmodels%2F51-6.webp?alt=media&token=f6da242a-7f97-4b02-b3a7-1b559dd3de4f",
         "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fmodels%2F51-6-small.webp?alt=media&token=54b2010f-2947-4f76-8393-f094d191866e"
-      }
-    ]
-  },
-  {
-    "model": "52",
-    "images": [
-      {
-        "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fmodels%2F52.webp?alt=media&token=4b02bf21-b5bd-40be-9ebd-f31fa8c9ed5d",
-        "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fmodels%2F52-small.webp?alt=media&token=7c5db705-4b15-4eff-b86f-64983c9eccbe"
-      },
-      {
-        "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fmodels%2F52-1.webp?alt=media&token=f8d5d18a-a9f2-4646-859a-5a63be52e24f",
-        "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fmodels%2F52-1-small.webp?alt=media&token=4c74b6db-1c03-40c6-b323-e5dd5a62bed6"
-      },
-      {
-        "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fmodels%2F52-2.webp?alt=media&token=2a116a49-8340-4c98-a3f1-1b6a136c992f",
-        "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fmodels%2F52-2-small.webp?alt=media&token=854a46df-9c4b-4dd7-91ff-50313790da7c"
-      },
-      {
-        "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fmodels%2F52-3.webp?alt=media&token=407c487d-53fe-4e78-8988-c8a22223d82a",
-        "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fmodels%2F52-3-small.webp?alt=media&token=217923cc-d133-478f-8ed4-c8515b098d7a"
-      },
-      {
-        "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fmodels%2F52-4.webp?alt=media&token=d8e545f9-09e4-456a-904d-73ea7782222e",
-        "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fmodels%2F52-4-small.webp?alt=media&token=691b9292-c89c-4e17-8fe8-220c26ce5473"
-      },
-      {
-        "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fmodels%2F52-5.webp?alt=media&token=b08c62eb-d118-4435-ac29-8e14b174689e",
-        "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fmodels%2F52-5-small.webp?alt=media&token=ffbcc5b4-541d-4f0d-85c3-edb4e8ab9c12"
-      }
-    ]
-  },
-  {
-    "model": "66",
-    "images": [
-      {
-        "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fmodels%2F66.webp?alt=media&token=34edef78-2b80-42e3-86f7-f5a450b62cdd",
-        "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fmodels%2F66-small.webp?alt=media&token=3e5e1db9-f171-4667-b465-aa33abe67859"
       }
     ]
   },
@@ -1018,15 +915,6 @@
       {
         "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fmodels%2F117-2.webp?alt=media&token=8798e5de-e7a2-4f69-8acd-e6367e995578",
         "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fmodels%2F117-2-small.webp?alt=media&token=422e55c9-dcdb-4dbe-a567-ef4564fc7645"
-      }
-    ]
-  },
-  {
-    "model": "136",
-    "images": [
-      {
-        "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fmodels%2F136.webp?alt=media&token=5c45e249-9126-42de-ab36-525647088c7c",
-        "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fmodels%2F136-small.webp?alt=media&token=6eaa5e92-a09c-49d5-9dae-22a6b66ba056"
       }
     ]
   },
