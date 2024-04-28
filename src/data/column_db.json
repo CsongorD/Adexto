@@ -41,14 +41,21 @@
   },
   {
     "name": "Stub ukrasni",
-    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fcolumns%2Fukrasni-zavrsni-1.webp?alt=media&token=42c4dae2-0806-4304-b14b-56c60843e603",
-    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcolumns%2Fukrasni-zavrsni-1-small.webp?alt=media&token=4700181d-f7bd-425f-ae7e-5e3d8ca37d98",
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fcolumns%2Fukrasni-srednji-2.jpg?alt=media&token=d875eedb-28c3-4cae-9822-b71ad365e23f",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcolumns%2Fukrasni-srednji-2-small.webp?alt=media&token=6185f40c-f838-4ae9-8325-4453966068be",
     "options": [
       {
         "length": 1.5,
         "full_length": 2.1,
         "price": 18
-      },
+      }
+    ]
+  },
+  {
+    "name": "Stub ukrasni",
+    "path": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/original%2Fcolumns%2Fukrasni-zavrsni-1.webp?alt=media&token=42c4dae2-0806-4304-b14b-56c60843e603",
+    "small": "https://firebasestorage.googleapis.com/v0/b/adexto.appspot.com/o/small%2Fcolumns%2Fukrasni-zavrsni-1-small.webp?alt=media&token=4700181d-f7bd-425f-ae7e-5e3d8ca37d98",
+    "options": [
       {
         "length": 2.0,
         "full_length": 2.8,
