@@ -63,7 +63,7 @@
       "purpose": "any maskable"
     }
   ],
-  "start_url": "./adextoapp",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#222327",
   "background_color": "#222327"
