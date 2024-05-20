@@ -11,7 +11,7 @@ const ContactLayout = () => {
           name="description"
           content="Kontaktirajte nas na: ................................"
         />
-        <link rel="canonical" href="https://adexto.web.app/kontakt" />
+        <link rel="canonical" href="https://adexto.com/kontakt" />
       </Helmet>
       <ContactPage />
     </>

@@ -11,7 +11,7 @@ const TypesLayout = () => {
           name="description"
           content="Cenovnik..........................................."
         />
-        <link rel="canonical" href="https://adexto.web.app/cenovnik" />
+        <link rel="canonical" href="https://adexto.com/cenovnik" />
       </Helmet>
       <TypesPage />
     </>
