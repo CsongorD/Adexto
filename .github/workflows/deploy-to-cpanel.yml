@@ -8,10 +8,10 @@ jobs:
     name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4.1
+    - uses: actions/checkout@v2.1.0
     - run: npm ci && npm run build
     - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@4.3.5
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         ftp-server: ${{ secrets.FTP_SERVER}}
         ftp-username: ${{ secrets.FTP_USERNAME}}
