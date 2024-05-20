@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://adexto.web.app/sitemap.xml
+Sitemap: https://adexto.com/sitemap.xml
