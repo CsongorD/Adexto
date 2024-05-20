@@ -11,7 +11,7 @@ const GalleryLayout = () => {
           name="description"
           content="Vidite galeriju...................................."
         />
-        <link rel="canonical" href="https://adexto.web.app/galerija" />
+        <link rel="canonical" href="https://adexto.com/galerija" />
       </Helmet>
       <GalleryPage />
     </>

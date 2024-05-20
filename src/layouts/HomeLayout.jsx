@@ -11,7 +11,7 @@ const HomeLayout = () => {
           name="description"
           content="Naslovna..............................................."
         />
-        <link rel="canonical" href="https://adexto.web.app/" />
+        <link rel="canonical" href="https://adexto.com/" />
       </Helmet>
       <HomePage />
     </>

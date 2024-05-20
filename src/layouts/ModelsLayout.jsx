@@ -11,7 +11,7 @@ const ModelsLayout = () => {
           name="description"
           content="Vidite nase modeli.................................."
         />
-        <link rel="canonical" href="https://adexto.web.app/modeli" />
+        <link rel="canonical" href="https://adexto.com/modeli" />
       </Helmet>
       <ModelsPage />
     </>
