@@ -4,7 +4,7 @@ import svgrPlugin from "vite-plugin-svgr";
 
 export default defineConfig(() => {
   return {
-    base: "https://adexto.com/",
+    // base: "https://adexto.com/",
     build: {
       outDir: "build",
     },
