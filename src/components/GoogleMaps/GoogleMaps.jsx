@@ -34,8 +34,9 @@ const GoogleMaps = () => {
           allowFullScreen={false}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          lang="rs"
-          language="rs"
+          lang="sr"
+          language="sr"
+          region="RS"
         />
       )}
     </div>
