@@ -1,6 +1,6 @@
-import "./GoogleMaps.css";
 import { useEffect, useState } from "react";
 import LoadingIcon from "../LoadingIcon/LoadingIcon";
+import "./GoogleMaps.css";
 
 const GoogleMaps = () => {
   const [mapLink, setMapLink] = useState("");
@@ -34,6 +34,8 @@ const GoogleMaps = () => {
           allowFullScreen={false}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
+          lang="rs"
+          language="rs"
         />
       )}
     </div>
