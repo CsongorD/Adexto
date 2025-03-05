@@ -1,6 +1,6 @@
-import "./NotFoundPage.css";
 import LoadingIcon from "../../components/LoadingIcon/LoadingIcon";
 import NavButton from "../../components/NavButton/NavButton";
+import "./NotFoundPage.css";
 
 const NotFoundPage = () => {
   return (
@@ -20,7 +20,7 @@ const NotFoundPage = () => {
         <NavButton className={"nav-btn"} to={"/"} text={"Naslovna"} />
       </div>
       <div className="not-found-footer">
-        <p>@2024 Adexto Error Page. All rights reserved</p>
+        <p>©2025 Adexto. All rights reserved.</p>
       </div>
     </div>
   );
