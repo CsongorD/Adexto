@@ -60,17 +60,18 @@
   background: #222327;
 }
 .pagination ul .disabled,
-.pagination ul .disabled:active {
+.pagination ul .disabled:active,
+.pagination ul .disabled svg {
   background-color: gray;
   border: 2px gray solid;
-  color: white;
-  fill: white;
+  stroke: white;
   cursor: default;
 }
-.pagination ul .btn #arrow-icon {
+.pagination ul .btn .arrow-icon {
   width: 35px;
   height: 35px;
   background-color: inherit;
+  stroke-width: 3px;
 }
 
 .pagination ul .prev {
@@ -81,17 +82,15 @@
   border-radius: 5px 25px 25px 5px;
 }
 @media (hover: hover) {
-  .pagination ul .disabled:hover {
-    border: 1px gray solid;
-  }
-
   .pagination ul .numb:hover,
   .pagination ul .btn:hover {
     color: #fff;
-    fill: white;
+    stroke: white;
     background: #222327;
   }
-
+  .pagination ul .btn:hover .arrow-icon {
+    stroke: white;
+  }
   .pagination ul .disabled:hover {
     background-color: gray;
     border: 2px gray solid;
@@ -111,7 +110,7 @@
   .pagination ul .btn {
     width: 45px;
   }
-  .pagination ul .btn #arrow-icon {
+  .pagination ul .btn .arrow-icon {
     width: 30px;
     height: 30px;
   }
@@ -149,7 +148,7 @@
     border: 1px gray solid;
   }
 
-  .pagination ul .btn #arrow-icon {
+  .pagination ul .btn .arrow-icon {
     width: 25px;
     height: 25px;
   }
@@ -174,7 +173,7 @@
     width: 35px;
   }
 
-  .pagination ul .btn #arrow-icon {
+  .pagination ul .btn .arrow-icon {
     width: 20px;
     height: 20px;
   }
@@ -200,7 +199,7 @@
     padding: 0 8px;
   }
 
-  .pagination ul .btn #arrow-icon {
+  .pagination ul .btn .arrow-icon {
     width: 15px;
     height: 15px;
   }
@@ -232,7 +231,7 @@
     width: 25px;
   }
 
-  .pagination ul .btn #arrow-icon {
+  .pagination ul .btn .arrow-icon {
     width: 20px;
     height: 20px;
   }
@@ -247,7 +246,7 @@
     height: 15px;
     width: 15px;
   }
-  .pagination ul .btn #arrow-icon {
+  .pagination ul .btn .arrow-icon {
     width: 15px;
     height: 15px;
     background-color: transparent;
