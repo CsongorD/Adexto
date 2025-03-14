@@ -1,10 +1,10 @@
-import "./Gallery.css";
 import GalleryList from "../GalleryList/GalleryList";
+import styles from "./Gallery.module.css";
 
 const Gallery = () => {
   return (
-    <div className="gallery">
-      <h1 className="title">GALERIJA</h1>
+    <div className={styles["gallery"]}>
+      <h1 className={"title"}>GALERIJA</h1>
       <GalleryList />
     </div>
   );
