@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   background-color: inherit;
   width: 600px;
   height: 40px;
@@ -9,7 +9,7 @@
 .navbar .navbar-container {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 25px;
   background-color: inherit;
   width: 100%;
@@ -99,10 +99,11 @@
     fill: white;
     background-color: inherit;
   }
-  .navbar .menu-icon-container #menu-icon,
-  .navbar .menu-icon-container #close-icon {
+  .navbar .menu-icon-container .menu-icon,
+  .navbar .menu-icon-container .close-icon {
     height: 100%;
     width: 100%;
+    stroke: white;
   }
 }
 @media (max-width: 320px) {
