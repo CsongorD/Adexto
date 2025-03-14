@@ -27,6 +27,15 @@
   min-height: 80px;
 }
 
+.footer .footer-container .location-icon,
+.footer .footer-container .mail-icon,
+.footer .footer-container .phone-icon {
+  stroke: yellow;
+  width: 38px;
+  height: 38px;
+  background-color: inherit;
+}
+
 @media (max-width: 1280px) {
   .footer .footer-container {
     align-items: flex-start;
@@ -50,6 +59,15 @@
 @media (max-width: 460px) {
   .footer .footer-container {
     padding: 5px 0%;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer .footer-container .info-container .icon-container .location-icon,
+  .footer .footer-container .info-container .icon-container .phone-icon,
+  .footer .footer-container .info-container .icon-container .mail-icon {
+    width: 30px;
+    height: 30px;
   }
 }
 
