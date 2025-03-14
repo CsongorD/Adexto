@@ -1,0 +1,44 @@
+.section-scroller-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  height: 100vh;
+  width: 130px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.section-scroller-container .section-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 10px;
+  width: 100%;
+  background-color: #222327;
+  text-decoration: none;
+  list-style-type: none;
+  cursor: pointer;
+  border-radius: 0 50px 50px 0;
+}
+
+.section-scroller-container .section-button .section-text {
+  color: white;
+}
+
+.section-scroller-container .section-button .plate-icon,
+.section-scroller-container .section-button .info-icon,
+.section-scroller-container .section-button .column-icon {
+  width: 25px;
+  height: 25px;
+  background-color: inherit;
+  stroke: white;
+}
+
+@media (max-width: 880px) {
+  .section-scroller-container {
+    display: none;
+  }
+}
