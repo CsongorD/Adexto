@@ -1,9 +1,9 @@
-import "./LoadingIcon.css";
+import styles from "./LoadingIcon.module.css";
 
 const LoadingIcon = () => {
   return (
     <svg
-      id="svg"
+      className={styles["svg"]}
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 86.000000 87.000000"
@@ -13,6 +13,7 @@ const LoadingIcon = () => {
         transform="translate(0.000000,87.000000) scale(0.100000,-0.100000)"
         fill="#000000"
         stroke="none"
+        focusable="false"
       >
         <path
           d="M356 839 c-51 -40 -71 -112 -45 -162 6 -12 29 -40 51 -63 l39 -41
