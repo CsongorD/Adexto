@@ -1,9 +1,8 @@
-import "./Medal.css";
 import Image from "../Image/Image";
-const Medal = ({ medal }) => {
-  const { path, small } = medal;
+import styles from "./Medal.module.css";
+const Medal = ({ medal: { path, small } }) => {
   return (
-    <div className="medal-container">
+    <div className={styles["medal-container"]}>
       <Image src={path} small={small} alt="medal" loading={"lazy"} />
     </div>
   );
