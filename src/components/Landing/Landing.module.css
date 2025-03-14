@@ -59,9 +59,10 @@
   .landing-text-container
   .landing-buttons
   .nav-btn
-  #play-icon {
+  .play-icon {
   width: 20px;
   height: 20px;
+  fill: black;
 }
 
 @media (max-width: 1280px) {
@@ -109,9 +110,10 @@
     .landing-text-container
     .landing-buttons
     .nav-btn
-    #play-icon {
+    .play-icon {
     width: 16px;
     height: 16px;
+    fill: black;
   }
 }
 @media (max-width: 280px) {
