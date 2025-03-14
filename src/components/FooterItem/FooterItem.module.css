@@ -14,15 +14,7 @@
   font-size: 1rem;
 }
 
-.info-container .icon-container #location-icon,
-.info-container .icon-container #mail-icon,
-.info-container .icon-container #phone-icon {
-  fill: yellow;
 
-  width: 40px;
-  height: 40px;
-  background-color: inherit;
-}
 .info-container .icon-container {
   display: flex;
   align-items: center;
@@ -62,14 +54,7 @@
     min-height: 50px;
   }
 }
-@media (max-width: 400px) {
-  .info-container .icon-container #location-icon,
-  .info-container .icon-container #phone-icon,
-  .info-container .icon-container #mail-icon {
-    width: 30px;
-    height: 30px;
-  }
-}
+
 @media (max-width: 300px) {
   .info-container {
     padding: 5px;
