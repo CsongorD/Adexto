@@ -1,0 +1,14 @@
+.contact-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 33px;
+  gap: 10px;
+  min-height: 20vh;
+}
+@media (max-width: 500px) {
+  .contact-page {
+    padding: 10px;
+  }
+}
