@@ -1,21 +1,16 @@
-import "./ColumnList.css";
 import useImages from "../../hooks/useImages";
 import Column from "../Column/Column";
 import ImageLoading from "../ImageLoading/ImageLoading";
-import ErrorComponent from "../ErrorComponent/ErrorComponent";
+import styles from "./ColumnList.module.css";
 
 const ColumnList = () => {
   const [columns, error] = useImages("column");
 
-  if (error) {
-    return <ErrorComponent error={error.message} />;
-  }
-  if (!columns) {
-    return <ImageLoading />;
-  }
+  if (error) throw error;
+  if (!columns) return <ImageLoading />;
 
   return (
-    <div className="column-list">
+    <div className={styles["column-list"]}>
       {columns?.map((column, index) => (
         <Column column={column} key={index} />
       ))}
