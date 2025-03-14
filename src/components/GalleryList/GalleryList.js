@@ -1,21 +1,18 @@
-import "./GalleryList.css";
+"use client";
+
 import useImages from "../../hooks/useImages";
 import GalleryImage from "../GalleryImage/GalleryImage";
 import ImageLoading from "../ImageLoading/ImageLoading";
-import ErrorComponent from "../ErrorComponent/ErrorComponent";
+import styles from "./GalleryList.module.css";
 
 const GalleryList = () => {
   const [gallery, error] = useImages("gallery");
 
-  if (error) {
-    return <ErrorComponent error={error.message} />;
-  }
+  if (error) throw error;
+  if (!gallery) return <ImageLoading />;
 
-  if (!gallery) {
-    return <ImageLoading />;
-  }
   return (
-    <div className="gallery-list">
+    <div className={styles["gallery-list"]}>
       {gallery?.map((image, index) => (
         <GalleryImage image={image} key={index} index={index} />
       ))}
