@@ -1,7 +1,7 @@
-import "./ModelList.css";
 import { useEffect, useState } from "react";
 import ImageSlider from "../ImageSlider/ImageSlider";
 import LoadingIcon from "../LoadingIcon/LoadingIcon";
+import styles from "./ModelList.module.css";
 
 const ModelList = ({ model, paginate, currentPage }) => {
   const [imageIndex, setImageIndex] = useState(0);
@@ -54,9 +54,10 @@ const ModelList = ({ model, paginate, currentPage }) => {
       setLoading(true);
     }
   }
+
   return (
-    <div className="model-list">
-      <h1 className="title">Model {modelNumber}</h1>
+    <div className={styles["model-list"]}>
+      <h1 className={"title"}>Model {modelNumber}</h1>
       <ImageSlider
         currentImage={currentImage}
         modelNumber={modelNumber}
