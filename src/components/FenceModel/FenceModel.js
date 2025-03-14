@@ -1,6 +1,8 @@
+"use client";
+
 import { Suspense, lazy, useEffect, useState } from "react";
-import "./FenceModel.css";
 import ImageLoading from "../../components/ImageLoading/ImageLoading";
+import "./FenceModel.module.css";
 const Spline = lazy(() => import("@splinetool/react-spline"));
 
 const FenceModel = () => {
@@ -20,7 +22,7 @@ const FenceModel = () => {
         <ImageLoading />
       ) : (
         <Suspense fallback={<ImageLoading />}>
-          <Spline scene={model} />
+          {/* <Spline scene={model} /> */}
         </Suspense>
       )}
     </div>
