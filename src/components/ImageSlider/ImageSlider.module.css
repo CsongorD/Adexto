@@ -46,15 +46,18 @@
   border: 1px solid black;
   background-color: #222327;
 }
-.image-slider-button #arrow-icon {
+.image-slider-button .arrow-icon {
   width: 40px;
   height: 40px;
   background-color: inherit;
+  stroke: white;
+  stroke-width: 3px;
 }
 
 .image-slider-button:active {
   background-color: white;
   fill: black;
+  stroke: black;
   cursor: pointer;
   box-shadow: none;
   border: 1px dashed black;
@@ -64,9 +67,15 @@
   .image-slider-button:hover {
     background-color: white;
     fill: black;
+
+    stroke: black;
+    color: black;
     cursor: pointer;
     box-shadow: none;
     border: 1px dashed black;
+  }
+  .image-slider-button:hover svg {
+    stroke: black;
   }
 }
 
@@ -109,7 +118,7 @@
     width: 50px;
     height: 50px;
   }
-  .image-slider-button #arrow-icon {
+  .image-slider-button .arrow-icon {
     width: 25px;
     height: 25px;
     background-color: inherit;
@@ -140,20 +149,20 @@
     border-radius: 0%;
   }
 
-  .image-slider-button #arrow-icon {
+  .image-slider-button .arrow-icon {
     width: 40px;
     height: 40px;
   }
 }
 @media (max-width: 350px) {
-  .image-slider-button #arrow-icon {
+  .image-slider-button .arrow-icon {
     width: 30px;
     height: 30px;
   }
 }
 
 @media (max-width: 230px) {
-  .image-slider-button #arrow-icon {
+  .image-slider-button .arrow-icon {
     width: 20px;
     height: 20px;
   }
