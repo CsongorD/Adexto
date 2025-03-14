@@ -1,18 +1,17 @@
-import "./CharacteristicList.css";
+"use client";
+
 import useImages from "../../hooks/useImages";
 import Characteristic from "../Characteristic/Characteristic";
 import ImageLoading from "../ImageLoading/ImageLoading";
-import ErrorComponent from "../ErrorComponent/ErrorComponent";
+import styles from "./CharacteristicList.module.css";
 
 const Characteristics = () => {
   const [characteristics, error] = useImages("characteristic");
 
-  if (error) {
-    return <ErrorComponent error={error.message} />;
-  }
+  if (error) throw error;
 
   return (
-    <div className="characteristic-list">
+    <div className={styles["characteristic-list"]}>
       {!characteristics ? (
         <ImageLoading />
       ) : (
