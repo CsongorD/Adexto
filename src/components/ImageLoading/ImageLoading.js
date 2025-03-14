@@ -1,10 +1,10 @@
-import "./ImageLoading.css";
 import LoadingIcon from "../LoadingIcon/LoadingIcon";
+import styles from "./ImageLoading.module.css";
 
 const ImageLoading = () => {
   return (
-    <div className="image-loading">
-      <div className="image-loading-container">
+    <div className={styles["image-loading"]}>
+      <div className={styles["image-loading-container"]}>
         <LoadingIcon />
       </div>
     </div>
