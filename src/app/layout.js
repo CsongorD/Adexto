@@ -34,14 +34,6 @@ export const metadata = {
       "Adexto proizvodi visokokvalitetne betonske ograde u Zrenjaninu.",
     url: "https://adexto.com",
     siteName: "Adexto",
-    images: [
-      {
-        url: "https://adexto.com/images/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Adexto Betonske Ograde",
-      },
-    ],
     type: "website",
     locale: "sr_RS",
     alternateLocale: ["en_US"],

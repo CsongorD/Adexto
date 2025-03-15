@@ -3,26 +3,17 @@ import CharacteristicList from "../components/CharacteristicList/CharacteristicL
 import Landing from "../components/Landing/Landing";
 
 export const metadata = {
-  title: "Adexto - Betonske Ograde",
+  title: "Adexto",
   description: "Najkvalitetnije betonske ograde u Zrenjaninu.",
   keywords: "betonske ograde, Zrenjanin, Adexto",
   openGraph: {
-    title: "Adexto - Betonske Ograde",
+    title: "Adexto",
     description: "Najkvalitetnije betonske ograde u Zrenjaninu.",
     url: "https://adexto.com",
     siteName: "Adexto",
-    images: [
-      {
-        url: "https://adexto.com/images/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Adexto Betonske Ograde",
-      },
-    ],
     type: "website",
   },
 };
- 
 
 export default function HomePage() {
   return (

@@ -3,7 +3,7 @@ import GoogleMaps from "../../components/GoogleMaps/GoogleMaps";
 import styles from "../../styles/contact.module.css";
 
 export const metadata = {
-  title: "Kontakt - Adexto",
+  title: "Kontakt",
   description: "Kontaktirajte nas za više informacija o betonskim ogradama.",
   keywords: "kontakt, betonske ograde, Zrenjanin, Adexto",
   openGraph: {
@@ -11,20 +11,9 @@ export const metadata = {
     description: "Kontaktirajte nas za više informacija o betonskim ogradama.",
     url: "https://adexto.com/kontakt",
     siteName: "Adexto",
-    images: [
-      {
-        url: "https://adexto.com/images/kontakt.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Kontakt Adexto",
-      },
-    ],
     type: "website",
   },
 };
-
-
-
 
 export default function ContactPage() {
   return (
@@ -34,5 +23,3 @@ export default function ContactPage() {
     </div>
   );
 }
-
-
