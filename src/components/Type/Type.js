@@ -3,7 +3,7 @@ import styles from "./Type.module.css";
 
 const Type = ({ type, index }) => {
   const { number, weight, path, small, height, width, price } = type;
-  const loadingType = index < 6 ? "eager" : "lazy";
+  const priority = index < 6 ? true : false;
 
   return (
     <div className={styles["type-container"]}>
@@ -14,7 +14,7 @@ const Type = ({ type, index }) => {
           src={path}
           small={small}
           alt={`type-${number}`}
-          loading={loadingType}
+          priority={priority}
         />
       </div>
       <p className={styles["type-height"]}>{height} mm</p>

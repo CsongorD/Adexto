@@ -24,8 +24,6 @@ const Logo = () => {
                 small={logo[0]?.small}
                 alt="adexto-logo"
                 priority={true}
-                width={100}
-                height={100}
               />
             </div>
             <h2>ADEXTO</h2>

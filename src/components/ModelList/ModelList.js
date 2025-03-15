@@ -51,6 +51,7 @@ const ModelList = ({ model, paginate, currentPage }) => {
       } else {
         setImageIndex((prevIndex) => prevIndex + 1);
       }
+
       setLoading(true);
     }
   }

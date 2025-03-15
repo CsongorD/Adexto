@@ -1,5 +1,5 @@
-import styles from "./Column.module.css";
 import Image from "../Image/Image";
+import styles from "./Column.module.css";
 
 const Column = ({ column }) => {
   const { name, path, small, options } = column;
@@ -7,7 +7,7 @@ const Column = ({ column }) => {
     <div className={styles["column-container"]}>
       <h2 className={styles["column-title"]}>{name}</h2>
       <div className={styles["column-image"]}>
-        <Image src={path} alt={name} small={small} loading="lazy" />
+        <Image src={path} alt={name} small={small} priority={false} />
       </div>
       <div className={styles["column-lengths"]}>
         <h3>DUŽINE:</h3>

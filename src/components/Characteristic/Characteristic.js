@@ -6,7 +6,7 @@ const Characteristic = ({ characteristic }) => {
   return (
     <div className={styles["characteristic-container"]}>
       <div className={styles["characteristic-image"]}>
-        <Image src={path} alt={text + "-logo"} small={small} loading={"lazy"} />
+        <Image src={path} alt={text + "-logo"} small={small} priority={false} />
       </div>
       <p>{text}</p>
     </div>
