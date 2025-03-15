@@ -43,29 +43,35 @@ export const metadata = {
   verification: {
     google: "ry2p4t0L_z9AhK5gYh4KU8vXzkYivtR_odspxBEJjJ4",
   },
+  other: {
+    "application/ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          name: "Adexto",
+          url: "https://adexto.com",
+        },
+        {
+          "@type": "Organization",
+          name: "Adexto",
+          url: "https://adexto.com",
+          logo: "https://adexto.com/images/logo.svg",
+          contactPoint: {
+            "@type": "ContactPoint",
+            telephone: "+381 66 8822 339",
+            contactType: "Customer Service",
+          },
+        },
+      ],
+    }),
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/favicon.ico" />
-        <link rel="manifest" href="/manifest.json" />
-        <link rel="preconnect" href="https://firebasestorage.googleapis.com" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              name: "Adexto",
-              url: "https://adexto.com/",
-            }),
-          }}
-        />
-      </head>
-      <body className={`${rubik.className} root-layout`}>
+    <html lang="sr-RS">
+      <body className={rubik.className + " root-layout"}>
         <Header />
         {children}
         <Footer />
