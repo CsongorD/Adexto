@@ -65,6 +65,9 @@ const Pagination = ({ modelsPerPage, totalModels, paginate, currentPage }) => {
             ` ${isFirstPage ? styles.disabled : ""}`
           }
           onClick={showPrevModel}
+          role="menuitem"
+          tabIndex={0}
+          onKeyDown={(e) => e.key === "Enter" && showPrevModel()}
         >
           <PrevIcon className={styles["arrow-icon"]} />
         </li>
@@ -79,6 +82,11 @@ const Pagination = ({ modelsPerPage, totalModels, paginate, currentPage }) => {
                 isActive ? styles.active : ""
               }`}
               onClick={() => !isDots && paginate(number)}
+              role="menuitem"
+              tabIndex={0}
+              onKeyDown={(e) =>
+                e.key === "Enter" && !isDots && paginate(number)
+              }
             >
               {number}
             </li>
@@ -93,6 +101,9 @@ const Pagination = ({ modelsPerPage, totalModels, paginate, currentPage }) => {
             ` ${isLastPage ? styles.disabled : ""}`
           }
           onClick={showNextModel}
+          role="menuitem"
+          tabIndex={0}
+          onKeyDown={(e) => e.key === "Enter" && showNextModel()}
         >
           <NextIcon className={styles["arrow-icon"]} />
         </li>

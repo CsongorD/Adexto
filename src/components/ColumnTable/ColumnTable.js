@@ -10,5 +10,5 @@ const ColumnTable = forwardRef((_props, ref) => {
     </div>
   );
 });
-
+ColumnTable.displayName = "ColumnTable";
 export default ColumnTable;

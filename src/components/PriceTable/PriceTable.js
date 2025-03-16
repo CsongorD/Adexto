@@ -27,6 +27,9 @@ export default function TypesPage() {
         <div
           className={styles["section-button"]}
           onClick={() => scrollToSection(typeSectionRef)}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => e.key === "Enter" && handleClick()}
         >
           <PlateIcon className={styles["plate-icon"]} />
           <h3 className={styles["section-text"]}>Ploče</h3>
@@ -34,6 +37,9 @@ export default function TypesPage() {
         <div
           className={styles["section-button"]}
           onClick={() => scrollToSection(columnSectionRef)}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => e.key === "Enter" && handleClick()}
         >
           <ColumnIcon className={styles["column-icon"]} />
           <h3 className={styles["section-text"]}>Stubovi</h3>
@@ -41,6 +47,9 @@ export default function TypesPage() {
         <div
           className={styles["section-button"]}
           onClick={() => scrollToSection(infoSectionRef)}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => e.key === "Enter" && handleClick()}
         >
           <InfoIcon className={styles["info-icon"]} />
           <h3 className={styles["section-text"]}>Info</h3>

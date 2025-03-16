@@ -17,6 +17,9 @@ const ImageSlider = ({
       <div
         className={styles["image-slider-button"] + " " + styles["prev"]}
         onClick={showPrevImage}
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => e.key === "Enter" && showPrevImage()}
       >
         <PrevIcon className={styles["arrow-icon"]} />
       </div>
@@ -32,6 +35,9 @@ const ImageSlider = ({
       <div
         className={styles["image-slider-button"] + " " + styles["next"]}
         onClick={showNextImage}
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => e.key === "Enter" && showNextImage()}
       >
         <NextIcon className={styles["arrow-icon"]} />
       </div>

@@ -10,5 +10,6 @@ const TypeTable = forwardRef((props, ref) => {
     </div>
   );
 });
+TypeTable.displayName = "TypeTable";
 
 export default TypeTable;

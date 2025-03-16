@@ -14,7 +14,7 @@ const NotFound = () => {
       <div className={styles["not-found-main"]}>
         <p className={styles["not-found-number"]}>404</p>
         <h3 className={styles["not-found-text"]}>
-          Sorry, we're not able to find what you were looking for.
+          Sorry, we&apos;re not able to find what you were looking for.
         </h3>
 
         <NavButton className={styles["nav-btn"]} to={"/"} text={"Naslovna"} />

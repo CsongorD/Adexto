@@ -1,8 +1,8 @@
 "use client";
 
+import useImages from "../../hooks/useImages";
 import ImageLoading from "../ImageLoading/ImageLoading";
 import MedalList from "../MedalList/MedalList";
-import useImages from "../../hooks/useImages";
 import styles from "./AboutUs.module.css";
 
 const AboutUs = () => {
@@ -28,7 +28,7 @@ const AboutUs = () => {
           firma je prva na teritoriji Balkana počela sa izradom betonskih
           proizvoda novom tehnologijom—armirani vibro beton, izuzetne
           izdržljivosti i trajnosti. Takođe, jedini smo dobitnici sertifikata
-          "FIRMA OD POVERENJA".
+          &ldquo;FIRMA OD POVERENJA&rdquo;.
         </p>
         <h2>Naš poslovni koncept</h2>
         <p>

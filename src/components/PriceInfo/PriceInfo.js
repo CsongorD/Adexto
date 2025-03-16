@@ -35,5 +35,6 @@ const PriceInfo = forwardRef((_props, ref) => {
     </div>
   );
 });
+PriceInfo.displayName = "PriceInfo";
 
 export default PriceInfo;
