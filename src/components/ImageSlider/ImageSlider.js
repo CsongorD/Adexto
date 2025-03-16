@@ -15,7 +15,7 @@ const ImageSlider = ({
   return (
     <div className={styles["image-slider"]}>
       <div
-        className={styles["image-slider-button"] + " " + styles["prev"]}
+        className={styles["image-slider-button"] + " " + styles.prev}
         onClick={showPrevImage}
         role="button"
         tabIndex={0}
@@ -33,7 +33,7 @@ const ImageSlider = ({
         />
       </div>
       <div
-        className={styles["image-slider-button"] + " " + styles["next"]}
+        className={styles["image-slider-button"] + " " + styles.next}
         onClick={showNextImage}
         role="button"
         tabIndex={0}
