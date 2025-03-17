@@ -6,6 +6,12 @@
   justify-content: center;
 }
 
+.fence-model-container video {
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 1200px) {
   .fence-model-container {
     width: 500px;
