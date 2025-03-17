@@ -1,4 +1,3 @@
-// import { memo } from "react";
 import styles from "./FooterItem.module.css";
 
 const FooterItem = ({ icon, title, info }) => {
