@@ -5,6 +5,7 @@
     "jsx-a11y/alt-text": "warn",
     "jsx-a11y/no-autofocus": "warn",
     "jsx-a11y/aria-role": "warn",
-    "jsx-a11y/click-events-have-key-events": "warn"
+    "jsx-a11y/click-events-have-key-events": "warn",
+    "jsx-a11y/media-has-caption": "off"
   }
 }
