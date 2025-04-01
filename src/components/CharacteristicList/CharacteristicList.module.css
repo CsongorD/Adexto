@@ -4,8 +4,7 @@
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  min-height: 20vh;
-  height: auto;
+  aspect-ratio: 5.3;
   padding: 40px;
   background-color: #bababa;
 }
