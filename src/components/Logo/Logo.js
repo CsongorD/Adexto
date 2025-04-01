@@ -9,7 +9,6 @@ const Logo = () => {
   const [logo, error] = useImages("logo");
 
   if (error) throw error;
-  if (!logo) return <ImageLoading />;
 
   return (
     <div className={styles["logo-container"]}>
@@ -19,12 +18,16 @@ const Logo = () => {
         text={
           <>
             <div className={styles["logo-image"]}>
-              <Image
-                src={logo[0]?.path}
-                small={logo[0]?.small}
-                alt="adexto-logo"
-                priority={true}
-              />
+              {!logo ? (
+                <ImageLoading />
+              ) : (
+                <Image
+                  src={logo[0]?.path}
+                  small={logo[0]?.small}
+                  alt="adexto-logo"
+                  priority={true}
+                />
+              )}
             </div>
             <h2>ADEXTO</h2>
           </>

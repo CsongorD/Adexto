@@ -9,13 +9,16 @@ const GalleryList = () => {
   const [gallery, error] = useImages("gallery");
 
   if (error) throw error;
-  if (!gallery) return <ImageLoading />;
 
   return (
     <div className={styles["gallery-list"]}>
-      {gallery?.map((image, index) => (
-        <GalleryImage image={image} key={index} index={index} />
-      ))}
+      {!gallery ? (
+        <ImageLoading />
+      ) : (
+        gallery?.map((image, index) => (
+          <GalleryImage image={image} key={index} index={index} />
+        ))
+      )}
     </div>
   );
 };
