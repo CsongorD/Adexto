@@ -20,13 +20,11 @@ const ContactCard = () => {
 
       <div className={styles["open-hours"]}>
         <h2 className={styles["card-title"]}>RADNO VREME!</h2>
-        <ul>
-          <li>Ponedeljak - Petak: 07:00 - 15:00</li>
-          <li>Subota, nedelja i praznici: po dogovoru.</li>
-        </ul>
-        <p className={styles["notice"]}>
-          Molimo Vas da zovete samo tokom našeg radnog vremena.
-        </p>
+
+        <p>Ponedeljak - Petak: 07:00 - 15:00</p>
+        <p>Subota, nedelja i praznici: po dogovoru.</p>
+        <br></br>
+        <p>Molimo Vas da zovete samo tokom našeg radnog vremena.</p>
       </div>
 
       <div className={styles["additional-info"]}>
