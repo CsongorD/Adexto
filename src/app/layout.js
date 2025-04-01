@@ -11,16 +11,28 @@ const rubik = Rubik({
 export const metadata = {
   title: {
     default: "Adexto - Betonske Ograde Zrenjanin",
-    template: "%s | Adexto", // Page title format
+    template: "%s | Adexto",
   },
   description:
-    "Adexto proizvodi visokokvalitetne betonske ograde u Zrenjaninu.",
-  manifest: "/manifest.json",
+    "Adexto proizvodi visokokvalitetne betonske ograde u Zrenjaninu, savršene za zaštitu i estetiku vašeg prostora.",
+  manifest: "/site.webmanifest",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "images/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "images/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: [
+      {
+        url: "images/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
   },
 
-  keywords: "betonske ograde, Zrenjanin, Adexto, ograda",
+  keywords:
+    "betonske ograde, Zrenjanin, Adexto, ograda, betonske ograde zaštita",
   alternates: {
     canonical: "https://adexto.com",
   },
@@ -31,7 +43,7 @@ export const metadata = {
   openGraph: {
     title: "Adexto - Betonske Ograde Zrenjanin",
     description:
-      "Adexto proizvodi visokokvalitetne betonske ograde u Zrenjaninu.",
+      "Adexto proizvodi visokokvalitetne betonske ograde u Zrenjaninu, savršene za zaštitu i estetiku vašeg prostora.",
     url: "https://adexto.com",
     siteName: "Adexto",
     type: "website",
