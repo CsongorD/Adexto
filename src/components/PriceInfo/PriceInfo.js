@@ -4,7 +4,7 @@ import styles from "./PriceInfo.module.css";
 const PriceInfo = forwardRef((_props, ref) => {
   return (
     <div className={styles["price-info"]} ref={ref}>
-      <h1 className={styles["title"]}>INFO</h1>
+      <h1 className="title">INFO</h1>
       <div className={styles["price-info-container"]}>
         <div className={styles["price-info-text"]}>
           <p>

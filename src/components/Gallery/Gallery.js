@@ -4,7 +4,7 @@ import styles from "./Gallery.module.css";
 const Gallery = () => {
   return (
     <div className={styles["gallery"]}>
-      <h1 className={"title"}>GALERIJA</h1>
+      <h1 className="title">GALERIJA</h1>
       <GalleryList />
     </div>
   );
