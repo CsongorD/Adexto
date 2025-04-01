@@ -7,7 +7,7 @@
   gap: 1rem;
   width: 100%;
   min-height: 20vh;
-  padding: 40px;
+  padding: 30px;
 }
 
 .image-slider-image {
@@ -23,7 +23,6 @@
 
 .image-slider-image .blur-load .image {
   object-fit: fill;
-  border-radius: 10px;
 }
 
 .image-slider-button.prev {

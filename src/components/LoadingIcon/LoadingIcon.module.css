@@ -1,10 +1,4 @@
 .svg g {
-  height: 100%;
-  width: 100%;
-  stroke: white;
-  fill-opacity: 0;
-  stroke-width: 15px;
-  stroke-dasharray: 5000;
   animation: draw infinite 3.5s ease-in-out;
 }
 

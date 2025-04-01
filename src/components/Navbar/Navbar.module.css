@@ -98,6 +98,7 @@
     z-index: 9999;
     fill: white;
     background-color: inherit;
+    border: none;
   }
   .navbar .menu-icon-container .menu-icon,
   .navbar .menu-icon-container .close-icon {
