@@ -3,16 +3,23 @@ import styles from "./LoadingIcon.module.css";
 const LoadingIcon = () => {
   return (
     <svg
-      className={styles["svg"]}
+      className={styles.svg}
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 86.000000 87.000000"
       preserveAspectRatio="xMidYMid meet"
+      width="100%"
+      height="100%"
     >
       <g
         transform="translate(0.000000,87.000000) scale(0.100000,-0.100000)"
+        width="100%"
+        height="100%"
         fill="#000000"
-        stroke="none"
+        stroke="white"
+        fillOpacity="0"
+        strokeWidth="15px"
+        strokeDasharray="5000"
         focusable="false"
       >
         <path
