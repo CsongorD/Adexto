@@ -25,7 +25,11 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <button className={styles["menu-icon-container"]} onClick={toggleSidebar}>
+      <button
+        className={styles["menu-icon-container"]}
+        onClick={toggleSidebar}
+        aria-label="menu-icon"
+      >
         {isOpen ? (
           <CloseIcon className={styles["close-icon"]} />
         ) : (
