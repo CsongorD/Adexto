@@ -32,6 +32,9 @@
   -o-user-select: none;
   color: black;
 
+  scrollbar-width: thin;
+  scrollbar-color: yellow #222327;
+
   /* GOOD BACKGROUND COLOR */
   /* background: #222327; */
 
@@ -79,28 +82,23 @@ a {
 p {
   font-size: var(--fs-p);
   font-weight: var(--fw-500);
-  /* background-color: pink; */
 }
 
 h1 {
   font-size: var(--fs-h1);
   font-weight: var(--fw-900);
-  /* background-color: blue; */
 }
 h2 {
   font-size: var(--fs-h2);
   font-weight: var(--fw-800);
-  /* background-color: green; */
 }
 h3 {
   font-size: var(--fs-h3);
   font-weight: var(--fw-600);
-  /* background-color: red; */
 }
 a {
   font-size: var(--fs-a);
   font-weight: var(--fw-500);
-  /* background-color: yellow; */
 }
 
 .title {
