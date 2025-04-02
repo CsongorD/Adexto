@@ -45,6 +45,8 @@
 @media (max-width: 680px) {
   .about-us {
     flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
