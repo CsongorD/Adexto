@@ -5,6 +5,9 @@
   justify-items: center;
   align-content: center;
   width: 100%;
-  height: 85vh;
-  /* background-color: purple; */
+  min-height: 85vh;
+}
+
+.model-table {
+  min-height: 85vh;
 }

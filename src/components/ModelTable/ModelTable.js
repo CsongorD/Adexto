@@ -6,7 +6,7 @@ import ImageLoading from "../ImageLoading/ImageLoading";
 import ModelList from "../ModelList/ModelList";
 import Pagination from "../Pagination/Pagination";
 
-import styles from "./ModelTable.module.css"; // Assuming you have a CSS file for styling
+import styles from "./ModelTable.module.css";
 
 const MODELS_PER_PAGE = 1;
 
@@ -18,7 +18,7 @@ export default function ModelTable() {
 
   if (!models) {
     return (
-      <div className={styles["loading-container"]}>
+      <div className={styles["loading-container"] + " " + "page-margin-top"}>
         <ImageLoading />
       </div>
     );
@@ -36,7 +36,7 @@ export default function ModelTable() {
   };
 
   return (
-    <div className={styles["model-table"] + " page-margin-top"}>
+    <div className={styles["model-table"] + " " + "page-margin-top"}>
       <Pagination
         modelsPerPage={MODELS_PER_PAGE}
         totalModels={totalModels}
