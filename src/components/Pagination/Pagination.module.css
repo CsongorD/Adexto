@@ -1,0 +1,260 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+  width: 100%;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.pagination ul {
+  display: flex;
+  background-color: #bababa;
+  padding: 8px;
+  border-radius: 50px;
+}
+.pagination ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.pagination ul .numb {
+  border-radius: 100%;
+}
+.pagination ul .dots {
+  font-size: 22px;
+  cursor: default;
+}
+
+.pagination ul .numb,
+.pagination ul .dots {
+  height: 45px;
+  width: 45px;
+  margin: 0 1px;
+}
+
+.pagination ul .btn {
+  background-color: yellow;
+  border: 2px black solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  padding: 0 10px;
+}
+
+.pagination ul .active,
+.pagination ul .btn:active,
+.pagination ul .numb:active {
+  color: #fff;
+  fill: white;
+  background: #222327;
+}
+.pagination ul .disabled,
+.pagination ul .disabled:active,
+.pagination ul .disabled svg {
+  background-color: gray;
+  border: 2px gray solid;
+  stroke: white;
+  cursor: default;
+}
+.pagination ul .btn .arrow-icon {
+  width: 35px;
+  height: 35px;
+  background-color: inherit;
+  stroke-width: 3px;
+}
+
+.pagination ul .prev {
+  border-radius: 25px 5px 5px 25px;
+}
+
+.pagination ul .next {
+  border-radius: 5px 25px 25px 5px;
+}
+@media (hover: hover) {
+  .pagination ul .numb:hover,
+  .pagination ul .btn:hover {
+    color: #fff;
+    stroke: white;
+    background: #222327;
+  }
+  .pagination ul .btn:hover .arrow-icon {
+    stroke: white;
+  }
+  .pagination ul .disabled:hover {
+    background-color: gray;
+    border: 2px gray solid;
+    color: white;
+    fill: white;
+    cursor: default;
+  }
+}
+
+@media (max-width: 550px) {
+  .pagination ul .numb,
+  .pagination ul .dots {
+    height: 40px;
+    width: 40px;
+  }
+
+  .pagination ul .btn {
+    width: 45px;
+  }
+  .pagination ul .btn .arrow-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .pagination {
+    padding: 10px;
+  }
+  .pagination ul .disabled,
+  .pagination ul .disabled:active {
+    border: 1px gray solid;
+  }
+}
+
+@media (max-width: 420px) {
+  .pagination ul li {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .pagination ul .dots {
+    font-size: 18px;
+  }
+
+  .pagination ul .numb,
+  .pagination ul .dots {
+    height: 35px;
+    width: 35px;
+  }
+
+  .pagination ul .btn {
+    width: 40px;
+    border: 1px black solid;
+  }
+  .pagination ul .disabled,
+  .pagination ul .disabled:active {
+    border: 1px gray solid;
+  }
+
+  .pagination ul .btn .arrow-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (max-width: 370px) {
+  .pagination ul li {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .pagination ul .dots {
+    font-size: 15px;
+  }
+
+  .pagination ul .numb,
+  .pagination ul .dots {
+    height: 30px;
+    width: 30px;
+  }
+
+  .pagination ul .btn {
+    width: 35px;
+  }
+
+  .pagination ul .btn .arrow-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .pagination ul li {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .pagination ul .dots {
+    font-size: 15px;
+  }
+
+  .pagination ul .numb,
+  .pagination ul .dots {
+    height: 25px;
+    width: 25px;
+  }
+
+  .pagination ul .btn {
+    width: 30px;
+    padding: 0 8px;
+  }
+
+  .pagination ul .btn .arrow-icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 270px) {
+  .pagination {
+    padding: 5px;
+  }
+  .pagination ul li {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .pagination ul {
+    padding: 5px;
+  }
+
+  .pagination ul .dots {
+    font-size: 12px;
+  }
+
+  .pagination ul .numb,
+  .pagination ul .dots {
+    height: 20px;
+    width: 20px;
+  }
+
+  .pagination ul .btn {
+    width: 25px;
+  }
+
+  .pagination ul .btn .arrow-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 230px) {
+  .pagination ul {
+    /* width: 100%; */
+  }
+  .pagination ul .numb,
+  .pagination ul .dots,
+  .pagination ul .btn {
+    height: 15px;
+    width: 15px;
+  }
+  .pagination ul .btn .arrow-icon {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pagination ul .btn {
+    padding: 3px;
+  }
+}

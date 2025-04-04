@@ -1,0 +1,86 @@
+.column-container {
+  background-color: white;
+  width: clamp(50px, 90vw, 500px);
+  height: auto;
+  border: 4px black solid;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.column-title {
+  padding: 30px 10px;
+  text-align: center;
+  width: 100%;
+}
+.column-image {
+  border: 1px solid black;
+  width: clamp(50px, 100%, 400px);
+  aspect-ratio: 1 / 1.3;
+  height: 600px;
+}
+.column-image .blur-load image {
+  object-fit: fill;
+}
+.column-lengths h3,
+.column-lengths div {
+  background-color: inherit;
+}
+.column-lengths {
+  text-align: center;
+  padding: 20px;
+}
+
+.column-length {
+  text-align: start;
+}
+@media (max-width: 600px) {
+  .column-image {
+    height: auto;
+  }
+}
+@media (max-width: 460px) {
+  .column-table .column-title {
+    padding: 15px;
+  }
+}
+@media (max-width: 420px) {
+  .column-container {
+    border: 2px solid black;
+  }
+
+  .column-lengths {
+    padding: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .column-container {
+    margin: 5px;
+  }
+
+  .column-lengths {
+    padding: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .column-container {
+    margin: 2px;
+  }
+}
+@media (max-width: 250px) {
+  .column-table .column-title {
+    padding: 10px 0px;
+  }
+}
+@media (max-width: 150px) {
+  .column-table .column-title {
+    padding: 5px 0px;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 100px) {
+  .column-table .column-title {
+    font-size: 0.6rem;
+  }
+}

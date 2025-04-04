@@ -2,32 +2,20 @@
   "name": "adexto",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
-  "homepage": ".",
   "dependencies": {
-    "@splinetool/react-spline": "^2.2.6",
-    "@splinetool/runtime": "^1.3.8",
-    "boxicons": "^2.1.4",
-    "firebase": "^10.12.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-helmet-async": "^2.0.5",
-    "react-router-dom": "^6.23.1",
-    "vite-plugin-env-compatible": "^2.0.1"
+    "firebase": "^11.6.0",
+    "lucide-react": "^0.487.0",
+    "next": "^15.2.4",
+    "next-sitemap": "^4.2.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "scripts": {
-    "start": "vite",
-    "build": "vite build",
-    "test": "vite test",
-    "eject": "vite eject",
-    "serve": "vite preview",
-    "snap": "react-snap"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "postbuild": "next-sitemap",
+    "lint": "next lint"
   },
   "browserslist": {
     "production": [
@@ -42,9 +30,11 @@
     ]
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.2.1",
-    "react-snap": "^1.23.0",
-    "vite": "^5.2.11",
-    "vite-plugin-svgr": "^4.2.0"
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.23.0",
+    "eslint": "^9.23.0",
+    "eslint-config-next": "^15.2.4",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2"
   }
 }

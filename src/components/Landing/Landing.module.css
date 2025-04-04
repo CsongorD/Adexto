@@ -1,0 +1,134 @@
+.landing-container {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.landing-container .landing-text-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  width: 40%;
+}
+
+.landing-container .landing-text-container .landing-title {
+  margin: 0 0 45px;
+  line-height: 1.3;
+}
+
+.landing-container .landing-text-container .landing-text {
+  line-height: 1.9;
+  margin-bottom: 40px;
+  max-width: 85%;
+}
+
+.landing-container .landing-text-container .landing-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.landing-container .landing-text-container .landing-buttons .nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #222327;
+  border: 1px solid #222327;
+  border-radius: 30px;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  transition: all 0.55s ease;
+}
+.landing-container .landing-text-container .landing-buttons .nav-btn:hover,
+.landing-container .landing-text-container .landing-buttons .btn-transparent {
+  background-color: transparent;
+  color: black;
+}
+
+.landing-container .landing-text-container .landing-buttons .nav-btn:hover {
+  transform: translateX(8px);
+}
+
+.landing-container
+  .landing-text-container
+  .landing-buttons
+  .nav-btn
+  .play-icon {
+  width: 20px;
+  height: 20px;
+  fill: black;
+}
+
+@media (max-width: 1280px) {
+  .landing-container {
+    min-height: calc(100vh - 70px);
+  }
+}
+
+@media (max-width: 800px) {
+  .landing-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 60vh;
+  }
+  .landing-container .landing-text-container {
+    width: 80%;
+  }
+}
+@media (max-width: 490px) {
+  .landing-container .landing-text-container {
+    width: 90%;
+  }
+}
+@media (max-width: 450px) {
+  .landing-container .landing-text-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .landing-container .landing-text-container {
+    padding: 20px;
+  }
+  .landing-container .landing-text-container .landing-buttons .nav-btn {
+    padding: 10px 20px;
+  }
+
+  .landing-container .landing-text-container .landing-title {
+    margin-bottom: 25px;
+  }
+  .landing-container .landing-text-container .landing-text {
+    margin-bottom: 20px;
+  }
+  .landing-container
+    .landing-text-container
+    .landing-buttons
+    .nav-btn
+    .play-icon {
+    width: 16px;
+    height: 16px;
+    fill: black;
+  }
+}
+@media (max-width: 280px) {
+  .landing-container .landing-text-container .landing-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (max-width: 250px) {
+  .landing-container .landing-text-container {
+    padding: 10px;
+  }
+}
+@media (max-width: 150px) {
+  .landing-container .landing-text-container .landing-buttons .nav-btn {
+    padding: 5px 15px;
+  }
+}
