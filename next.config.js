@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -10,5 +11,6 @@ const nextConfig = {
       },
     ],
   },
+  output: "export",
 };
 module.exports = nextConfig;
