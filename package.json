@@ -15,7 +15,8 @@
     "build": "next build",
     "start": "next start",
     "postbuild": "next-sitemap",
-    "lint": "next lint"
+    "lint": "next lint",
+    "serve-static": "serve out"
   },
   "browserslist": {
     "production": [
