@@ -69,18 +69,19 @@
   }
 }
 @media (max-width: 250px) {
-  .column-table .column-title {
+  .column-container .column-title {
     padding: 10px 0px;
   }
 }
 @media (max-width: 150px) {
-  .column-table .column-title {
+  .column-container .column-title {
     padding: 5px 0px;
     font-size: 0.8rem;
   }
 }
 @media (max-width: 100px) {
-  .column-table .column-title {
+  .column-container .column-title {
     font-size: 0.6rem;
+    padding: 0px;
   }
 }
