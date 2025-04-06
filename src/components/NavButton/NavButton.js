@@ -5,8 +5,13 @@ import styles from "../Navbar/Navbar.module.css";
 
 const NavButton = ({ to, text, onClick = () => {}, className = "" }) => {
   const pathname = usePathname(); // Replaces useRouter() for Next.js App Router
-  const isActive = pathname === to;
+  let isActive = false;
 
+  if (pathname === "/") {
+    isActive = pathname === to;
+  } else {
+    isActive = pathname.slice(0, -1) === to;
+  }
   const handleClick = (event) => {
     if (pathname === to) {
       event.preventDefault(); // Prevents reloading the same page

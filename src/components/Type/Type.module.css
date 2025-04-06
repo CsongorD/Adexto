@@ -135,3 +135,22 @@
     font-size: 0.5rem;
   }
 }
+
+@media (max-width: 170px) {
+  .type-container {
+    display: grid;
+    grid-template-areas:
+      "tnumber"
+      "timage"
+      "twidth"
+      "theight"
+      "tweight"
+      "tprice";
+    align-items: center;
+    justify-content: center;
+  }
+
+  .width-sizer,.height-sizer {
+    display: none;
+  }
+}

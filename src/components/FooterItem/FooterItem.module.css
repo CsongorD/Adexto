@@ -9,11 +9,12 @@
 }
 
 .info-container .info-text .footer-info {
-  color: #b3b3b3;
+  color: #b3b3b3 !important;
   text-align: start;
   font-size: 1rem;
+  text-decoration: none;
+  -webkit-text-fill-color: inherit;
 }
-
 
 .info-container .icon-container {
   display: flex;
@@ -70,5 +71,14 @@
   }
   .info-container .info-text {
     padding: 0;
+  }
+}
+
+@media (max-width: 130px) {
+  .info-container .footer-info-title {
+    display: none;
+  }
+  .info-container .info-text .footer-info {
+    font-size: 0.6rem;
   }
 }

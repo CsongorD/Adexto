@@ -22,6 +22,7 @@ storage.rules
 # Production build folder (Next.js defaults to `.next/`, but include `/build/` if using custom `distDir`)
 /.next
 /build
+/out
 
 # Miscellaneous OS and IDE-specific files
 .DS_Store
