@@ -1,4 +1,3 @@
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Rubik } from "next/font/google";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
@@ -88,7 +87,6 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
-        <SpeedInsights />
       </body>
     </html>
   );
