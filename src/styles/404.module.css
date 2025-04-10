@@ -1,40 +1,26 @@
 .not-found-page {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
-  background: rgba(22, 23, 27, 0.7);
+  height: 100%;
+  background-color: rgba(22, 23, 27, 0.7);
   backdrop-filter: blur(10px);
 }
-.not-found-page .not-found-header,
-.not-found-page .not-found-footer,
-.not-found-page .not-found-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  gap: 10px;
-}
-.not-found-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  /* gap: 70px; */
-}
-.not-found-main .not-found-number {
+
+.not-found-page .not-found-number {
   font-size: clamp(10px, 25vw + 1rem, 100px);
   font-weight: 900;
-  color: rgba(255, 255, 0, 0.721);
-  -webkit-text-stroke: 3px rgb(63, 63, 63);
+  color: yellow;
+  -webkit-text-stroke: 3px #222327;
+  background-color: transparent;
 }
 
-.not-found-text {
+.not-found-page .not-found-text {
   padding: 20px;
-  padding-top: 50px;
+  color: white;
+  background-color: transparent;
 }
 
 .not-found-page .nav-btn {
@@ -46,24 +32,15 @@
   align-items: center;
   justify-content: center;
   color: white;
+  background-color: transparent;
 }
 .not-found-page .nav-btn:hover {
   background-color: white;
   color: black;
 }
 
-.not-found-page .loading-logo-container {
-  width: 60px;
-  height: 60px;
-}
-.not-found-page h1,
-.not-found-page h3,
-.not-found-page p {
-  color: white;
-}
-
 @media (max-width: 250px) {
-  .not-found-text {
+  .not-found-page .not-found-text {
     padding: 10px;
   }
 }
