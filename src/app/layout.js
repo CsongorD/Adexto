@@ -1,4 +1,5 @@
 import { Rubik } from "next/font/google";
+import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import "../styles/global.css";
@@ -84,6 +85,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="sr-RS">
       <body className={rubik.className + " " + "root-layout"}>
+        <ErrorBoundary />
         <Header />
         {children}
         <Footer />
