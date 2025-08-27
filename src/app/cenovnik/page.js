@@ -16,6 +16,10 @@ export const metadata = {
   },
 };
 
-export default function TypesPage() {
-  return <PriceTable />;
+export default function PricePage() {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <PriceTable />
+    </div>
+  );
 }

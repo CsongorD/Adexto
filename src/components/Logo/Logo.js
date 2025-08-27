@@ -3,7 +3,6 @@ import useImages from "../../hooks/useImages";
 import Image from "../Image/Image";
 import ImageLoading from "../ImageLoading/ImageLoading";
 import NavButton from "../NavButton/NavButton";
-import styles from "./Logo.module.css";
 
 const Logo = () => {
   const [logo, error] = useImages("logo");
@@ -11,13 +10,13 @@ const Logo = () => {
   if (error) throw error;
 
   return (
-    <div className={styles["logo-container"]}>
+    <div className="flex items-center">
       <NavButton
-        className={styles["logo"]}
+        className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-300"
         to="/"
         text={
           <>
-            <div className={styles["logo-image"]}>
+            <div className="w-10 h-10 relative">
               {!logo ? (
                 <ImageLoading />
               ) : (
@@ -29,11 +28,14 @@ const Logo = () => {
                 />
               )}
             </div>
-            <h2>ADEXTO</h2>
+            <h2 className="text-2xl font-bold text-white tracking-tight">
+              ADEXTO
+            </h2>
           </>
         }
       />
     </div>
   );
 };
+
 export default Logo;

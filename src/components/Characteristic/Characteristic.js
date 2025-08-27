@@ -1,14 +1,21 @@
 import Image from "../Image/Image";
-import styles from "./Characteristic.module.css";
 
 const Characteristic = ({ characteristic }) => {
   const { path, text, small } = characteristic;
+  
   return (
-    <div className={styles["characteristic-container"]}>
-      <div className={styles["characteristic-image"]}>
-        <Image src={path} alt={text + "-logo"} small={small} priority={false} />
+    <div className="card p-6 text-center group hover:scale-105 transition-all duration-300">
+      <div className="w-20 h-20 mx-auto mb-4 relative group-hover:scale-110 transition-transform duration-300">
+        <Image 
+          src={path} 
+          alt={text + "-logo"} 
+          small={small} 
+          priority={false} 
+        />
       </div>
-      <p>{text}</p>
+      <p className="text-gray-700 font-medium leading-relaxed">
+        {text}
+      </p>
     </div>
   );
 };

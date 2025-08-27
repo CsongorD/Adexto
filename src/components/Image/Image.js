@@ -2,7 +2,6 @@
 
 import NextImage from "next/image";
 import { useEffect, useState } from "react";
-import styles from "./Image.module.css";
 
 const Image = ({
   src,
@@ -12,26 +11,53 @@ const Image = ({
   onLoad = () => {},
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [imageError, setImageError] = useState(false);
 
   useEffect(() => {
     setIsLoaded(true);
   }, []);
 
+  const handleLoad = () => {
+    setIsLoaded(true);
+    onLoad();
+  };
+
+  const handleError = () => {
+    setImageError(true);
+  };
+
+  if (imageError) {
+    return (
+      <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+        <div className="text-gray-400 text-center">
+          <svg className="w-12 h-12 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
+          </svg>
+          <p className="text-sm">Image not available</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div
-      className={styles["blur-load"] + `${isLoaded ? " " + styles.loaded : ""}`}
-      style={{ backgroundImage: isLoaded ? `url(${small})` : "none" }}
-    >
+    <div className="relative w-full h-full bg-gray-100">
+      {!isLoaded && (
+        <div className="absolute inset-0 bg-gray-200 animate-pulse rounded" />
+      )}
+      
       <NextImage
         src={src}
         alt={alt}
-        className={styles["image"]}
+        className={`w-full h-full object-cover transition-opacity duration-300 ${
+          isLoaded ? 'opacity-100' : 'opacity-0'
+        }`}
         fill={true}
-        onLoad={onLoad}
+        onLoad={handleLoad}
+        onError={handleError}
         priority={priority}
         placeholder={small ? "blur" : "empty"}
         blurDataURL={small}
-        // {/* sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" */}
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
     </div>
   );

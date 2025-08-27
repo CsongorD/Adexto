@@ -1,10 +1,9 @@
 import LoadingIcon from "../LoadingIcon/LoadingIcon";
-import styles from "./ImageLoading.module.css";
 
 const ImageLoading = () => {
   return (
-    <div className={styles["image-loading"]}>
-      <div className={styles["image-loading-container"]}>
+    <div className="flex items-center justify-center p-8">
+      <div className="w-16 h-16">
         <LoadingIcon />
       </div>
     </div>

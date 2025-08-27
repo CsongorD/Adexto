@@ -3,7 +3,6 @@
 import useImages from "../../hooks/useImages";
 import GalleryImage from "../GalleryImage/GalleryImage";
 import ImageLoading from "../ImageLoading/ImageLoading";
-import styles from "./GalleryList.module.css";
 
 const GalleryList = () => {
   const [gallery, error] = useImages("gallery");
@@ -11,12 +10,16 @@ const GalleryList = () => {
   if (error) throw error;
 
   return (
-    <div className={styles["gallery-list"]}>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {!gallery ? (
-        <ImageLoading />
+        <div className="col-span-full flex justify-center py-12">
+          <ImageLoading />
+        </div>
       ) : (
         gallery?.map((image, index) => (
-          <GalleryImage image={image} key={index} index={index} />
+          <div key={index} className="animate-fade-in" style={{animationDelay: `${index * 0.05}s`}}>
+            <GalleryImage image={image} index={index} />
+          </div>
         ))
       )}
     </div>

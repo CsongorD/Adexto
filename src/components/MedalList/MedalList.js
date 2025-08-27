@@ -1,13 +1,15 @@
-import styles from "./MedalList.module.css";
 import Medal from "../Medal/Medal";
 
 const MedalList = ({ medals = [] }) => {
   return (
-    <div className={styles["medal-list"]}>
+    <div className="flex flex-col space-y-6">
       {medals.map((medal, index) => (
-        <Medal medal={medal} key={index} />
+        <div key={index} className="animate-fade-in" style={{animationDelay: `${index * 0.2}s`}}>
+          <Medal medal={medal} />
+        </div>
       ))}
     </div>
   );
 };
+
 export default MedalList;

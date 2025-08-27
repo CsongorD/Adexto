@@ -6,8 +6,6 @@ import ImageLoading from "../ImageLoading/ImageLoading";
 import ModelList from "../ModelList/ModelList";
 import Pagination from "../Pagination/Pagination";
 
-import styles from "./ModelTable.module.css";
-
 const MODELS_PER_PAGE = 1;
 
 export default function ModelTable() {
@@ -18,7 +16,7 @@ export default function ModelTable() {
 
   if (!models) {
     return (
-      <div className={styles["loading-container"] + " " + "page-margin-top"}>
+      <div className="min-h-screen flex items-center justify-center">
         <ImageLoading />
       </div>
     );
@@ -36,18 +34,30 @@ export default function ModelTable() {
   };
 
   return (
-    <div className={styles["model-table"] + " " + "page-margin-top"}>
-      <Pagination
-        modelsPerPage={MODELS_PER_PAGE}
-        totalModels={totalModels}
-        paginate={handlePagination}
-        currentPage={currentPage}
-      />
-      <ModelList
-        model={currentModel}
-        paginate={handlePagination}
-        currentPage={currentPage}
-      />
+    <div className="section-padding">
+      <div className="container-custom">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            Naši <span className="text-gradient">Modeli</span>
+          </h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Pregledajte našu kolekciju betonskih ograda i pronađite savršen dizajn za vaš prostor
+          </p>
+        </div>
+        
+        <Pagination
+          modelsPerPage={MODELS_PER_PAGE}
+          totalModels={totalModels}
+          paginate={handlePagination}
+          currentPage={currentPage}
+        />
+        
+        <ModelList
+          model={currentModel}
+          paginate={handlePagination}
+          currentPage={currentPage}
+        />
+      </div>
     </div>
   );
 }

@@ -1,15 +1,23 @@
 import { forwardRef } from "react";
 import TypeList from "../TypeList/TypeList";
-import styles from "./TypeTable.module.css";
 
 const TypeTable = forwardRef((props, ref) => {
   return (
-    <div className={styles["type-table"]} ref={ref}>
-      <h1 className="title">PLOČE</h1>
-      <TypeList />
-    </div>
+    <section ref={ref} className="section-padding bg-white">
+      <div className="container-custom">
+        <div className="text-center mb-16">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            Betonske <span className="text-gradient">Ploče</span>
+          </h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Širok izbor kvalitetnih betonskih ploča za sve vaše potrebe
+          </p>
+        </div>
+        <TypeList />
+      </div>
+    </section>
   );
 });
-TypeTable.displayName = "TypeTable";
 
+TypeTable.displayName = "TypeTable";
 export default TypeTable;
