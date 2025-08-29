@@ -10,7 +10,7 @@ const CharacteristicList = () => {
   if (error) throw error;
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-grey-50">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">

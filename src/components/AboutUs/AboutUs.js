@@ -10,7 +10,7 @@ const AboutUs = () => {
   if (error) throw error;
 
   return (
-    <section className="section-padding bg-gray-50">
+    <section className="section-padding bg-white">
       <div className="container-custom">
         <div className="grid lg:grid-cols-3 gap-12 items-start">
           {/* Left medals */}

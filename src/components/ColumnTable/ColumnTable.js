@@ -3,7 +3,7 @@ import ColumnList from "../ColumnList/ColumnList";
 
 const ColumnTable = forwardRef((_props, ref) => {
   return (
-    <section ref={ref} className="section-padding bg-gray-50">
+    <section ref={ref} className="section-padding bg-grey-50">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">

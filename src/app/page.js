@@ -20,7 +20,7 @@ export const metadata = {
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white">
       <Landing />
       <CharacteristicList />
       <AboutUs />
