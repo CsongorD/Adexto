@@ -21,14 +21,14 @@ const CharacteristicList = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+        <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
           {!characteristics ? (
-            <div className="col-span-full flex justify-center">
+            <div className="w-full flex justify-center">
               <ImageLoading />
             </div>
           ) : (
             characteristics?.map((characteristic, index) => (
-              <div key={index} className="animate-fade-in" style={{animationDelay: `${index * 0.1}s`}}>
+              <div key={index} className="animate-fade-in w-full sm:w-auto sm:min-w-[280px] sm:max-w-[320px]" style={{animationDelay: `${index * 0.1}s`}}>
                 <Characteristic characteristic={characteristic} />
               </div>
             ))
