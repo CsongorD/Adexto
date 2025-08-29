@@ -16,7 +16,7 @@ const Landing = () => {
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-6">
               <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
-                <span className="text-primary-500">ADEXTO</span>
+                <span className="text-gray-800">ADEXTO</span>
                 <span className="text-2xl lg:text-3xl font-light text-gray-500 ml-3">
                   d.o.o.
                 </span>
