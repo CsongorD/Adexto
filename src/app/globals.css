@@ -38,7 +38,7 @@
   }
   
   .gradient-bg {
-    @apply bg-gradient-to-br from-grey-900 via-grey-800 to-grey-900;
+    @apply bg-gradient-to-br from-dark-900 via-dark-800 to-dark-900;
   }
   
   .text-gradient {
