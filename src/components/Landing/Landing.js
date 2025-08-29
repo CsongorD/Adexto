@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <section className="min-h-screen gradient-bg flex items-center relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/10 to-transparent"></div>
+      <div className="absolute inset-0 bg-primary-500/5"></div>
       <div className="absolute top-20 right-20 w-72 h-72 bg-primary-500/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-20 w-96 h-96 bg-primary-400/5 rounded-full blur-3xl"></div>
       
@@ -16,7 +16,7 @@ const Landing = () => {
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-6">
               <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight">
-                <span className="text-gradient">ADEXTO</span>
+                <span className="text-primary-500">ADEXTO</span>
                 <br />
                 <span className="text-3xl lg:text-4xl font-medium text-gray-300">
                   D.O.O
