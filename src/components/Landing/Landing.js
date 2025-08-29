@@ -4,27 +4,27 @@ import NavButton from "../NavButton/NavButton";
 
 const Landing = () => {
   return (
-    <section className="min-h-screen gradient-bg flex items-center relative overflow-hidden">
+    <section className="min-h-screen bg-white flex items-center relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute inset-0 bg-primary-500/5"></div>
-      <div className="absolute top-20 right-20 w-72 h-72 bg-primary-500/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 left-20 w-96 h-96 bg-primary-400/5 rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 bg-gray-50/30"></div>
+      <div className="absolute top-20 right-20 w-72 h-72 bg-gray-100/40 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 left-20 w-96 h-96 bg-gray-100/30 rounded-full blur-3xl"></div>
       
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh] section-padding">
           {/* Content */}
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-6">
-              <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight">
+              <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
                 <span className="text-primary-500">ADEXTO</span>
                 <br />
-                <span className="text-3xl lg:text-4xl font-medium text-gray-300">
+                <span className="text-3xl lg:text-4xl font-medium text-gray-600">
                   D.O.O
                 </span>
               </h1>
               
-              <p className="text-xl text-gray-300 leading-relaxed max-w-2xl">
-                Firma <span className="text-primary-400 font-semibold">ADEXTO</span> nudi vam 
+              <p className="text-xl text-gray-700 leading-relaxed max-w-2xl">
+                Firma <span className="text-primary-600 font-semibold">ADEXTO</span> nudi vam 
                 betonske ograde sa ugradnjom vrhunskog kvaliteta i velikim izborom dezena.
               </p>
             </div>
