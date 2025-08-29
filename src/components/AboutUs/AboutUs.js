@@ -60,9 +60,9 @@ const AboutUs = () => {
               <h3 className="text-xl font-semibold text-gray-900">Naša priznanja</h3>
               
               {medals ? (
-                <div className="grid grid-cols-3 lg:grid-cols-2 gap-4">
+                <div className="grid grid-cols-4 lg:grid-cols-3 gap-3">
                   {medals.map((medal, index) => (
-                    <div key={index} className="bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-colors duration-200">
+                    <div key={index} className="bg-gray-50 rounded-lg p-2 hover:bg-gray-100 transition-colors duration-200">
                       <div className="w-full aspect-square rounded overflow-hidden">
                         <img 
                           src={medal.path} 
