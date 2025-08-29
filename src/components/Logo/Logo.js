@@ -12,7 +12,7 @@ const Logo = () => {
   return (
     <div className="flex items-center">
       <NavButton
-        className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-300 focus:outline-none focus:ring-0 focus:border-none focus:shadow-none active:outline-none active:ring-0 active:border-none"
+        className="logo-no-focus flex items-center space-x-3 hover:opacity-80 transition-opacity duration-300"
         to="/"
         text={
           <>
