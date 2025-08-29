@@ -1,5 +1,5 @@
 import FenceModel from "../FenceModel/FenceModel";
-import PlayIcon from "../Icons/PlayIcon";
+import { Eye } from "lucide-react";
 import NavButton from "../NavButton/NavButton";
 
 const Landing = () => {
@@ -40,7 +40,7 @@ const Landing = () => {
                 to="/modeli"
                 text={
                   <>
-                    <PlayIcon className="w-5 h-5" />
+                    <Eye className="w-5 h-5" />
                     <span>POGLEDAJ MODELE</span>
                   </>
                 }
