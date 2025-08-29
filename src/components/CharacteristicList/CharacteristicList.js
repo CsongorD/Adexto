@@ -28,7 +28,7 @@ const CharacteristicList = () => {
             </div>
           ) : (
             characteristics?.map((characteristic, index) => (
-              <div key={index} className="animate-fade-in w-full sm:w-auto sm:min-w-[280px] sm:max-w-[320px]" style={{animationDelay: `${index * 0.1}s`}}>
+              <div key={index} className="animate-fade-in w-full sm:w-auto sm:flex-1 sm:min-w-[250px] sm:max-w-[300px]" style={{animationDelay: `${index * 0.1}s`}}>
                 <Characteristic characteristic={characteristic} />
               </div>
             ))
