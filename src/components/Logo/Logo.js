@@ -25,7 +25,7 @@ const Logo = () => {
                   small={logo[0]?.small}
                   alt="adexto-logo"
                   priority={true}
-                 className="filter brightness-0 invert"
+                 className="filter brightness-0 invert bg-transparent"
                 />
               )}
             </div>
