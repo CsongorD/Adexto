@@ -17,8 +17,8 @@ const Landing = () => {
             <div className="space-y-6">
               <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
                 <span className="text-gray-900">ADEXTO</span>
-                <span className="text-xl lg:text-2xl font-medium text-gray-600 ml-4 tracking-wider uppercase">
-                  LLC
+                <span className="text-xl lg:text-2xl font-medium text-gray-600 ml-4 tracking-wider">
+                  d.o.o.
                 </span>
               </h1>
               
