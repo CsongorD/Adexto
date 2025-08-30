@@ -8,7 +8,7 @@ const ColumnList = () => {
   if (error) throw error;
 
   return (
-    <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
       {!columns ? (
         <div className="col-span-full flex justify-center py-12">
           <ImageLoading />
