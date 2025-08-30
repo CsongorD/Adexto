@@ -8,7 +8,7 @@ const TypeList = () => {
   if (error) throw error;
 
   return (
-    <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+    <div className="grid lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
       {!types ? (
         <div className="col-span-full flex justify-center py-12">
           <ImageLoading />
