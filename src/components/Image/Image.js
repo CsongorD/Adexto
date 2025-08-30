@@ -40,9 +40,9 @@ const Image = ({
   }
 
   return (
-    <div className="relative w-full h-full bg-gray-100">
+    <div className="relative w-full h-full">
       {!isLoaded && (
-        <div className="absolute inset-0 bg-gray-200 animate-pulse rounded" />
+        <div className="absolute inset-0 bg-gray-700/20 animate-pulse rounded" />
       )}
       
       <NextImage
