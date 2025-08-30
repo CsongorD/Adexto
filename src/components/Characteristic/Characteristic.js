@@ -13,11 +13,11 @@ const Characteristic = ({ characteristic }) => {
   const IconComponent = iconMap[text] || Shield;
   
   return (
-    <div className="card p-6 text-center group hover:scale-105 transition-all duration-300">
+    <div className="card p-6 text-center group hover:scale-105 transition-all duration-300 h-48 flex flex-col justify-center items-center">
       <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-primary-50 rounded-full group-hover:bg-primary-100 group-hover:scale-110 transition-all duration-300">
         <IconComponent className="w-10 h-10 text-primary-600" />
       </div>
-      <p className="text-gray-700 font-medium leading-relaxed">
+      <p className="text-gray-700 font-medium leading-relaxed text-sm">
         {text}
       </p>
     </div>
