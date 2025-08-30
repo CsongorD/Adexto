@@ -1,10 +1,10 @@
-import { Inter } from "next/font/google";
+import { Rubik } from "next/font/google";
 import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import "./globals.css";
 
-const inter = Inter({
+const rubik = Rubik({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
   display: 'swap',
@@ -84,7 +84,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="sr-RS" className="scroll-smooth">
-      <body className={`${inter.className} min-h-screen flex flex-col bg-white`}>
+      <body className={`${rubik.className} min-h-screen flex flex-col bg-white`}>
         <ErrorBoundary />
         <Header />
         <main className="flex-1 pt-20">
