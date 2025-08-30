@@ -5,32 +5,28 @@ const Type = ({ type, index }) => {
   const priority = index < 6 ? true : false;
 
   return (
-    <div className="card p-6 hover:scale-105 transition-all duration-300">
-      <div className="grid grid-cols-3 gap-4 items-center mb-6">
+    <div className="bg-white rounded-xl border border-gray-100 p-4 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+      {/* Header with key info */}
+      <div className="flex justify-between items-center mb-4">
         <div className="text-center">
-          <h3 className="text-2xl font-bold text-primary-600 mb-1">
-            {number}
-          </h3>
-          <p className="text-sm text-gray-500">Model</p>
+          <div className="text-xl font-bold text-gray-900">{number}</div>
+          <div className="text-xs text-gray-500">Model</div>
         </div>
         
         <div className="text-center">
-          <p className="text-lg font-semibold text-gray-900 mb-1">
-            {weight} KG
-          </p>
-          <p className="text-sm text-gray-500">Težina</p>
+          <div className="text-sm font-semibold text-gray-700">{weight} KG</div>
+          <div className="text-xs text-gray-500">Težina</div>
         </div>
         
         <div className="text-center">
-          <p className="text-2xl font-bold text-primary-600 mb-1">
-            {price} €
-          </p>
-          <p className="text-sm text-gray-500">Cena</p>
+          <div className="text-xl font-bold text-primary-600">{price} €</div>
+          <div className="text-xs text-gray-500">Cena</div>
         </div>
       </div>
       
-      <div className="relative mb-6 rounded-lg overflow-hidden border border-gray-200">
-        <div className="aspect-[16/5] bg-gray-50">
+      {/* Image */}
+      <div className="relative mb-4 rounded-lg overflow-hidden bg-gray-50">
+        <div className="aspect-[16/5]">
           <Image
             src={path}
             small={small}
@@ -40,19 +36,16 @@ const Type = ({ type, index }) => {
         </div>
       </div>
       
-      <div className="grid grid-cols-2 gap-4 text-center">
-        <div className="bg-gray-50 rounded-lg p-3">
-          <p className="text-lg font-semibold text-gray-900 mb-1">
-            {height} mm
-          </p>
-          <p className="text-sm text-gray-500">Visina</p>
+      {/* Dimensions */}
+      <div className="flex gap-2">
+        <div className="flex-1 bg-gray-50 rounded-lg p-2 text-center">
+          <div className="text-sm font-semibold text-gray-900">{height} mm</div>
+          <div className="text-xs text-gray-500">Visina</div>
         </div>
         
-        <div className="bg-gray-50 rounded-lg p-3">
-          <p className="text-lg font-semibold text-gray-900 mb-1">
-            {width} mm
-          </p>
-          <p className="text-sm text-gray-500">Širina</p>
+        <div className="flex-1 bg-gray-50 rounded-lg p-2 text-center">
+          <div className="text-sm font-semibold text-gray-900">{width} mm</div>
+          <div className="text-xs text-gray-500">Širina</div>
         </div>
       </div>
     </div>
