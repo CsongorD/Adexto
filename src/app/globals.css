@@ -99,6 +99,16 @@ textarea:focus {
   ring: none !important;
 }
 
+/* Remove focus effects from navigation buttons */
+nav a:focus,
+nav a:active,
+nav a:focus-visible {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  ring: none !important;
+}
+
 /* Keyframes */
 @keyframes fadeIn {
   0% { opacity: 0; }
