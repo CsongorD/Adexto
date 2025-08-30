@@ -20,7 +20,13 @@ const NavButton = ({ to, text, onClick = () => {}, className = "" }) => {
   return (
     <Link
       href={to}
-      className={className}
+      className={`${className} ${
+        isHeaderNav && isActive 
+          ? "text-primary-400 after:scale-x-100" 
+          : isHeaderNav 
+          ? "after:scale-x-0 hover:after:scale-x-100"
+          : ""
+      } ${isHeaderNav ? "relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-primary-400 after:transition-transform after:duration-300 after:origin-left" : ""}`}
       onClick={handleClick}
     >
       {text}
