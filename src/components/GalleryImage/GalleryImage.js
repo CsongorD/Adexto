@@ -4,8 +4,8 @@ const GalleryImage = ({ image: { path, small }, index }) => {
   const priority = index < 6 ? true : false;
 
   return (
-    <div className="card p-2 group hover:scale-105 transition-all duration-300 cursor-pointer">
-      <div className="aspect-[16/10] rounded-lg overflow-hidden bg-gray-100">
+    <div className="group cursor-pointer">
+      <div className="aspect-[16/10] rounded-xl overflow-hidden bg-gray-50 hover:shadow-lg transition-all duration-500 hover:scale-[1.02]">
         <Image
           alt={`gallery-image-${index}`}
           src={path}
