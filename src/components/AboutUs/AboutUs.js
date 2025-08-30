@@ -56,18 +56,21 @@ const AboutUs = () => {
           
           {/* Medals */}
           <div className="lg:col-span-1">
-            <div className="space-y-6">
-              <h3 className="text-xl font-semibold text-gray-900">Naša priznanja</h3>
+            <div className="space-y-8">
+              <div className="text-center lg:text-left">
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Naša priznanja</h3>
+                <p className="text-sm text-gray-500">Sertifikati kvaliteta i poverenja</p>
+              </div>
               
               {medals ? (
-                <div className="grid grid-cols-4 lg:grid-cols-3 gap-3">
+                <div className="grid grid-cols-3 gap-4">
                   {medals.map((medal, index) => (
-                    <div key={index} className="bg-gray-50 rounded-lg p-2 hover:bg-gray-100 transition-colors duration-200">
-                      <div className="w-full aspect-square rounded overflow-hidden">
+                    <div key={index} className="group cursor-pointer">
+                      <div className="w-full aspect-square rounded-xl overflow-hidden bg-white shadow-sm border border-gray-100 hover:shadow-md hover:border-primary-200 transition-all duration-300 group-hover:scale-105 p-3">
                         <img 
                           src={medal.path} 
                           alt={`medal-${index}`} 
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-contain"
                         />
                       </div>
                     </div>
