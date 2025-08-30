@@ -41,18 +41,18 @@ export default function PriceTable() {
   return (
     <div className="relative">
       {/* Floating Navigation */}
-      <div className="fixed left-4 top-1/2 transform -translate-y-1/2 z-40 hidden lg:block">
-        <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-2">
+      <div className="fixed left-6 top-1/2 transform -translate-y-1/2 z-40 hidden lg:block">
+        <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border border-gray-100 p-1">
           {sections.map((section, index) => (
             <button
               key={index}
               onClick={() => scrollToSection(section.ref)}
-              className="flex items-center space-x-3 w-full p-3 rounded-xl hover:bg-primary-50 hover:text-primary-600 transition-all duration-300 group"
+              className="flex items-center space-x-2 w-full p-2 rounded-lg hover:bg-primary-50 hover:text-primary-600 transition-all duration-300 group"
             >
-              <div className="text-gray-600 group-hover:text-primary-600 transition-colors duration-300">
+              <div className="text-gray-500 group-hover:text-primary-600 transition-colors duration-300">
                 {section.icon}
               </div>
-              <span className="text-sm font-medium text-gray-700 group-hover:text-primary-600 transition-colors duration-300">
+              <span className="text-xs font-medium text-gray-600 group-hover:text-primary-600 transition-colors duration-300 whitespace-nowrap">
                 {section.text}
               </span>
             </button>
