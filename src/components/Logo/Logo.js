@@ -16,7 +16,7 @@ const Logo = () => {
         to="/"
         text={
           <>
-            <div className="w-10 h-10 relative">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 relative">
               {!logo ? (
                 <ImageLoading />
               ) : (
@@ -29,7 +29,7 @@ const Logo = () => {
                 />
               )}
             </div>
-            <h2 className="text-2xl font-bold text-white tracking-tight">
+            <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-white tracking-tight">
               ADEXTO
             </h2>
           </>

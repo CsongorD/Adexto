@@ -67,10 +67,10 @@ const ModelList = ({ model, paginate, currentPage }) => {
   return (
     <div className="space-y-8">
       <div className="text-center">
-        <h2 className="text-3xl font-bold text-gray-900 mb-2">
+        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-2">
           Model <span className="text-gradient">{modelNumber}</span>
         </h2>
-        <p className="text-gray-600">
+        <p className="text-sm sm:text-base text-gray-600">
           Slika {imageIndex + 1} od {modelImages.length}
         </p>
       </div>

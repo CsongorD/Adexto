@@ -55,8 +55,8 @@ const Pagination = ({ modelsPerPage, totalModels, paginate, currentPage }) => {
   const paginationNumbers = getPaginationRange(totalPages, currentPage, 1);
 
   return (
-    <div className="flex justify-center py-8">
-      <div className="flex items-center space-x-2 bg-white rounded-2xl shadow-lg p-2 border border-gray-200">
+    <div className="flex justify-center py-4 sm:py-6 lg:py-8">
+      <div className="flex items-center space-x-1 sm:space-x-2 bg-white rounded-xl sm:rounded-2xl shadow-lg p-1 sm:p-2 border border-gray-200">
         <button
           onClick={showPrevModel}
           disabled={isFirstPage}
@@ -66,7 +66,7 @@ const Pagination = ({ modelsPerPage, totalModels, paginate, currentPage }) => {
               : "text-gray-700 hover:bg-primary-50 hover:text-primary-600"
           }`}
         >
-          <PrevIcon className="w-5 h-5" />
+          <PrevIcon className="w-4 h-4 sm:w-5 sm:h-5" />
         </button>
 
         {paginationNumbers.map((number, index) => {
@@ -78,7 +78,7 @@ const Pagination = ({ modelsPerPage, totalModels, paginate, currentPage }) => {
               key={isDots ? `dots-${index}` : number}
               onClick={() => !isDots && paginate(number)}
               disabled={isDots}
-              className={`min-w-[40px] h-10 rounded-xl font-medium transition-all duration-300 ${
+              className={`min-w-[32px] sm:min-w-[40px] h-8 sm:h-10 rounded-lg sm:rounded-xl font-medium text-sm sm:text-base transition-all duration-300 ${
                 isDots
                   ? "text-gray-400 cursor-default"
                   : isActive
@@ -100,7 +100,7 @@ const Pagination = ({ modelsPerPage, totalModels, paginate, currentPage }) => {
               : "text-gray-700 hover:bg-primary-50 hover:text-primary-600"
           }`}
         >
-          <NextIcon className="w-5 h-5" />
+          <NextIcon className="w-4 h-4 sm:w-5 sm:h-5" />
         </button>
       </div>
     </div>

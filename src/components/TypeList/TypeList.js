@@ -8,9 +8,9 @@ const TypeList = () => {
   if (error) throw error;
 
   return (
-    <div className="grid lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
+    <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto">
       {!types ? (
-        <div className="col-span-full flex justify-center py-12">
+        <div className="col-span-full flex justify-center py-8 sm:py-12">
           <ImageLoading />
         </div>
       ) : (
