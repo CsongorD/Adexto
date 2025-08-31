@@ -16,7 +16,7 @@ const Logo = () => {
         to="/"
         text={
           <>
-            <div className="w-10 h-10 relative">
+            <div className="w-8 h-8 relative">
               {!logo ? (
                 <ImageLoading />
               ) : (
@@ -25,11 +25,11 @@ const Logo = () => {
                   small={logo[0]?.small}
                   alt="adexto-logo"
                   priority={true}
-                 className="filter brightness-0 invert"
+                 className="filter brightness-0"
                 />
               )}
             </div>
-            <h2 className="text-2xl font-bold text-white tracking-tight">
+            <h2 className="text-xl font-bold text-gray-900 tracking-tight">
               ADEXTO
             </h2>
           </>
