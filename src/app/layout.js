@@ -87,7 +87,7 @@ export default function RootLayout({ children }) {
       <body className={`${rubik.className} min-h-screen flex flex-col bg-white`}>
         <ErrorBoundary />
         <Header />
-        <main className="flex-1 pt-16">
+        <main className="flex-1 pt-20">
           {children}
         </main>
         <Footer />

@@ -37,7 +37,7 @@ const Navbar = () => {
         {NAV_LINKS.map(({ to, text }) => (
           <NavButton
             key={to}
-            className="text-gray-600 hover:text-gray-900 font-medium transition-colors duration-300 relative group"
+            className="text-gray-300 hover:text-primary-400 font-medium transition-colors duration-300 relative group"
             to={to}
             text={text}
             onClick={closeSidebar}
@@ -47,7 +47,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Button */}
       <button
-        className="lg:hidden p-2 text-gray-700 hover:text-gray-900 transition-colors duration-300"
+        className="lg:hidden p-2 text-white hover:text-primary-400 transition-colors duration-300"
         onClick={toggleSidebar}
         aria-label="Toggle menu"
       >
