@@ -30,7 +30,6 @@ const Logo = () => {
               )}
             </div>
             <h2 className="text-xl font-bold text-gray-900 tracking-tight">
-            <h2 className="text-xl font-bold text-white tracking-tight">
               ADEXTO
             </h2>
           </>
