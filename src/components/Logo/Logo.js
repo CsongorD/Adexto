@@ -12,11 +12,11 @@ const Logo = () => {
   return (
     <div className="flex items-center">
       <NavButton
-        className="logo-no-focus flex items-center space-x-3 hover:opacity-80 transition-opacity duration-300"
+        className="logo-no-focus flex items-center space-x-2 hover:opacity-90 transition-all duration-300"
         to="/"
         text={
           <>
-            <div className="w-10 h-10 relative">
+            <div className="w-8 h-8 relative">
               {!logo ? (
                 <ImageLoading />
               ) : (
@@ -29,7 +29,7 @@ const Logo = () => {
                 />
               )}
             </div>
-            <h2 className="text-2xl font-bold text-white tracking-tight">
+            <h2 className="text-xl font-bold text-white tracking-wide">
               ADEXTO
             </h2>
           </>
