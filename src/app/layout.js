@@ -7,7 +7,7 @@ import "./globals.css";
 const rubik = Rubik({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
-  display: 'swap',
+  display: "swap",
 });
 
 export const metadata = {
@@ -84,12 +84,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="sr-RS" className="scroll-smooth">
-      <body className={`${rubik.className} min-h-screen flex flex-col bg-white`}>
+      <body
+        className={`${rubik.className} flex min-h-screen flex-col bg-white`}
+      >
         <ErrorBoundary />
         <Header />
-        <main className="flex-1 pt-16 sm:pt-20">
-          {children}
-        </main>
+        <main className="flex-1 pt-16 sm:pt-20">{children}</main>
         <Footer />
       </body>
     </html>

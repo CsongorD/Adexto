@@ -8,22 +8,22 @@ const ImageSlider = ({
   handleLoad,
   showPrevImage,
   showNextImage,
-  loading = false
+  loading = false,
 }) => {
   const { path, small } = currentImage;
 
   return (
-    <div className="relative max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto">
-      <div className="relative group">
+    <div className="relative mx-auto max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl">
+      <div className="group relative">
         {/* Loading overlay */}
         {loading && (
-          <div className="absolute inset-0 bg-white/60 backdrop-blur-sm flex items-center justify-center z-10 rounded-lg sm:rounded-2xl">
-            <div className="w-6 h-6 sm:w-8 sm:h-8 border-2 border-gray-300 border-t-gray-600 rounded-full animate-spin"></div>
+          <div className="absolute inset-0 z-10 flex items-center justify-center rounded-lg bg-white/60 backdrop-blur-sm sm:rounded-2xl">
+            <div className="h-6 w-6 animate-spin rounded-full border-2 border-gray-300 border-t-gray-600 sm:h-8 sm:w-8"></div>
           </div>
         )}
-        
+
         {/* Image container */}
-        <div className="aspect-[16/9] rounded-lg sm:rounded-2xl overflow-hidden bg-white shadow-sm border border-gray-100">
+        <div className="aspect-[16/9] overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm sm:rounded-2xl">
           <Image
             src={path}
             small={small}
@@ -32,22 +32,22 @@ const ImageSlider = ({
             onLoad={handleLoad}
           />
         </div>
-        
+
         {/* Navigation buttons */}
         <button
           onClick={showPrevImage}
           disabled={loading}
-          className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 bg-white/80 backdrop-blur-sm hover:bg-white border border-gray-200 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 disabled:opacity-40 disabled:cursor-not-allowed opacity-0 group-hover:opacity-100"
+          className="absolute left-2 top-1/2 flex h-8 w-8 -translate-y-1/2 transform items-center justify-center rounded-full border border-gray-200 bg-white/80 opacity-0 backdrop-blur-sm transition-all duration-200 hover:scale-105 hover:bg-white disabled:cursor-not-allowed disabled:opacity-40 group-hover:opacity-100 sm:left-4 sm:h-10 sm:w-10"
         >
-          <PrevIcon className="w-3 h-3 sm:w-4 sm:h-4 text-gray-700" />
+          <PrevIcon className="h-3 w-3 text-gray-700 sm:h-4 sm:w-4" />
         </button>
-        
+
         <button
           onClick={showNextImage}
           disabled={loading}
-          className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 bg-white/80 backdrop-blur-sm hover:bg-white border border-gray-200 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 disabled:opacity-40 disabled:cursor-not-allowed opacity-0 group-hover:opacity-100"
+          className="absolute right-2 top-1/2 flex h-8 w-8 -translate-y-1/2 transform items-center justify-center rounded-full border border-gray-200 bg-white/80 opacity-0 backdrop-blur-sm transition-all duration-200 hover:scale-105 hover:bg-white disabled:cursor-not-allowed disabled:opacity-40 group-hover:opacity-100 sm:right-4 sm:h-10 sm:w-10"
         >
-          <NextIcon className="w-3 h-3 sm:w-4 sm:h-4 text-gray-700" />
+          <NextIcon className="h-3 w-3 text-gray-700 sm:h-4 sm:w-4" />
         </button>
       </div>
     </div>

@@ -1,13 +1,13 @@
 const FenceModel = () => {
   return (
-    <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto">
-      <div className="relative group">
-        <video 
-          autoPlay 
-          playsInline 
-          muted 
+    <div className="relative mx-auto w-full max-w-xs sm:max-w-sm md:max-w-md">
+      <div className="group relative">
+        <video
+          autoPlay
+          playsInline
+          muted
           loop
-          className="w-full h-auto rounded-lg sm:rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 group-hover:scale-[1.02]"
+          className="h-auto w-full rounded-lg shadow-lg transition-all duration-500 hover:shadow-xl group-hover:scale-[1.02] sm:rounded-xl"
         >
           <source src="/adexto-3-d-model.mp4" type="video/mp4" />
         </video>

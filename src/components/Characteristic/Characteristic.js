@@ -1,4 +1,4 @@
-import { Shield, DollarSign, Hammer, Lock, Wrench } from "lucide-react";
+import { DollarSign, Hammer, Lock, Shield, Wrench } from "lucide-react";
 
 const iconMap = {
   "25 GODINA GARANCIJA": Shield,
@@ -11,13 +11,13 @@ const iconMap = {
 const Characteristic = ({ characteristic }) => {
   const { text } = characteristic;
   const IconComponent = iconMap[text] || Shield;
-  
+
   return (
-    <div className="card p-4 sm:p-6 text-center group hover:scale-105 transition-all duration-300 h-40 sm:h-44 lg:h-48 flex flex-col justify-center items-center">
-      <div className="w-16 h-16 sm:w-18 sm:h-18 lg:w-20 lg:h-20 mx-auto mb-3 sm:mb-4 flex items-center justify-center bg-primary-50 rounded-full group-hover:bg-primary-100 group-hover:scale-110 transition-all duration-300">
-        <IconComponent className="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 text-primary-600" />
+    <div className="card group flex h-40 flex-col items-center justify-center p-4 text-center transition-all duration-300 hover:scale-105 sm:h-44 sm:p-6 lg:h-48">
+      <div className="sm:w-18 sm:h-18 mx-auto mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-primary-50 transition-all duration-300 group-hover:scale-110 group-hover:bg-primary-100 sm:mb-4 lg:h-20 lg:w-20">
+        <IconComponent className="h-8 w-8 text-primary-600 sm:h-9 sm:w-9 lg:h-10 lg:w-10" />
       </div>
-      <p className="text-gray-700 font-medium leading-relaxed text-xs sm:text-sm">
+      <p className="text-xs font-medium leading-relaxed text-gray-700 sm:text-sm">
         {text}
       </p>
     </div>

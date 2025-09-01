@@ -5,17 +5,17 @@ import PhoneIcon from "../Icons/PhoneIcon";
 
 const footerData = [
   {
-    icon: <LocationIcon className="w-6 h-6 text-primary-400" />,
+    icon: <LocationIcon className="h-6 w-6 text-primary-400" />,
     title: "Lokacija",
     info: "Servo Mihalja BB, 23206 Zrenjanin (Mužlja)",
   },
   {
-    icon: <PhoneIcon className="w-6 h-6 text-primary-400" />,
+    icon: <PhoneIcon className="h-6 w-6 text-primary-400" />,
     title: "Telefon",
     info: "+381 66 8822 339",
   },
   {
-    icon: <MailIcon className="w-6 h-6 text-primary-400" />,
+    icon: <MailIcon className="h-6 w-6 text-primary-400" />,
     title: "Email",
     info: "info@adexto.com",
   },
@@ -25,18 +25,14 @@ const Footer = () => {
   return (
     <footer className="gradient-bg border-t border-gray-800/20">
       <div className="container-custom section-padding">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 items-center">
+        <div className="grid items-center gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="md:col-span-2 lg:col-span-1">
-            <h3 className="text-2xl font-bold text-white mb-2">
-              ADEXTO D.O.O
-            </h3>
-            <p className="text-gray-400">
-              Vrhunski kvalitet betonskih ograda
-            </p>
+            <h3 className="mb-2 text-2xl font-bold text-white">ADEXTO D.O.O</h3>
+            <p className="text-gray-400">Vrhunski kvalitet betonskih ograda</p>
           </div>
-          
+
           <div className="md:col-span-2 lg:col-span-3">
-            <div className="grid sm:grid-cols-3 gap-6">
+            <div className="grid gap-6 sm:grid-cols-3">
               {footerData.map((item, index) => (
                 <FooterItem
                   key={index}
@@ -48,8 +44,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        
-        <div className="border-t border-gray-700 mt-12 pt-8 text-center">
+
+        <div className="mt-12 border-t border-gray-700 pt-8 text-center">
           <p className="text-gray-400">
             © 2024 Adexto D.O.O. Sva prava zadržana.
           </p>

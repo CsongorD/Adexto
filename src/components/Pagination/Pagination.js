@@ -11,7 +11,7 @@ const Pagination = ({ modelsPerPage, totalModels, paginate, currentPage }) => {
   function showNextModel() {
     if (!isLastPage) paginate(currentPage + 1);
   }
-  
+
   function showPrevModel() {
     if (!isFirstPage) paginate(currentPage - 1);
   }
@@ -56,34 +56,34 @@ const Pagination = ({ modelsPerPage, totalModels, paginate, currentPage }) => {
 
   return (
     <div className="flex justify-center py-4 sm:py-6 lg:py-8">
-      <div className="flex items-center space-x-1 sm:space-x-2 bg-white rounded-xl sm:rounded-2xl shadow-lg p-1 sm:p-2 border border-gray-200">
+      <div className="flex items-center space-x-1 rounded-xl border border-gray-200 bg-white p-1 shadow-lg sm:space-x-2 sm:rounded-2xl sm:p-2">
         <button
           onClick={showPrevModel}
           disabled={isFirstPage}
-          className={`p-3 rounded-xl transition-all duration-300 ${
+          className={`rounded-xl p-3 transition-all duration-300 ${
             isFirstPage
-              ? "text-gray-400 cursor-not-allowed"
+              ? "cursor-not-allowed text-gray-400"
               : "text-gray-700 hover:bg-primary-50 hover:text-primary-600"
           }`}
         >
-          <PrevIcon className="w-4 h-4 sm:w-5 sm:h-5" />
+          <PrevIcon className="h-4 w-4 sm:h-5 sm:w-5" />
         </button>
 
         {paginationNumbers.map((number, index) => {
           const isActive = number === currentPage;
           const isDots = number === "...";
-          
+
           return (
             <button
               key={isDots ? `dots-${index}` : number}
               onClick={() => !isDots && paginate(number)}
               disabled={isDots}
-              className={`min-w-[32px] sm:min-w-[40px] h-8 sm:h-10 rounded-lg sm:rounded-xl font-medium text-sm sm:text-base transition-all duration-300 ${
+              className={`h-8 min-w-[32px] rounded-lg text-sm font-medium transition-all duration-300 sm:h-10 sm:min-w-[40px] sm:rounded-xl sm:text-base ${
                 isDots
-                  ? "text-gray-400 cursor-default"
+                  ? "cursor-default text-gray-400"
                   : isActive
-                  ? "bg-primary-500 text-white shadow-lg"
-                  : "text-gray-700 hover:bg-primary-50 hover:text-primary-600"
+                    ? "bg-primary-500 text-white shadow-lg"
+                    : "text-gray-700 hover:bg-primary-50 hover:text-primary-600"
               }`}
             >
               {number}
@@ -94,13 +94,13 @@ const Pagination = ({ modelsPerPage, totalModels, paginate, currentPage }) => {
         <button
           onClick={showNextModel}
           disabled={isLastPage}
-          className={`p-3 rounded-xl transition-all duration-300 ${
+          className={`rounded-xl p-3 transition-all duration-300 ${
             isLastPage
-              ? "text-gray-400 cursor-not-allowed"
+              ? "cursor-not-allowed text-gray-400"
               : "text-gray-700 hover:bg-primary-50 hover:text-primary-600"
           }`}
         >
-          <NextIcon className="w-4 h-4 sm:w-5 sm:h-5" />
+          <NextIcon className="h-4 w-4 sm:h-5 sm:w-5" />
         </button>
       </div>
     </div>
