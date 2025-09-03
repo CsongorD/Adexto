@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
-import { getStorage } from "firebase/storage";
 import { getPerformance } from "firebase/performance";
+import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -16,4 +16,4 @@ const app = initializeApp(firebaseConfig);
 
 const storage = getStorage(app);
 const perf = getPerformance(app);
-export { storage, perf };
+export { perf, storage };
