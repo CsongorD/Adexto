@@ -42,17 +42,17 @@ export default function PriceTable() {
     <div className="relative">
       {/* Floating Navigation */}
       <div className="fixed left-1 top-1/2 z-40 hidden -translate-y-1/2 transform sm:left-2 lg:block">
-        <div className="rounded-lg border border-gray-100 bg-white/95 p-1 shadow-md backdrop-blur-sm 2xl:p-2">
+        <div className="rounded-xl border border-gray-200 bg-white/95 p-2 shadow-lg backdrop-blur-sm">
           {sections.map((section, index) => (
             <button
               key={index}
               onClick={() => scrollToSection(section.ref)}
-              className="group flex w-full items-center space-x-1 rounded-md p-1.5 transition-all duration-300 hover:bg-primary-50 hover:text-primary-600 sm:space-x-2 lg:p-1.5 xl:p-2 2xl:p-3"
+              className="group flex w-full items-center justify-start space-x-3 rounded-lg p-3 transition-all duration-300 hover:bg-primary-50 hover:text-primary-600 hover:shadow-sm"
             >
-              <div className="h-3 w-3 text-gray-500 transition-colors duration-300 group-hover:text-primary-600 sm:h-4 sm:w-4 lg:h-5 lg:w-5 xl:h-6 xl:w-6">
+              <div className="flex h-5 w-5 flex-shrink-0 items-center justify-center text-gray-600 transition-colors duration-300 group-hover:text-primary-600">
                 {section.icon}
               </div>
-              <span className="hidden whitespace-nowrap text-xs font-medium text-gray-600 transition-colors duration-300 group-hover:text-primary-600 lg:text-xs xl:inline xl:text-sm 2xl:text-base">
+              <span className="hidden whitespace-nowrap text-sm font-medium text-gray-700 transition-colors duration-300 group-hover:text-primary-600 xl:inline">
                 {section.text}
               </span>
             </button>
@@ -62,18 +62,18 @@ export default function PriceTable() {
 
       {/* Mobile Navigation */}
       <div className="sticky top-16 z-30 border-b border-gray-200 bg-white sm:top-20 lg:hidden">
-        <div className="container-custom px-4">
-          <div className="flex space-x-1 py-2 sm:py-4">
+        <div className="container-custom">
+          <div className="flex space-x-2 px-4 py-3 sm:space-x-4 sm:px-6 sm:py-4">
             {sections.map((section, index) => (
               <button
                 key={index}
                 onClick={() => scrollToSection(section.ref)}
-                className="flex flex-1 items-center justify-center space-x-1 rounded-lg px-2 py-1.5 transition-all duration-300 hover:bg-primary-50 hover:text-primary-600 sm:space-x-2 sm:px-4 sm:py-2"
+                className="flex flex-1 flex-col items-center justify-center space-y-1 rounded-lg px-3 py-2 transition-all duration-300 hover:bg-primary-50 hover:text-primary-600 hover:shadow-sm sm:space-y-2 sm:px-4 sm:py-3"
               >
-                <div className="h-4 w-4 text-gray-600 transition-colors duration-300 hover:text-primary-600 sm:h-5 sm:w-5">
+                <div className="flex h-5 w-5 items-center justify-center text-gray-600 transition-colors duration-300 group-hover:text-primary-600 sm:h-6 sm:w-6">
                   {section.icon}
                 </div>
-                <span className="text-xs font-medium text-gray-700 transition-colors duration-300 hover:text-primary-600 sm:text-sm">
+                <span className="text-xs font-medium text-gray-700 transition-colors duration-300 group-hover:text-primary-600 sm:text-sm">
                   {section.text}
                 </span>
               </button>
