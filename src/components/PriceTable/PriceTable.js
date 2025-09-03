@@ -47,12 +47,12 @@ export default function PriceTable() {
             <button
               key={index}
               onClick={() => scrollToSection(section.ref)}
-              className="group flex w-full items-center justify-start space-x-3 rounded-lg p-3 transition-all duration-300 hover:bg-primary-50 hover:text-primary-600 hover:shadow-sm"
+              className="group flex w-full items-center justify-start space-x-2 rounded-lg p-2 transition-all duration-300 hover:bg-primary-50 hover:text-primary-600 hover:shadow-sm"
             >
               <div className="flex h-5 w-5 flex-shrink-0 items-center justify-center text-gray-600 transition-colors duration-300 group-hover:text-primary-600">
                 {section.icon}
               </div>
-              <span className="hidden whitespace-nowrap text-sm font-medium text-gray-700 transition-colors duration-300 group-hover:text-primary-600 xl:inline">
+              <span className="hidden whitespace-nowrap text-xs font-medium text-gray-700 transition-colors duration-300 group-hover:text-primary-600 xl:inline">
                 {section.text}
               </span>
             </button>
@@ -68,7 +68,7 @@ export default function PriceTable() {
               <button
                 key={index}
                 onClick={() => scrollToSection(section.ref)}
-                className="flex flex-1 flex-col items-center justify-center space-y-1 rounded-lg px-3 py-2 transition-all duration-300 hover:bg-primary-50 hover:text-primary-600 hover:shadow-sm sm:space-y-2 sm:px-4 sm:py-3"
+                className="flex flex-1 flex-col items-center justify-center space-y-1 rounded-lg px-2 py-1.5 transition-all duration-300 hover:bg-primary-50 hover:text-primary-600 hover:shadow-sm sm:space-y-1.5 sm:px-3 sm:py-2"
               >
                 <div className="flex h-5 w-5 items-center justify-center text-gray-600 transition-colors duration-300 group-hover:text-primary-600 sm:h-6 sm:w-6">
                   {section.icon}
