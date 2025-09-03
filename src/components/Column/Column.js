@@ -25,7 +25,7 @@ const Column = ({ column }) => {
           {options.map((option, index) => (
             <div
               key={index}
-              className="flex items-center justify-between rounded-md bg-gray-50 px-2 py-1.5 sm:rounded-lg sm:px-3 sm:py-2"
+              className="flex items-center justify-between rounded-md bg-gray-100 px-2 py-1.5 sm:rounded-lg sm:px-3 sm:py-2"
             >
               <div className="text-xs text-gray-600">
                 <span className="font-medium text-gray-900">

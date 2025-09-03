@@ -21,7 +21,7 @@ const PriceInfo = forwardRef((_props, ref) => {
                   Cene ugradnje:
                 </h3>
                 <div className="space-y-2 sm:space-y-3">
-                  <div className="flex flex-col space-y-1 rounded-lg bg-gray-50 p-2 sm:flex-row sm:items-center sm:justify-between sm:space-y-0 sm:p-3">
+                  <div className="flex flex-col space-y-1 rounded-lg bg-gray-100 p-2 sm:flex-row sm:items-center sm:justify-between sm:space-y-0 sm:p-3">
                     <span className="text-sm text-gray-700 sm:text-base">
                       Ugradnja ograde (1.5m visine)
                     </span>
@@ -29,7 +29,7 @@ const PriceInfo = forwardRef((_props, ref) => {
                       7€ / 1m
                     </span>
                   </div>
-                  <div className="flex flex-col space-y-1 rounded-lg bg-gray-50 p-2 sm:flex-row sm:items-center sm:justify-between sm:space-y-0 sm:p-3">
+                  <div className="flex flex-col space-y-1 rounded-lg bg-gray-100 p-2 sm:flex-row sm:items-center sm:justify-between sm:space-y-0 sm:p-3">
                     <span className="text-sm text-gray-700 sm:text-base">
                       Ugradnja ograde (2.0m visine)
                     </span>
