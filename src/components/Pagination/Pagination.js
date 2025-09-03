@@ -82,8 +82,8 @@ const Pagination = ({ modelsPerPage, totalModels, paginate, currentPage }) => {
                 isDots
                   ? "cursor-default text-gray-400"
                   : isActive
-                    ? "bg-primary-500 text-white shadow-lg"
-                    : "text-gray-700 hover:bg-primary-50 hover:text-primary-600"
+                    ? "bg-primary-800 text-white shadow-lg"
+                    : "text-gray-700 hover:bg-primary-200 hover:text-primary-800"
               }`}
             >
               {number}
@@ -97,7 +97,7 @@ const Pagination = ({ modelsPerPage, totalModels, paginate, currentPage }) => {
           className={`rounded-xl p-3 transition-all duration-300 ${
             isLastPage
               ? "cursor-not-allowed text-gray-400"
-              : "text-gray-700 hover:bg-primary-50 hover:text-primary-600"
+              : "text-gray-700 hover:bg-primary-200 hover:text-primary-600"
           }`}
         >
           <NextIcon className="h-4 w-4 sm:h-5 sm:w-5" />

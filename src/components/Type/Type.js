@@ -44,14 +44,14 @@ const Type = ({ type, index }) => {
 
       {/* Dimensions */}
       <div className="flex gap-2">
-        <div className="flex-1 rounded-md bg-gray-50 p-1.5 text-center sm:rounded-lg sm:p-2">
+        <div className="flex-1 rounded-md bg-gray-100 p-1.5 text-center sm:rounded-lg sm:p-2">
           <div className="text-xs font-semibold text-gray-900 sm:text-sm">
             {height} mm
           </div>
           <div className="text-xs text-gray-500">Visina</div>
         </div>
 
-        <div className="flex-1 rounded-md bg-gray-50 p-1.5 text-center sm:rounded-lg sm:p-2">
+        <div className="flex-1 rounded-md bg-gray-100 p-1.5 text-center sm:rounded-lg sm:p-2">
           <div className="text-xs font-semibold text-gray-900 sm:text-sm">
             {width} mm
           </div>
