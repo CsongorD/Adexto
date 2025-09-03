@@ -3,7 +3,13 @@
 import NextImage from "next/image";
 import { useEffect, useState } from "react";
 
-const Image = ({ src, alt, small, priority = false, onLoad = () => {} }) => {
+const Image = ({
+  src,
+  alt,
+  small,
+  priority = false,
+  onLoad = () => {},
+}) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
 
@@ -22,18 +28,10 @@ const Image = ({ src, alt, small, priority = false, onLoad = () => {} }) => {
 
   if (imageError) {
     return (
-      <div className="flex h-full w-full items-center justify-center bg-gray-200">
-        <div className="text-center text-gray-400">
-          <svg
-            className="mx-auto mb-2 h-12 w-12"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              fillRule="evenodd"
-              d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
-              clipRule="evenodd"
-            />
+      <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+        <div className="text-gray-400 text-center">
+          <svg className="w-12 h-12 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
           </svg>
           <p className="text-sm">Image not available</p>
         </div>
@@ -42,16 +40,16 @@ const Image = ({ src, alt, small, priority = false, onLoad = () => {} }) => {
   }
 
   return (
-    <div className="relative h-full w-full">
+    <div className="relative w-full h-full bg-gray-100">
       {!isLoaded && (
-        <div className="absolute inset-0 animate-pulse rounded bg-gray-700/20" />
+        <div className="absolute inset-0 bg-gray-200 animate-pulse rounded" />
       )}
-
+      
       <NextImage
         src={src}
         alt={alt}
-        className={`h-full w-full object-cover transition-opacity duration-300 ${
-          isLoaded ? "opacity-100" : "opacity-0"
+        className={`w-full h-full object-cover transition-opacity duration-300 ${
+          isLoaded ? 'opacity-100' : 'opacity-0'
         }`}
         fill={true}
         onLoad={handleLoad}

@@ -4,11 +4,11 @@ const Gallery = () => {
   return (
     <div className="section-padding">
       <div className="container-custom">
-        <div className="mb-8 text-center sm:mb-12 lg:mb-16">
-          <h1 className="mb-4 text-2xl font-bold text-gray-900 sm:text-3xl lg:text-4xl">
+        <div className="text-center mb-16">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Naša <span className="text-gradient">Galerija</span>
           </h1>
-          <p className="mx-auto max-w-3xl px-4 text-base text-gray-600 sm:text-lg lg:text-xl">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Pogledajte realizovane projekte i inspirišite se za svoj prostor
           </p>
         </div>

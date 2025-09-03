@@ -8,18 +8,14 @@ const ColumnList = () => {
   if (error) throw error;
 
   return (
-    <div className="mx-auto grid max-w-5xl grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
+    <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
       {!columns ? (
-        <div className="col-span-full flex justify-center py-8 sm:py-12">
+        <div className="col-span-full flex justify-center py-12">
           <ImageLoading />
         </div>
       ) : (
         columns?.map((column, index) => (
-          <div
-            key={index}
-            className="animate-fade-in"
-            style={{ animationDelay: `${index * 0.1}s` }}
-          >
+          <div key={index} className="animate-fade-in" style={{animationDelay: `${index * 0.1}s`}}>
             <Column column={column} />
           </div>
         ))

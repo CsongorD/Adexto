@@ -12,28 +12,23 @@ const CharacteristicList = () => {
   return (
     <section className="section-padding bg-grey-50">
       <div className="container-custom">
-        <div className="mb-8 text-center sm:mb-12 lg:mb-16">
-          <h2 className="mb-4 text-2xl font-bold text-gray-900 sm:text-3xl lg:text-4xl">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Zašto odabrati <span className="text-gradient">Adexto</span>?
           </h2>
-          <p className="mx-auto max-w-3xl px-4 text-base text-gray-600 sm:text-lg lg:text-xl">
-            Naše betonske ograde kombinuju funkcionalnost, estetiku i
-            dugotrajnost
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Naše betonske ograde kombinuju funkcionalnost, estetiku i dugotrajnost
           </p>
         </div>
-
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-8 xl:grid-cols-5">
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
           {!characteristics ? (
-            <div className="col-span-full flex justify-center py-8">
+            <div className="col-span-full flex justify-center">
               <ImageLoading />
             </div>
           ) : (
             characteristics?.map((characteristic, index) => (
-              <div
-                key={index}
-                className="animate-fade-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
+              <div key={index} className="animate-fade-in" style={{animationDelay: `${index * 0.1}s`}}>
                 <Characteristic characteristic={characteristic} />
               </div>
             ))
