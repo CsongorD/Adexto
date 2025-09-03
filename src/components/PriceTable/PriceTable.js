@@ -42,7 +42,7 @@ export default function PriceTable() {
     <div className="relative">
       {/* Floating Navigation */}
       <div className="fixed left-1 top-1/2 z-40 hidden -translate-y-1/2 transform sm:left-2 lg:block">
-        <div className="rounded-xl border border-gray-200 bg-white/95 p-2 shadow-lg backdrop-blur-sm">
+        <div className="space-y-1 rounded-xl border border-gray-200 bg-white/95 p-2 shadow-lg backdrop-blur-sm">
           {sections.map((section, index) => (
             <button
               key={index}
@@ -63,7 +63,7 @@ export default function PriceTable() {
       {/* Mobile Navigation */}
       <div className="sticky top-16 z-30 border-b border-gray-200 bg-white sm:top-20 lg:hidden">
         <div className="container-custom">
-          <div className="flex space-x-2 px-4 py-3 sm:space-x-4 sm:px-6 sm:py-4">
+          <div className="flex space-x-3 px-4 py-3 sm:space-x-6 sm:px-6 sm:py-4">
             {sections.map((section, index) => (
               <button
                 key={index}
