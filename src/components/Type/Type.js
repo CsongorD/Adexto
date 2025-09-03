@@ -5,34 +5,32 @@ const Type = ({ type, index }) => {
   const priority = index < 6 ? true : false;
 
   return (
-    <div className="rounded-lg border border-gray-100 bg-white p-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-md sm:rounded-xl sm:p-4">
-      {/* Header with key info */}
-      <div className="mb-3 flex items-center justify-between sm:mb-4">
+    <div className="card p-6 hover:scale-105 transition-all duration-300">
+      <div className="grid grid-cols-3 gap-4 items-center mb-6">
         <div className="text-center">
-          <div className="text-lg font-bold text-gray-900 sm:text-xl">
+          <h3 className="text-2xl font-bold text-primary-600 mb-1">
             {number}
-          </div>
-          <div className="text-xs text-gray-500">Model</div>
+          </h3>
+          <p className="text-sm text-gray-500">Model</p>
         </div>
-
+        
         <div className="text-center">
-          <div className="text-xs font-semibold text-gray-700 sm:text-sm">
+          <p className="text-lg font-semibold text-gray-900 mb-1">
             {weight} KG
-          </div>
-          <div className="text-xs text-gray-500">Težina</div>
+          </p>
+          <p className="text-sm text-gray-500">Težina</p>
         </div>
-
+        
         <div className="text-center">
-          <div className="text-lg font-bold text-primary-600 sm:text-xl">
+          <p className="text-2xl font-bold text-primary-600 mb-1">
             {price} €
-          </div>
-          <div className="text-xs text-gray-500">Cena</div>
+          </p>
+          <p className="text-sm text-gray-500">Cena</p>
         </div>
       </div>
-
-      {/* Image */}
-      <div className="relative mb-3 overflow-hidden rounded-lg bg-gray-50 sm:mb-4">
-        <div className="aspect-[16/5]">
+      
+      <div className="relative mb-6 rounded-lg overflow-hidden border border-gray-200">
+        <div className="aspect-[16/5] bg-gray-50">
           <Image
             src={path}
             small={small}
@@ -47,15 +45,15 @@ const Type = ({ type, index }) => {
         <div className="flex-1 rounded-md bg-gray-100 p-1.5 text-center sm:rounded-lg sm:p-2">
           <div className="text-xs font-semibold text-gray-900 sm:text-sm">
             {height} mm
-          </div>
-          <div className="text-xs text-gray-500">Visina</div>
+          </p>
+          <p className="text-sm text-gray-500">Visina</p>
         </div>
 
         <div className="flex-1 rounded-md bg-gray-100 p-1.5 text-center sm:rounded-lg sm:p-2">
           <div className="text-xs font-semibold text-gray-900 sm:text-sm">
             {width} mm
-          </div>
-          <div className="text-xs text-gray-500">Širina</div>
+          </p>
+          <p className="text-sm text-gray-500">Širina</p>
         </div>
       </div>
     </div>

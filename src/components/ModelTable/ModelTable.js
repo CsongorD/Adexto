@@ -16,7 +16,7 @@ export default function ModelTable() {
 
   if (!models) {
     return (
-      <div className="flex min-h-screen items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center">
         <ImageLoading />
       </div>
     );
@@ -36,23 +36,22 @@ export default function ModelTable() {
   return (
     <div className="section-padding">
       <div className="container-custom">
-        <div className="mb-8 text-center sm:mb-10 lg:mb-12">
-          <h1 className="mb-4 text-2xl font-bold text-gray-900 sm:text-3xl lg:text-4xl">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Naši <span className="text-gradient">Modeli</span>
           </h1>
-          <p className="mx-auto max-w-3xl px-4 text-base text-gray-600 sm:text-lg lg:text-xl">
-            Pregledajte našu kolekciju betonskih ograda i pronađite savršen
-            dizajn za vaš prostor
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Pregledajte našu kolekciju betonskih ograda i pronađite savršen dizajn za vaš prostor
           </p>
         </div>
-
+        
         <Pagination
           modelsPerPage={MODELS_PER_PAGE}
           totalModels={totalModels}
           paginate={handlePagination}
           currentPage={currentPage}
         />
-
+        
         <ModelList
           model={currentModel}
           paginate={handlePagination}

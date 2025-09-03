@@ -1,7 +1,7 @@
-import { FileText } from "lucide-react";
+import { Info } from "lucide-react";
 
 const InfoIcon = ({ className }) => {
-  return <FileText className={className} />;
+  return <Info className={className} />;
 };
 
 export default InfoIcon;

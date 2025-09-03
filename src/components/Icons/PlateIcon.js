@@ -1,7 +1,7 @@
-import { RectangleHorizontal } from "lucide-react";
+import { BrickWall } from "lucide-react";
 
 const PlateIcon = ({ className }) => {
-  return <RectangleHorizontal className={className} />;
+  return <BrickWall className={className} />;
 };
 
 export default PlateIcon;

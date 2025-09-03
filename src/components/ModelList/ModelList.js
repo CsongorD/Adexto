@@ -20,10 +20,10 @@ const ModelList = ({ model, paginate, currentPage }) => {
       </div>
     );
   }
-
+  
   if (currentModel.images.length === 0) {
     return (
-      <div className="py-12 text-center">
+      <div className="text-center py-12">
         <p className="text-gray-500">No images found for this model!</p>
       </div>
     );
@@ -48,7 +48,7 @@ const ModelList = ({ model, paginate, currentPage }) => {
       setLoading(true);
     }
   }
-
+  
   function showNextImage() {
     if (
       !loading &&
@@ -73,11 +73,11 @@ const ModelList = ({ model, paginate, currentPage }) => {
             Model {modelNumber}
           </span>
         </h2>
-        <p className="text-sm text-gray-600 sm:text-base">
+        <p className="text-gray-600">
           Slika {imageIndex + 1} od {modelImages.length}
         </p>
       </div>
-
+      
       <ImageSlider
         currentImage={currentImage}
         modelNumber={modelNumber}

@@ -8,18 +8,14 @@ const TypeList = () => {
   if (error) throw error;
 
   return (
-    <div className="mx-auto grid max-w-4xl gap-4 sm:grid-cols-2 sm:gap-6">
+    <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
       {!types ? (
-        <div className="col-span-full flex justify-center py-8 sm:py-12">
+        <div className="col-span-full flex justify-center py-12">
           <ImageLoading />
         </div>
       ) : (
         types.map((type, index) => (
-          <div
-            key={type.id || index}
-            className="animate-fade-in"
-            style={{ animationDelay: `${index * 0.1}s` }}
-          >
+          <div key={type.id || index} className="animate-fade-in" style={{animationDelay: `${index * 0.1}s`}}>
             <Type type={type} index={index} />
           </div>
         ))
