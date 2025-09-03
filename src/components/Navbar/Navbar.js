@@ -120,6 +120,7 @@ const Navbar = () => {
                 <div className="h-1.5 w-1.5 rounded-full bg-primary-500"></div>
                 <p className="text-sm font-medium text-gray-700">ADEXTO</p>
                 <p className="text-xs text-gray-500">Betonske ograde</p>
+              </div>
             </div>
           </div>
         </div>
