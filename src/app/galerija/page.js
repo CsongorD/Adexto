@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function GalleryPage() {
   return (
-    <div className="page-margin-top">
+    <div className="min-h-screen bg-white">
       <Gallery />
     </div>
   );

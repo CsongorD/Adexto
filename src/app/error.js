@@ -1,12 +1,29 @@
-"use client"; // Ensures it's a client component
-import styles from "../styles/error.module.css"; // Adjust the path as necessary
+"use client";
+
+import { AlertTriangle } from "lucide-react";
+
 export default function GlobalError({ error, reset }) {
   return (
-    <div className={styles["error-container"]}>
-      <div className={styles["error-message"]}>
-        <h2>Error: Something went wrong!</h2>
-        <p>{error?.message || "Pokušajte ponovo kasnije."}</p>
-        <button onClick={() => reset()}>Try again</button>
+    <div className="flex min-h-screen items-center justify-center bg-gray-50">
+      <div className="mx-auto max-w-md space-y-8 px-4 text-center">
+        <div className="space-y-4">
+          <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-red-100">
+            <AlertTriangle className="h-10 w-10 text-red-600" />
+          </div>
+
+          <h2 className="text-2xl font-semibold text-gray-900">
+            Nešto je pošlo po zlu
+          </h2>
+
+          <p className="leading-relaxed text-gray-600">
+            {error?.message ||
+              "Dogodila se neočekivana greška. Molimo pokušajte ponovo."}
+          </p>
+        </div>
+
+        <button onClick={() => reset()} className="btn-primary">
+          Pokušaj ponovo
+        </button>
       </div>
     </div>
   );

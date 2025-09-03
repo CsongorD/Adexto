@@ -17,5 +17,9 @@ export const metadata = {
 };
 
 export default function ModelsPage() {
-  return <ModelTable />;
+  return (
+    <div className="min-h-screen bg-white">
+      <ModelTable />
+    </div>
+  );
 }

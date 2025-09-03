@@ -1,14 +1,26 @@
 import NavButton from "../components/NavButton/NavButton";
-import styles from "../styles/404.module.css";
 
 const NotFound = () => {
   return (
-    <div className={styles["not-found-page"]}>
-      <p className={styles["not-found-number"]}>404</p>
-      <h3 className={styles["not-found-text"]}>
-        Sorry, we&apos;re not able to find what you were looking for.
-      </h3>
-      <NavButton className={styles["nav-btn"]} to={"/"} text={"Naslovna"} />
+    <div className="flex min-h-screen items-center justify-center bg-gray-50">
+      <div className="mx-auto max-w-md space-y-8 px-4 text-center">
+        <div className="space-y-4">
+          <h1 className="text-gradient text-9xl font-bold">404</h1>
+          <h2 className="text-2xl font-semibold text-gray-900">
+            Stranica nije pronađena
+          </h2>
+          <p className="leading-relaxed text-gray-600">
+            Izvinjavamo se, ali stranica koju tražite ne postoji ili je
+            premeštena.
+          </p>
+        </div>
+
+        <NavButton
+          className="btn-primary inline-flex items-center justify-center"
+          to="/"
+          text="Vrati se na početnu"
+        />
+      </div>
     </div>
   );
 };

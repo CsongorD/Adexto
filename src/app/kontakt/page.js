@@ -1,6 +1,5 @@
 import ContactCard from "../../components/ContactCard/ContactCard";
 import GoogleMaps from "../../components/GoogleMaps/GoogleMaps";
-import styles from "../../styles/contact.module.css";
 
 export const metadata = {
   title: "Kontakt - Betonske Ograde Zrenjanin",
@@ -20,9 +19,25 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <div className={`${styles["contact-page"]} page-margin-top`}>
-      <ContactCard />
-      <GoogleMaps />
+    <div className="min-h-screen bg-white">
+      <div className="section-padding">
+        <div className="container-custom">
+          <div className="mb-8 text-center sm:mb-12 lg:mb-16">
+            <h1 className="mb-4 text-2xl font-bold text-gray-900 sm:text-3xl lg:text-4xl">
+              Kontaktirajte <span className="text-gradient">nas</span>
+            </h1>
+            <p className="mx-auto max-w-3xl px-4 text-base text-gray-600 sm:text-lg lg:text-xl">
+              Spremni smo da odgovorimo na sva vaša pitanja i pomognemo vam u
+              izboru
+            </p>
+          </div>
+
+          <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-12">
+            <ContactCard />
+            <GoogleMaps />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

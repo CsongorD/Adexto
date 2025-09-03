@@ -2,16 +2,17 @@ import { Rubik } from "next/font/google";
 import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-import "../styles/global.css";
+import "./globals.css";
 
 const rubik = Rubik({
   subsets: ["latin"],
-  weight: ["500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
 });
 
 export const metadata = {
   title: {
-    default: "Adexto - Betonske Ograde Zrenjanin",
+    default: "Adexto - Premium Betonske Ograde Zrenjanin",
     template: "%s | Adexto",
   },
   description:
@@ -31,7 +32,6 @@ export const metadata = {
       },
     ],
   },
-
   keywords:
     "betonske ograde, Zrenjanin, Adexto, ograda, betonske ograde zaštita",
   alternates: {
@@ -42,7 +42,7 @@ export const metadata = {
     follow: true,
   },
   openGraph: {
-    title: "Adexto - Betonske Ograde Zrenjanin",
+    title: "Adexto - Premium Betonske Ograde Zrenjanin",
     description:
       "Adexto proizvodi visokokvalitetne betonske ograde u Zrenjaninu, savršene za zaštitu i estetiku vašeg prostora.",
     url: "https://adexto.com",
@@ -83,11 +83,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="sr-RS">
-      <body className={rubik.className + " " + "root-layout"}>
+    <html lang="sr-RS" className="scroll-smooth">
+      <body
+        className={`${rubik.className} flex min-h-screen flex-col bg-white`}
+      >
         <ErrorBoundary />
         <Header />
-        {children}
+        <main className="flex-1 pt-16 sm:pt-20">{children}</main>
         <Footer />
       </body>
     </html>

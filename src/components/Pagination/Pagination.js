@@ -1,6 +1,5 @@
 import NextIcon from "../Icons/NextIcon";
 import PrevIcon from "../Icons/PrevIcon";
-import styles from "./Pagination.module.css";
 
 const Pagination = ({ modelsPerPage, totalModels, paginate, currentPage }) => {
   const totalPages = Math.ceil(totalModels / modelsPerPage);
@@ -12,6 +11,7 @@ const Pagination = ({ modelsPerPage, totalModels, paginate, currentPage }) => {
   function showNextModel() {
     if (!isLastPage) paginate(currentPage + 1);
   }
+
   function showPrevModel() {
     if (!isFirstPage) paginate(currentPage - 1);
   }
@@ -55,59 +55,54 @@ const Pagination = ({ modelsPerPage, totalModels, paginate, currentPage }) => {
   const paginationNumbers = getPaginationRange(totalPages, currentPage, 1);
 
   return (
-    <div className={styles.pagination}>
-      <ul>
-        <li
-          className={
-            styles.btn +
-            " " +
-            styles.prev +
-            ` ${isFirstPage ? styles.disabled : ""}`
-          }
+    <div className="flex justify-center py-4 sm:py-6 lg:py-8">
+      <div className="flex items-center space-x-1 rounded-xl border border-gray-200 bg-white p-1 shadow-lg sm:space-x-2 sm:rounded-2xl sm:p-2">
+        <button
           onClick={showPrevModel}
-          role="menuitem"
-          tabIndex={0}
-          onKeyDown={(e) => e.key === "Enter" && showPrevModel()}
+          disabled={isFirstPage}
+          className={`rounded-xl p-3 transition-all duration-300 ${
+            isFirstPage
+              ? "cursor-not-allowed text-gray-400"
+              : "text-gray-700 hover:bg-primary-50 hover:text-primary-600"
+          }`}
         >
-          <PrevIcon className={styles["arrow-icon"]} />
-        </li>
+          <PrevIcon className="h-4 w-4 sm:h-5 sm:w-5" />
+        </button>
 
         {paginationNumbers.map((number, index) => {
           const isActive = number === currentPage;
           const isDots = number === "...";
+
           return (
-            <li
+            <button
               key={isDots ? `dots-${index}` : number}
-              className={`${isDots ? styles.dots : styles.numb} ${
-                isActive ? styles.active : ""
-              }`}
               onClick={() => !isDots && paginate(number)}
-              role="menuitem"
-              tabIndex={0}
-              onKeyDown={(e) =>
-                e.key === "Enter" && !isDots && paginate(number)
-              }
+              disabled={isDots}
+              className={`h-8 min-w-[32px] rounded-lg text-sm font-medium transition-all duration-300 sm:h-10 sm:min-w-[40px] sm:rounded-xl sm:text-base ${
+                isDots
+                  ? "cursor-default text-gray-400"
+                  : isActive
+                    ? "bg-primary-500 text-white shadow-lg"
+                    : "text-gray-700 hover:bg-primary-50 hover:text-primary-600"
+              }`}
             >
               {number}
-            </li>
+            </button>
           );
         })}
 
-        <li
-          className={
-            styles.btn +
-            " " +
-            styles.next +
-            ` ${isLastPage ? styles.disabled : ""}`
-          }
+        <button
           onClick={showNextModel}
-          role="menuitem"
-          tabIndex={0}
-          onKeyDown={(e) => e.key === "Enter" && showNextModel()}
+          disabled={isLastPage}
+          className={`rounded-xl p-3 transition-all duration-300 ${
+            isLastPage
+              ? "cursor-not-allowed text-gray-400"
+              : "text-gray-700 hover:bg-primary-50 hover:text-primary-600"
+          }`}
         >
-          <NextIcon className={styles["arrow-icon"]} />
-        </li>
-      </ul>
+          <NextIcon className="h-4 w-4 sm:h-5 sm:w-5" />
+        </button>
+      </div>
     </div>
   );
 };

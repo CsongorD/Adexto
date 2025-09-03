@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import ImageSlider from "../ImageSlider/ImageSlider";
 import LoadingIcon from "../LoadingIcon/LoadingIcon";
-import styles from "./ModelList.module.css";
 
 const ModelList = ({ model, paginate, currentPage }) => {
   const [imageIndex, setImageIndex] = useState(0);
@@ -15,10 +14,19 @@ const ModelList = ({ model, paginate, currentPage }) => {
   }, [currentPage, model, isPrev]);
 
   if (!currentModel || !model) {
-    return <LoadingIcon />;
+    return (
+      <div className="flex justify-center py-12">
+        <LoadingIcon />
+      </div>
+    );
   }
+
   if (currentModel.images.length === 0) {
-    return <div>No images found for this model!</div>;
+    return (
+      <div className="py-12 text-center">
+        <p className="text-gray-500">No images found for this model!</p>
+      </div>
+    );
   }
 
   let modelNumber = currentModel.model;
@@ -40,6 +48,7 @@ const ModelList = ({ model, paginate, currentPage }) => {
       setLoading(true);
     }
   }
+
   function showNextImage() {
     if (
       !loading &&
@@ -51,20 +60,28 @@ const ModelList = ({ model, paginate, currentPage }) => {
       } else {
         setImageIndex((prevIndex) => prevIndex + 1);
       }
-
       setLoading(true);
     }
   }
 
   return (
-    <div className={styles["model-list"]}>
-      <h1 className={"title"}>Model {modelNumber}</h1>
+    <div className="space-y-8">
+      <div className="text-center">
+        <h2 className="mb-2 text-xl font-bold text-gray-900 sm:text-2xl lg:text-3xl">
+          Model <span className="text-gradient">{modelNumber}</span>
+        </h2>
+        <p className="text-sm text-gray-600 sm:text-base">
+          Slika {imageIndex + 1} od {modelImages.length}
+        </p>
+      </div>
+
       <ImageSlider
         currentImage={currentImage}
         modelNumber={modelNumber}
         handleLoad={handleLoad}
         showPrevImage={showPrevImage}
         showNextImage={showNextImage}
+        loading={loading}
       />
     </div>
   );

@@ -1,7 +1,7 @@
-import { ChartNoAxesColumn } from "lucide-react";
+import { Columns3 } from "lucide-react";
 
 const ColumnIcon = ({ className }) => {
-  return <ChartNoAxesColumn className={className} />;
+  return <Columns3 className={className} />;
 };
 
 export default ColumnIcon;

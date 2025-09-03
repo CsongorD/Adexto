@@ -3,13 +3,13 @@ import CharacteristicList from "../components/CharacteristicList/CharacteristicL
 import Landing from "../components/Landing/Landing";
 
 export const metadata = {
-  title: "Adexto - Betonske Ograde Zrenjanin",
+  title: "Adexto - Premium Betonske Ograde Zrenjanin",
   description:
     "Adexto nudi najkvalitetnije betonske ograde u Zrenjaninu, savršene za svaki prostor. Otkrijte našu ponudu danas!",
   keywords:
     "betonske ograde, Zrenjanin, Adexto, ograde za dvorište, betonske ograde Zrenjanin",
   openGraph: {
-    title: "Adexto - Betonske Ograde Zrenjanin",
+    title: "Adexto - Premium Betonske Ograde Zrenjanin",
     description:
       "Adexto nudi najkvalitetnije betonske ograde u Zrenjaninu, savršene za svaki prostor. Otkrijte našu ponudu danas!",
     url: "https://adexto.com",
@@ -20,7 +20,7 @@ export const metadata = {
 
 export default function HomePage() {
   return (
-    <div className="home-page page-margin-top">
+    <div className="min-h-screen bg-white">
       <Landing />
       <CharacteristicList />
       <AboutUs />
