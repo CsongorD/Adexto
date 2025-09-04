@@ -70,9 +70,9 @@ const Navbar = () => {
           />
 
           {/* Menu Panel */}
-          <div className="fixed inset-0 flex flex-col bg-black transition-all duration-300 ease-out">
+          <div className="fixed inset-0 flex flex-col bg-primary-900 transition-all duration-300 ease-out">
             {/* Header */}
-            <div className="flex items-center justify-between border-b border-gray-800 bg-gray-900 px-6 py-5">
+            <div className="flex items-center justify-between border-b border-primary-800 bg-primary-900 px-6 py-5">
               <div>
                 <h2 className="text-xl font-bold tracking-tight text-white">
                   ADEXTO
