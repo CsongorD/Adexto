@@ -6,7 +6,7 @@ const Column = ({ column }) => {
   return (
     <div className="overflow-hidden rounded-lg border border-primary-100 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:rounded-xl">
       <div className="relative">
-        <div className="aspect-[4/5] bg-primary-50">
+        <div className="aspect-[3/4] bg-primary-50 sm:aspect-[4/5]">
           <Image src={path} alt={name} small={small} priority={false} />
         </div>
         <div className="absolute left-2 top-2 rounded-full bg-white/90 px-2 py-1 backdrop-blur-sm sm:left-3 sm:top-3 sm:px-3">
