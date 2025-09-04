@@ -85,7 +85,7 @@ const AboutUs = () => {
               </div>
 
               {medals ? (
-                <div className="mx-auto grid max-w-32 grid-cols-2 gap-0.5 sm:max-w-xs sm:grid-cols-3 sm:gap-3 lg:mx-0">
+                <div className="mx-auto grid max-w-40 grid-cols-3 gap-0.5 sm:max-w-xs sm:grid-cols-3 sm:gap-3 lg:mx-0">
                   {medals.map((medal, index) => (
                     <div key={index} className="group cursor-pointer">
                       <div className="aspect-square w-full overflow-hidden rounded border border-primary-100 bg-white p-0 shadow-sm transition-all duration-300 hover:border-primary-200 hover:shadow-md group-hover:scale-105 sm:rounded-lg sm:p-2">
