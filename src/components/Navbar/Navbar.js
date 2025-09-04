@@ -70,9 +70,9 @@ const Navbar = () => {
           />
 
           {/* Menu Panel */}
-          <div className="fixed inset-0 transform bg-primary-900 transition-transform duration-300 ease-out">
+          <div className="fixed inset-0 transform bg-gray-900 transition-transform duration-300 ease-out">
             {/* Header */}
-            <div className="flex items-center justify-between border-b border-primary-700 bg-primary-800 px-6 py-5">
+            <div className="flex items-center justify-between border-b border-gray-800 bg-black px-6 py-5">
               <div className="flex items-center space-x-3">
                 <div className="relative h-8 w-8">
                   <div className="h-full w-full rounded-full bg-white"></div>
@@ -83,7 +83,7 @@ const Navbar = () => {
               </div>
               <button
                 onClick={closeSidebar}
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/20 text-white shadow-sm transition-all duration-200 hover:bg-white/30"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white shadow-sm transition-all duration-200 hover:bg-white/20"
               >
                 <CloseIcon className="h-5 w-5" />
               </button>
@@ -97,8 +97,8 @@ const Navbar = () => {
                   <NavButton
                     className={`block rounded-xl px-8 py-4 text-xl font-medium transition-all duration-300 hover:bg-primary-700 hover:text-white ${
                       pathname === to
-                        ? "bg-primary-700 text-white"
-                        : "text-primary-200"
+                        ? "bg-gray-800 text-white"
+                        : "text-gray-300"
                     }`}
                     to={to}
                     text={text}
