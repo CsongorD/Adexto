@@ -85,10 +85,10 @@ const AboutUs = () => {
               </div>
 
               {medals ? (
-                <div className="mx-auto grid max-w-xs grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-3 lg:mx-0">
+                <div className="mx-auto grid max-w-48 grid-cols-2 gap-1 sm:max-w-xs sm:grid-cols-3 sm:gap-3 lg:mx-0">
                   {medals.map((medal, index) => (
                     <div key={index} className="group cursor-pointer">
-                      <div className="aspect-square w-full overflow-hidden rounded-lg border border-primary-100 bg-white p-1 shadow-sm transition-all duration-300 hover:border-primary-200 hover:shadow-md group-hover:scale-105 sm:p-2">
+                      <div className="aspect-square w-full overflow-hidden rounded-md border border-primary-100 bg-white p-0.5 shadow-sm transition-all duration-300 hover:border-primary-200 hover:shadow-md group-hover:scale-105 sm:rounded-lg sm:p-2">
                         <img
                           src={medal.path}
                           alt={`medal-${index}`}
