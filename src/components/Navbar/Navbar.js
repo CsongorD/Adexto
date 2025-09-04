@@ -87,7 +87,7 @@ const Navbar = () => {
             </div>
 
             {/* Navigation Links */}
-            <div className="flex flex-1 items-center justify-center bg-primary-700">
+            <div className="flex flex-1 items-center justify-center bg-primary-700 h-full">
               <nav className="space-y-8 text-center">
                 {NAV_LINKS.map(({ to, text }, index) => (
                   <NavButton
