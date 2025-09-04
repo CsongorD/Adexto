@@ -65,12 +65,12 @@ const Navbar = () => {
         <div className="fixed inset-0 z-50 h-screen w-screen animate-fade-in md:hidden">
           {/* Backdrop */}
           <div
-            className="fixed inset-0 h-screen w-screen bg-black/80 backdrop-blur-sm transition-opacity duration-300"
+            className="fixed inset-0 h-screen w-screen bg-primary-800/80 backdrop-blur-sm transition-opacity duration-300"
             onClick={closeSidebar}
           />
 
           {/* Menu Panel */}
-          <div className="fixed inset-0 flex h-screen w-screen flex-col bg-black transition-all duration-300 ease-out">
+          <div className="fixed inset-0 flex h-screen w-screen flex-col bg-primary-800 transition-all duration-300 ease-out">
             {/* Header */}
             <div className="flex items-center justify-between border-b border-primary-800 bg-primary-800 px-6 py-5">
               <div>
