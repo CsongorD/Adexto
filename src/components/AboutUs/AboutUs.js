@@ -12,10 +12,10 @@ const AboutUs = () => {
     <section className="section-padding bg-white">
       <div className="container-custom">
         <div className="mb-8 text-center sm:mb-12 lg:mb-16">
-          <h2 className="mb-4 text-2xl font-bold text-gray-900 sm:text-3xl lg:text-4xl">
-            O <span className="text-primary-500">nama</span>
+          <h2 className="mb-4 text-2xl font-bold text-primary-800 sm:text-3xl lg:text-4xl">
+            O <span className="text-gradient">nama</span>
           </h2>
-          <p className="mx-auto max-w-3xl px-4 text-base text-gray-600 sm:text-lg lg:text-xl">
+          <p className="mx-auto max-w-3xl px-4 text-base text-primary-600 sm:text-lg lg:text-xl">
             Naša priča o kvalitetu i pouzdanosti
           </p>
         </div>
@@ -23,12 +23,12 @@ const AboutUs = () => {
         <div className="grid items-start gap-8 lg:grid-cols-3 lg:gap-12">
           {/* Main content */}
           <div className="space-y-12 lg:col-span-2">
-            {/* Company story */}
+            {/* Company story ee*/}
             <div className="space-y-4 sm:space-y-6">
-              <h3 className="text-xl font-semibold text-gray-900 sm:text-2xl">
+              <h3 className="text-xl font-semibold text-primary-800 sm:text-2xl">
                 Naša priča
               </h3>
-              <p className="text-base leading-relaxed text-gray-700 sm:text-lg">
+              <p className="text-base leading-relaxed text-primary-800 sm:text-lg">
                 Preduzeće{" "}
                 <span className="font-semibold text-primary-500">
                   Adexto d.o.o
@@ -42,7 +42,7 @@ const AboutUs = () => {
                 , izuzetne izdržljivosti i trajnosti. Takođe, jedini smo
                 dobitnici sertifikata{" "}
                 <span className="font-semibold text-primary-600">
-                  "FIRMA OD POVERENJA"
+                  &quot;FIRMA OD POVERENJA&quot;
                 </span>
                 .
               </p>
@@ -51,20 +51,20 @@ const AboutUs = () => {
             {/* Business info */}
             <div className="grid gap-6 sm:grid-cols-2 sm:gap-8">
               <div className="space-y-4">
-                <h4 className="text-lg font-semibold text-gray-900 sm:text-xl">
+                <h4 className="text-lg font-semibold text-primary-800 sm:text-xl">
                   Poslovni koncept
                 </h4>
-                <p className="text-sm leading-relaxed text-gray-700 sm:text-base">
+                <p className="text-sm leading-relaxed text-primary-700 sm:text-base">
                   Adexto će na jednostavan način ponuditi prodaju i postavljanje
                   betonskih ograda.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <h4 className="text-lg font-semibold text-gray-900 sm:text-xl">
+                <h4 className="text-lg font-semibold text-primary-800 sm:text-xl">
                   Naša vizija
                 </h4>
-                <p className="text-sm leading-relaxed text-gray-700 sm:text-base">
+                <p className="text-sm leading-relaxed text-primary-700 sm:text-base">
                   Želja nam je da vam približimo novine u betonskoj proizvodnji
                   kroz asortiman naših proizvoda i da budemo još bolji.
                 </p>
@@ -76,10 +76,10 @@ const AboutUs = () => {
           <div className="lg:col-span-1">
             <div className="space-y-6 sm:space-y-8">
               <div className="text-center lg:text-left">
-                <h3 className="mb-2 text-xl font-bold text-gray-900 sm:text-2xl">
+                <h3 className="mb-2 text-xl font-bold text-primary-800 sm:text-2xl">
                   Naša priznanja
                 </h3>
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-primary-500">
                   Sertifikati kvaliteta i poverenja
                 </p>
               </div>
@@ -88,7 +88,7 @@ const AboutUs = () => {
                 <div className="mx-auto grid max-w-xs grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-3 lg:mx-0">
                   {medals.map((medal, index) => (
                     <div key={index} className="group cursor-pointer">
-                      <div className="aspect-square w-full overflow-hidden rounded-lg border border-gray-100 bg-white p-1 shadow-sm transition-all duration-300 hover:border-primary-200 hover:shadow-md group-hover:scale-105 sm:p-2">
+                      <div className="aspect-square w-full overflow-hidden rounded-lg border border-primary-100 bg-white p-1 shadow-sm transition-all duration-300 hover:border-primary-200 hover:shadow-md group-hover:scale-105 sm:p-2">
                         <img
                           src={medal.path}
                           alt={`medal-${index}`}

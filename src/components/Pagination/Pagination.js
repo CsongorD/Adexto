@@ -56,14 +56,14 @@ const Pagination = ({ modelsPerPage, totalModels, paginate, currentPage }) => {
 
   return (
     <div className="flex justify-center py-4 sm:py-6 lg:py-8">
-      <div className="flex items-center space-x-1 rounded-xl border border-gray-200 bg-white p-1 shadow-lg sm:space-x-2 sm:rounded-2xl sm:p-2">
+      <div className="flex items-center space-x-1 rounded-xl border border-primary-200 bg-white p-1 shadow-lg sm:space-x-2 sm:rounded-2xl sm:p-2">
         <button
           onClick={showPrevModel}
           disabled={isFirstPage}
           className={`rounded-xl p-3 transition-all duration-300 ${
             isFirstPage
-              ? "cursor-not-allowed text-gray-400"
-              : "text-gray-700 hover:bg-primary-50 hover:text-primary-600"
+              ? "cursor-not-allowed text-primary-300"
+              : "text-primary-700 hover:bg-primary-50 hover:text-primary-600"
           }`}
         >
           <PrevIcon className="h-4 w-4 sm:h-5 sm:w-5" />
@@ -80,10 +80,10 @@ const Pagination = ({ modelsPerPage, totalModels, paginate, currentPage }) => {
               disabled={isDots}
               className={`h-8 min-w-[32px] rounded-lg text-sm font-medium transition-all duration-300 sm:h-10 sm:min-w-[40px] sm:rounded-xl sm:text-base ${
                 isDots
-                  ? "cursor-default text-gray-400"
+                  ? "cursor-default text-primary-300"
                   : isActive
                     ? "bg-primary-800 text-white shadow-lg"
-                    : "text-gray-700 hover:bg-primary-200 hover:text-primary-800"
+                    : "text-primary-700 hover:bg-primary-200 hover:text-primary-800"
               }`}
             >
               {number}
@@ -96,8 +96,8 @@ const Pagination = ({ modelsPerPage, totalModels, paginate, currentPage }) => {
           disabled={isLastPage}
           className={`rounded-xl p-3 transition-all duration-300 ${
             isLastPage
-              ? "cursor-not-allowed text-gray-400"
-              : "text-gray-700 hover:bg-primary-200 hover:text-primary-600"
+              ? "cursor-not-allowed text-primary-300"
+              : "text-primary-700 hover:bg-primary-200 hover:text-primary-600"
           }`}
         >
           <NextIcon className="h-4 w-4 sm:h-5 sm:w-5" />

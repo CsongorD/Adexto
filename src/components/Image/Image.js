@@ -22,8 +22,8 @@ const Image = ({ src, alt, small, priority = false, onLoad = () => {} }) => {
 
   if (imageError) {
     return (
-      <div className="flex h-full w-full items-center justify-center bg-gray-200">
-        <div className="text-center text-gray-400">
+      <div className="flex h-full w-full items-center justify-center bg-primary-200">
+        <div className="text-center text-primary-300">
           <svg
             className="mx-auto mb-2 h-12 w-12"
             fill="currentColor"
@@ -44,7 +44,7 @@ const Image = ({ src, alt, small, priority = false, onLoad = () => {} }) => {
   return (
     <div className="relative h-full w-full">
       {!isLoaded && (
-        <div className="absolute inset-0 animate-pulse rounded bg-gray-700/20" />
+        <div className="absolute inset-0 animate-pulse rounded bg-primary-700/20" />
       )}
 
       <NextImage

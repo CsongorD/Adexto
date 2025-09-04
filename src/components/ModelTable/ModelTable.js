@@ -37,10 +37,10 @@ export default function ModelTable() {
     <div className="section-padding">
       <div className="container-custom">
         <div className="mb-8 text-center sm:mb-10 lg:mb-12">
-          <h1 className="mb-4 text-2xl font-bold text-gray-900 sm:text-3xl lg:text-4xl">
+          <h1 className="mb-4 text-2xl font-bold text-primary-800 sm:text-3xl lg:text-4xl">
             Naši <span className="text-gradient">Modeli</span>
           </h1>
-          <p className="mx-auto max-w-3xl px-4 text-base text-gray-600 sm:text-lg lg:text-xl">
+          <p className="mx-auto max-w-3xl px-4 text-base text-primary-600 sm:text-lg lg:text-xl">
             Pregledajte našu kolekciju betonskih ograda i pronađite savršen
             dizajn za vaš prostor
           </p>

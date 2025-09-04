@@ -16,7 +16,7 @@ const NavButton = ({ to, text, onClick = () => {}, className = "" }) => {
 
   // Check if this is a header navigation button by looking for nav-specific classes
   const isHeaderNav =
-    className.includes("text-gray-300") ||
+    className.includes("text-primary-300") ||
     className.includes("hover:text-primary-400");
 
   return (
