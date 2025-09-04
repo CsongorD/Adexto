@@ -94,8 +94,8 @@ const Navbar = () => {
                     key={to}
                     className={`animate-fade-in block rounded-lg px-8 py-4 text-xl font-medium transition-all duration-200 hover:bg-gray-800 hover:text-white ${
                       pathname === to
-                        ? "bg-gray-800 text-white"
-                        : "text-gray-300"
+                        ? "bg-primary-800 text-white"
+                        : "text-primary-300"
                     }`}
                     to={to}
                     text={text}
