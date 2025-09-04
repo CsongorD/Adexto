@@ -92,7 +92,7 @@ const Navbar = () => {
                 {NAV_LINKS.map(({ to, text }, index) => (
                   <NavButton
                     key={to}
-                    className={`animate-fade-in block rounded-lg px-8 py-4 text-xl font-medium transition-all duration-200 hover:bg-gray-800 hover:text-white ${
+                    className={`animate-fade-in block rounded-lg px-8 py-4 text-xl font-medium transition-all duration-200 hover:bg-primary-800 hover:text-white ${
                       pathname === to
                         ? "bg-primary-800 text-white"
                         : "text-primary-300"
