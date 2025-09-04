@@ -62,15 +62,15 @@ const Navbar = () => {
 
       {/* Mobile Navigation Overlay */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 animate-fade-in md:hidden">
+        <div className="fixed inset-0 z-50 h-screen w-screen animate-fade-in md:hidden">
           {/* Backdrop */}
           <div
-            className="fixed inset-0 bg-black/80 backdrop-blur-sm transition-opacity duration-300"
+            className="fixed inset-0 h-screen w-screen bg-black/80 backdrop-blur-sm transition-opacity duration-300"
             onClick={closeSidebar}
           />
 
           {/* Menu Panel */}
-          <div className="fixed inset-0 flex flex-col bg-primary-800 transition-all duration-300 ease-out">
+          <div className="fixed inset-0 flex h-screen w-screen flex-col bg-black transition-all duration-300 ease-out">
             {/* Header */}
             <div className="flex items-center justify-between border-b border-primary-800 bg-primary-800 px-6 py-5">
               <div>
@@ -87,7 +87,7 @@ const Navbar = () => {
             </div>
 
             {/* Navigation Links */}
-            <div className="flex flex-1 items-center justify-center bg-primary-700 ">
+            <div className="flex flex-1 h-full items-center justify-center bg-black">
               <nav className="space-y-8 text-center">
                 {NAV_LINKS.map(({ to, text }, index) => (
                   <NavButton
