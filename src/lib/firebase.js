@@ -1,5 +1,6 @@
-// src/lib/firebaseConfig.js
+// src/lib/firebase.js
 import { initializeApp } from "firebase/app";
+import { getPerformance } from "firebase/performance";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
@@ -9,6 +10,7 @@ const firebaseConfig = {
   storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
   messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
@@ -17,4 +19,10 @@ const app = initializeApp(firebaseConfig);
 // Initialize Firebase Storage
 const storage = getStorage(app);
 
-export { storage };
+// Initialize Firebase Performance (only in browser)
+let perf = null;
+if (typeof window !== 'undefined') {
+  perf = getPerformance(app);
+}
+
+export { storage, perf };

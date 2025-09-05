@@ -1,29 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import allData from "../data/all_data";
 
 const useImages = (db) => {
-  const [images, setImages] = useState(null);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    async function fetchImages() {
-      try {
-        const response = await import(`../data/${db}_db.json`);
-        const images = response.default;
-
-        if (!response || !images) {
-          throw new Error("Failed to fetch data");
-        }
-        setImages(images);
-      } catch (error) {
-        setError(error);
-      }
-    }
-
-    fetchImages();
-  }, [db]);
+  const images = allData[db] || null;
+  const error = images ? null : new Error(`Data for "${db}" not found`);
 
   return [images, error];
 };
+
 export default useImages;

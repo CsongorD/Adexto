@@ -1,14 +1,18 @@
-import LoadingIcon from "../LoadingIcon/LoadingIcon";
-import styles from "./Loading.module.css";
-
 const Loading = () => {
   return (
-    <div className={styles["loading"]} role="status" aria-live="polite">
-      <div className={styles["loading-logo-container"]}>
-        <LoadingIcon />
+    <div 
+      className="fixed inset-0 z-50 flex min-h-screen flex-col items-center justify-center bg-white"
+      role="status" 
+      aria-live="polite"
+    >
+      <div className="mb-8 flex h-16 w-16 items-center justify-center">
+        <div className="loading-spinner"></div>
       </div>
-      <div className={styles["logo-name"]}>ADEXTO</div>
+      <div className="text-2xl font-bold tracking-tight text-primary-800">
+        ADEXTO
+      </div>
     </div>
   );
 };
+
 export default Loading;

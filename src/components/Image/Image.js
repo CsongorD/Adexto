@@ -1,20 +1,10 @@
 "use client";
 
 import NextImage from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Image = ({ src, alt, small, priority = false, onLoad = () => {} }) => {
-  const [isLoaded, setIsLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
-
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
-
-  const handleLoad = () => {
-    setIsLoaded(true);
-    onLoad();
-  };
 
   const handleError = () => {
     setImageError(true);
@@ -43,18 +33,12 @@ const Image = ({ src, alt, small, priority = false, onLoad = () => {} }) => {
 
   return (
     <div className="relative h-full w-full">
-      {!isLoaded && (
-        <div className="absolute inset-0 animate-pulse rounded bg-primary-700/20" />
-      )}
-
       <NextImage
         src={src}
         alt={alt}
-        className={`h-full w-full object-cover transition-opacity duration-300 ${
-          isLoaded ? "opacity-100" : "opacity-0"
-        }`}
+        className="h-full w-full object-cover"
         fill={true}
-        onLoad={handleLoad}
+        onLoad={onLoad}
         onError={handleError}
         priority={priority}
         placeholder={small ? "blur" : "empty"}
