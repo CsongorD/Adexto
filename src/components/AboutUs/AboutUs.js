@@ -1,6 +1,7 @@
 "use client";
 
 import useImages from "../../hooks/useImages";
+import Link from "next/link";
 import ImageLoading from "../ImageLoading/ImageLoading";
 
 const AboutUs = () => {
@@ -46,6 +47,20 @@ const AboutUs = () => {
                 </span>
                 .
               </p>
+              <Link
+                href="/galerija"
+                className="inline-flex items-center text-primary-600 hover:text-primary-800 font-medium text-sm mt-2"
+                title="Pogledajte našu galeriju realizovanih projekata"
+              >
+                Pogledajte galeriju →
+              </Link>
+              <Link
+                href="/kontakt"
+                className="inline-flex items-center text-primary-600 hover:text-primary-800 font-medium text-sm mt-2"
+                title="Kontaktirajte nas za više informacija"
+              >
+                Kontaktirajte nas →
+              </Link>
             </div>
 
             {/* Business info */}

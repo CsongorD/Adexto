@@ -1,6 +1,7 @@
 import AboutUs from "../components/AboutUs/AboutUs";
 import CharacteristicList from "../components/CharacteristicList/CharacteristicList";
 import Landing from "../components/Landing/Landing";
+import RelatedLinks from "../components/RelatedLinks/RelatedLinks";
 
 export const metadata = {
   title: "Adexto - Premium Betonske Ograde Zrenjanin",
@@ -24,6 +25,7 @@ export default function HomePage() {
       <Landing />
       <CharacteristicList />
       <AboutUs />
+      <RelatedLinks currentPage="/" />
     </div>
   );
 }

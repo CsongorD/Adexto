@@ -1,4 +1,6 @@
 import ModelTable from "../../components/ModelTable/ModelTable";
+import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
+import RelatedLinks from "../../components/RelatedLinks/RelatedLinks";
 
 export const metadata = {
   title: "Modeli - Betonske Ograde Zrenjanin",
@@ -19,7 +21,9 @@ export const metadata = {
 export default function ModelsPage() {
   return (
     <div className="min-h-screen bg-white">
+      <Breadcrumbs />
       <ModelTable />
+      <RelatedLinks currentPage="/modeli" />
     </div>
   );
 }

@@ -34,11 +34,13 @@ const Landing = () => {
               <NavButton
                 className="btn-primary inline-flex items-center justify-center"
                 to="/cenovnik"
+                title="Pogledajte cene betonskih ograda i stubova"
                 text="POGLEDAJ CENOVNIK"
               />
               <NavButton
                 className="btn-secondary inline-flex items-center justify-center space-x-1 sm:space-x-2"
                 to="/modeli"
+                title="Pogledajte sve dostupne modele betonskih ograda"
                 text={
                   <>
                     <Eye className="h-4 w-4 sm:h-5 sm:w-5" />
