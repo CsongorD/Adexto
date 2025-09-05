@@ -18,7 +18,7 @@ export const metadata = {
   },
   description:
     "Adexto proizvodi visokokvalitetne betonske ograde u Zrenjaninu, savršene za zaštitu i estetiku vašeg prostora.",
-  manifest: "/site.webmanifest",
+  manifest: "/manifest.json",
   icons: {
     icon: [
       { url: "/favicon.ico" },
