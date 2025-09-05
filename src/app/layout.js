@@ -2,7 +2,6 @@ import { Rubik } from "next/font/google";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import PWAInstallPrompt from "../components/PWAInstallPrompt/PWAInstallPrompt";
-import ServiceWorkerRegistration from "../components/ServiceWorkerRegistration/ServiceWorkerRegistration";
 import "./globals.css";
 
 const rubik = Rubik({
@@ -153,8 +152,6 @@ export default function RootLayout({ children }) {
         <Header />
         <main className="flex-1 pt-16 sm:pt-20">{children}</main>
         <Footer />
-        <PWAInstallPrompt />
-        <ServiceWorkerRegistration />
       </body>
     </html>
   );
