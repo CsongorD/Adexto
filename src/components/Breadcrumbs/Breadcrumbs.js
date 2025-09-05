@@ -46,7 +46,6 @@ const Breadcrumbs = ({ customItems = null }) => {
                       aria-current="page"
                     >
                       {item.icon && <span>{item.icon}</span>}
-                      }
                       <span>{item.title}</span>
                     </span>
                   ) : (
@@ -56,7 +55,6 @@ const Breadcrumbs = ({ customItems = null }) => {
                       title={item.description}
                     >
                       {item.icon && <span>{item.icon}</span>}
-                      }
                       <span>{item.title}</span>
                     </Link>
                   )}
