@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const NavButton = ({ to, text, onClick = () => {}, className = "", title = "" }) => {
+const NavButton = ({ to, text, onClick = () => {}, className = "" }) => {
   const pathname = usePathname();
   const isActive = pathname === to;
 
@@ -30,7 +30,6 @@ const NavButton = ({ to, text, onClick = () => {}, className = "", title = "" })
             : ""
       } ${isHeaderNav ? "relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-center after:bg-primary-400 after:transition-transform after:duration-300 after:content-['']" : ""}`}
       onClick={handleClick}
-      title={title}
     >
       {text}
     </Link>

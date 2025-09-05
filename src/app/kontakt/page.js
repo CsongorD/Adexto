@@ -1,7 +1,5 @@
 import ContactCard from "../../components/ContactCard/ContactCard";
 import GoogleMaps from "../../components/GoogleMaps/GoogleMaps";
-import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
-import RelatedLinks from "../../components/RelatedLinks/RelatedLinks";
 
 export const metadata = {
   title: "Kontakt - Betonske Ograde Zrenjanin",
@@ -22,7 +20,6 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
-      <Breadcrumbs />
       <div className="section-padding">
         <div className="container-custom">
           <div className="mb-8 text-center sm:mb-12 lg:mb-16">
@@ -41,7 +38,6 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-      <RelatedLinks currentPage="/kontakt" />
     </div>
   );
 }

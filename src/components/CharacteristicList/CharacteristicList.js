@@ -1,7 +1,6 @@
 "use client";
 
 import useImages from "../../hooks/useImages";
-import Link from "next/link";
 import Characteristic from "../Characteristic/Characteristic";
 import ImageLoading from "../ImageLoading/ImageLoading";
 
@@ -39,28 +38,6 @@ const CharacteristicList = () => {
               </div>
             ))
           )}
-        </div>
-
-        <div className="text-center mt-8 sm:mt-12">
-          <p className="text-primary-600 mb-4">
-            Zainteresovani ste za naše betonske ograde?
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Link
-              href="/cenovnik"
-              className="btn-primary inline-flex items-center justify-center"
-              title="Pogledajte cene svih naših proizvoda"
-            >
-              Pogledajte Cenovnik
-            </Link>
-            <Link
-              href="/modeli"
-              className="btn-secondary inline-flex items-center justify-center"
-              title="Istražite sve dostupne modele betonskih ograda"
-            >
-              Istražite Modele
-            </Link>
-          </div>
         </div>
       </div>
     </section>

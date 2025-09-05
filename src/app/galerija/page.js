@@ -1,6 +1,4 @@
 import Gallery from "../../components/Gallery/Gallery";
-import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
-import RelatedLinks from "../../components/RelatedLinks/RelatedLinks";
 
 export const metadata = {
   title: "Galerija - Betonske Ograde Zrenjanin",
@@ -21,9 +19,7 @@ export const metadata = {
 export default function GalleryPage() {
   return (
     <div className="min-h-screen bg-white">
-      <Breadcrumbs />
       <Gallery />
-      <RelatedLinks currentPage="/galerija" />
     </div>
   );
 }
