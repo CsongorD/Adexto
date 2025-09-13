@@ -67,6 +67,14 @@ const Navbar = () => {
           <div
             className="fixed inset-0 h-screen w-screen bg-primary-800/80 backdrop-blur-sm transition-opacity duration-300"
             onClick={closeSidebar}
+            role="button"
+            tabIndex={0}
+            aria-label="Close menu overlay"
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                closeSidebar();
+              }
+            }}
           />
 
           {/* Menu Panel */}
