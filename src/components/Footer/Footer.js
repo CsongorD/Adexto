@@ -23,12 +23,14 @@ const footerData = [
 
 const Footer = () => {
   return (
-    <footer className="gradient-bg border-t border-gray-800/20">
+    <footer className="gradient-bg border-t border-primary-800/20">
       <div className="container-custom section-padding">
         <div className="grid items-center gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="md:col-span-2 lg:col-span-1">
             <h3 className="mb-2 text-2xl font-bold text-white">ADEXTO D.O.O</h3>
-            <p className="text-gray-400">Vrhunski kvalitet betonskih ograda</p>
+            <p className="text-primary-300">
+              Vrhunski kvalitet betonskih ograda
+            </p>
           </div>
 
           <div className="md:col-span-2 lg:col-span-3">
@@ -45,9 +47,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-gray-700 pt-8 text-center">
-          <p className="text-gray-400">
-            © 2024 Adexto D.O.O. Sva prava zadržana.
+        <div className="mt-12 border-t border-primary-700 pt-8 text-center">
+          <p className="text-primary-300">
+            ©2025 Adexto D.O.O. Sva prava zadržana.
           </p>
         </div>
       </div>

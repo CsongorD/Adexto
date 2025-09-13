@@ -23,10 +23,10 @@ export default function ContactPage() {
       <div className="section-padding">
         <div className="container-custom">
           <div className="mb-8 text-center sm:mb-12 lg:mb-16">
-            <h1 className="mb-4 text-2xl font-bold text-gray-900 sm:text-3xl lg:text-4xl">
+            <h1 className="mb-4 text-2xl font-bold text-primary-800 sm:text-3xl lg:text-4xl">
               Kontaktirajte <span className="text-gradient">nas</span>
             </h1>
-            <p className="mx-auto max-w-3xl px-4 text-base text-gray-600 sm:text-lg lg:text-xl">
+            <p className="mx-auto max-w-3xl px-4 text-base text-primary-600 sm:text-lg lg:text-xl">
               Spremni smo da odgovorimo na sva vaša pitanja i pomognemo vam u
               izboru
             </p>

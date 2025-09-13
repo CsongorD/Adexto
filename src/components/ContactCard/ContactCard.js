@@ -4,11 +4,11 @@ const ContactCard = () => {
   return (
     <div className="space-y-6 sm:space-y-8">
       <div className="card p-4 sm:p-6 lg:p-8">
-        <h2 className="mb-4 text-xl font-bold text-gray-900 sm:mb-6 sm:text-2xl">
+        <h2 className="mb-4 text-xl font-bold text-primary-800 sm:mb-6 sm:text-2xl">
           ADEXTO DOO
         </h2>
 
-        <div className="space-y-3 text-gray-700 sm:space-y-4">
+        <div className="space-y-3 text-primary-700 sm:space-y-4">
           <div className="flex items-start space-x-3">
             <MapPin className="mt-1 h-4 w-4 flex-shrink-0 text-primary-500 sm:h-5 sm:w-5" />
             <p className="text-sm sm:text-base">
@@ -23,7 +23,7 @@ const ContactCard = () => {
                 Tel:{" "}
                 <a
                   href="tel:+381668822339"
-                  className="text-primary-600 transition-colors duration-300 hover:text-primary-700"
+                  className="font-bold text-primary-800 transition-colors duration-300 hover:text-primary-900"
                 >
                   +381 66 8822 339
                 </a>
@@ -38,7 +38,7 @@ const ContactCard = () => {
                 Email:{" "}
                 <a
                   href="mailto:info@adexto.com"
-                  className="text-primary-600 transition-colors duration-300 hover:text-primary-700"
+                  className="font-bold text-primary-800 transition-colors duration-300 hover:text-primary-900"
                 >
                   info@adexto.com
                 </a>
@@ -46,7 +46,7 @@ const ContactCard = () => {
             </div>
           </div>
 
-          <div className="space-y-1 border-t border-gray-200 pt-3 sm:space-y-2 sm:pt-4">
+          <div className="space-y-1 border-t border-primary-200 pt-3 sm:space-y-2 sm:pt-4">
             <p className="text-sm sm:text-base">
               <span className="font-medium">Matični broj:</span> 20289635
             </p>
@@ -58,11 +58,11 @@ const ContactCard = () => {
       </div>
 
       <div className="card p-4 sm:p-6 lg:p-8">
-        <h3 className="mb-3 text-lg font-bold text-gray-900 sm:mb-4 sm:text-xl">
+        <h3 className="mb-3 text-lg font-bold text-primary-800 sm:mb-4 sm:text-xl">
           RADNO VREME
         </h3>
 
-        <div className="space-y-2 text-gray-700 sm:space-y-3">
+        <div className="space-y-2 text-primary-700 sm:space-y-3">
           <div className="flex flex-col space-y-1 sm:flex-row sm:items-center sm:justify-between sm:space-y-0">
             <span className="text-sm sm:text-base">Ponedeljak - Petak:</span>
             <span className="text-sm font-medium text-primary-600 sm:text-base">
@@ -73,7 +73,7 @@ const ContactCard = () => {
             <span className="text-sm sm:text-base">
               Subota, nedelja i praznici:
             </span>
-            <span className="text-sm font-medium text-gray-600 sm:text-base">
+            <span className="text-sm font-medium text-primary-800 sm:text-base">
               po dogovoru
             </span>
           </div>
@@ -87,11 +87,11 @@ const ContactCard = () => {
       </div>
 
       <div className="card p-4 sm:p-6 lg:p-8">
-        <h3 className="mb-3 text-lg font-bold text-gray-900 sm:mb-4 sm:text-xl">
+        <h3 className="mb-3 text-lg font-bold text-primary-800 sm:mb-4 sm:text-xl">
           KAKO DO NAS
         </h3>
 
-        <p className="text-sm leading-relaxed text-gray-700 sm:text-base">
+        <p className="text-sm leading-relaxed text-primary-700 sm:text-base">
           Krenite prema Mužlji iz Zrenjanina. Kod Gomexa skrenite desno u ulicu
           Servo Mihalja. Vozite 2.5 km dok ne vidite žuti objekat sa leve
           strane.

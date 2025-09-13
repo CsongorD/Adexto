@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import CloseIcon from "../Icons/CloseIcon";
 import MenuIcon from "../Icons/MenuIcon";
 import NavButton from "../NavButton/NavButton";
@@ -14,6 +15,7 @@ const NAV_LINKS = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     if (isOpen) {
@@ -37,7 +39,7 @@ const Navbar = () => {
         {NAV_LINKS.map(({ to, text }) => (
           <NavButton
             key={to}
-            className="group relative text-sm font-medium text-gray-300 transition-colors duration-300 hover:text-primary-400 lg:text-base"
+            className="group relative text-sm font-medium text-primary-200 transition-colors duration-300 hover:text-primary-400 lg:text-base"
             to={to}
             text={text}
             onClick={closeSidebar}
@@ -60,33 +62,56 @@ const Navbar = () => {
 
       {/* Mobile Navigation Overlay */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 md:hidden">
+        <div className="fixed inset-0 z-50 h-screen w-screen animate-fade-in md:hidden">
+          {/* Backdrop */}
           <div
-            className="fixed inset-0 bg-black/50 backdrop-blur-sm"
+            className="fixed inset-0 h-screen w-screen bg-primary-800/80 backdrop-blur-sm transition-opacity duration-300"
             onClick={closeSidebar}
+            role="button"
+            tabIndex={0}
+            aria-label="Close menu overlay"
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                closeSidebar();
+              }
+            }}
           />
-          <div className="gradient-bg fixed right-0 top-0 h-full w-72 max-w-full shadow-2xl sm:w-80">
-            <div className="flex items-center justify-between border-b border-gray-700 p-6">
-              <h3 className="text-lg font-semibold text-white sm:text-xl">
-                Menu
-              </h3>
+
+          {/* Menu Panel */}
+          <div className="fixed inset-0 flex h-screen w-screen flex-col bg-primary-800 transition-all duration-300 ease-out">
+            {/* Header */}
+            <div className="flex items-center justify-between border-b border-primary-800 bg-primary-800 px-6 py-5">
+              <div>
+                <h2 className="text-xl font-bold tracking-tight text-white">
+                  ADEXTO
+                </h2>
+              </div>
               <button
                 onClick={closeSidebar}
-                className="p-2 text-gray-300 transition-colors duration-300 hover:text-white"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-200 hover:bg-white/20"
               >
-                <CloseIcon className="h-5 w-5 sm:h-6 sm:w-6" />
+                <CloseIcon className="h-5 w-5" />
               </button>
             </div>
-            <div className="flex flex-col space-y-3 p-4 sm:space-y-4 sm:p-6">
-              {NAV_LINKS.map(({ to, text }) => (
-                <NavButton
-                  key={to}
-                  className="rounded-lg px-3 py-2 text-base font-medium text-gray-300 transition-all duration-300 hover:bg-gray-800/50 hover:text-primary-400 sm:px-4 sm:py-3 sm:text-lg"
-                  to={to}
-                  text={text}
-                  onClick={closeSidebar}
-                />
-              ))}
+
+            {/* Navigation Links */}
+            <div className="flex flex-1 h-full items-center justify-center bg-primary-800">
+              <nav className="space-y-8 text-center">
+                {NAV_LINKS.map(({ to, text }, index) => (
+                  <NavButton
+                    key={to}
+                    className={`animate-fade-in block rounded-lg px-8 py-4 text-xl font-medium transition-all duration-200 hover:bg-primary-800 hover:text-white ${
+                      pathname === to
+                        ? "bg-primary-800 text-white"
+                        : "text-primary-300"
+                    }`}
+                    to={to}
+                    text={text}
+                    onClick={closeSidebar}
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  />
+                ))}
+              </nav>
             </div>
           </div>
         </div>

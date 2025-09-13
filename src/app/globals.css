@@ -18,15 +18,15 @@
 
 @layer components {
   .btn-primary {
-    @apply transform rounded-xl bg-primary-500 px-4 py-2 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-primary-600 hover:shadow-xl sm:px-6 sm:py-3 sm:text-base;
+    @apply transform rounded-xl bg-primary-800 px-4 py-2 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-primary-800 hover:shadow-xl sm:px-6 sm:py-3 sm:text-base;
   }
 
   .btn-secondary {
-    @apply rounded-xl border-2 border-primary-500 bg-transparent px-4 py-2 text-sm font-semibold text-primary-500 transition-all duration-300 hover:bg-primary-500 hover:text-white sm:px-6 sm:py-3 sm:text-base;
+    @apply rounded-xl border-2 border-primary-800 bg-transparent px-4 py-2 text-sm font-semibold text-primary-800 transition-all duration-300 hover:bg-primary-800 hover:text-white sm:px-6 sm:py-3 sm:text-base;
   }
 
   .card {
-    @apply rounded-2xl border border-gray-100/50 bg-white shadow-lg transition-all duration-300 hover:shadow-xl;
+    @apply rounded-2xl border border-primary-100/50 bg-white shadow-lg transition-all duration-300 hover:shadow-xl;
   }
 
   .section-padding {
@@ -42,11 +42,11 @@
   }
 
   .text-gradient {
-    @apply text-primary-500;
+    @apply rounded-xl bg-primary-800 px-3 py-1 text-center text-primary-400;
   }
 
   .loading-spinner {
-    @apply h-8 w-8 animate-spin rounded-full border-b-2 border-primary-500;
+    @apply h-8 w-8 animate-spin rounded-full border-b-2 border-primary-800;
   }
 }
 
@@ -70,7 +70,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-gray-100;
+  @apply bg-primary-100;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -78,7 +78,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-primary-500;
+  @apply bg-primary-800;
 }
 
 /* Focus styles */

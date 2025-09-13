@@ -13,10 +13,10 @@ const CharacteristicList = () => {
     <section className="section-padding bg-grey-50">
       <div className="container-custom">
         <div className="mb-8 text-center sm:mb-12 lg:mb-16">
-          <h2 className="mb-4 text-2xl font-bold text-gray-900 sm:text-3xl lg:text-4xl">
+          <h2 className="mb-4 text-2xl font-bold text-primary-800 sm:text-3xl lg:text-4xl">
             Zašto odabrati <span className="text-gradient">Adexto</span>?
           </h2>
-          <p className="mx-auto max-w-3xl px-4 text-base text-gray-600 sm:text-lg lg:text-xl">
+          <p className="mx-auto max-w-3xl px-4 text-base text-primary-600 sm:text-lg lg:text-xl">
             Naše betonske ograde kombinuju funkcionalnost, estetiku i
             dugotrajnost
           </p>

@@ -1,7 +1,8 @@
 import { Rubik } from "next/font/google";
-import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
+import PWAInstallPrompt from "../components/PWAInstallPrompt/PWAInstallPrompt";
+import ServiceWorkerRegistration from "../components/ServiceWorkerRegistration/ServiceWorkerRegistration";
 import "./globals.css";
 
 const rubik = Rubik({
@@ -17,7 +18,7 @@ export const metadata = {
   },
   description:
     "Adexto proizvodi visokokvalitetne betonske ograde u Zrenjaninu, savršene za zaštitu i estetiku vašeg prostora.",
-  manifest: "/site.webmanifest",
+  manifest: "/manifest.json",
   icons: {
     icon: [
       { url: "/favicon.ico" },
@@ -31,6 +32,16 @@ export const metadata = {
         type: "image/png",
       },
     ],
+  },
+  other: {
+    "mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "black-translucent",
+    "apple-mobile-web-app-title": "Adexto",
+    "application-name": "Adexto",
+    "msapplication-TileColor": "#1a1a1a",
+    "msapplication-config": "/browserconfig.xml",
+    "theme-color": "#1a1a1a",
   },
   keywords:
     "betonske ograde, Zrenjanin, Adexto, ograda, betonske ograde zaštita",
@@ -56,41 +67,94 @@ export const metadata = {
   verification: {
     google: "ry2p4t0L_z9AhK5gYh4KU8vXzkYivtR_odspxBEJjJ4",
   },
-  other: {
-    "application/ld+json": JSON.stringify({
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          name: "Adexto",
-          url: "https://adexto.com",
+  additionalMetaTags: [
+    {
+      name: "viewport",
+      content: "width=device-width, initial-scale=1, viewport-fit=cover",
+    },
+  ],
+  additionalLinkTags: [
+    {
+      rel: "manifest",
+      href: "/manifest.json",
+    },
+    {
+      rel: "apple-touch-startup-image",
+      href: "/images/apple-touch-icon.png",
+    },
+  ],
+  structuredData: {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        name: "Adexto",
+        url: "https://adexto.com",
+      },
+      {
+        "@type": "Organization",
+        name: "Adexto",
+        url: "https://adexto.com",
+        logo: "https://adexto.com/images/logo.svg",
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: "+381 66 8822 339",
+          contactType: "Customer Service",
         },
-        {
-          "@type": "Organization",
-          name: "Adexto",
-          url: "https://adexto.com",
-          logo: "https://adexto.com/images/logo.svg",
-          contactPoint: {
-            "@type": "ContactPoint",
-            telephone: "+381 66 8822 339",
-            contactType: "Customer Service",
-          },
-        },
-      ],
-    }),
+      },
+    ],
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="sr-RS" className="scroll-smooth">
+      {/* <head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#1a1a1a" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="Adexto" />
+        <meta name="application-name" content="Adexto" />
+        <meta name="msapplication-TileColor" content="#1a1a1a" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <link rel="apple-touch-startup-image" href="/images/apple-touch-icon.png" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "WebSite",
+                  name: "Adexto",
+                  url: "https://adexto.com",
+                },
+                {
+                  "@type": "Organization",
+                  name: "Adexto",
+                  url: "https://adexto.com",
+                  logo: "https://adexto.com/images/logo.svg",
+                  contactPoint: {
+                    "@type": "ContactPoint",
+                    telephone: "+381 66 8822 339",
+                    contactType: "Customer Service",
+                  },
+                },
+              ],
+            }),
+          }}
+        />
+      </head> */}
       <body
         className={`${rubik.className} flex min-h-screen flex-col bg-white`}
       >
-        <ErrorBoundary />
         <Header />
         <main className="flex-1 pt-16 sm:pt-20">{children}</main>
         <Footer />
+        <PWAInstallPrompt />
+        <ServiceWorkerRegistration />
       </body>
     </html>
   );

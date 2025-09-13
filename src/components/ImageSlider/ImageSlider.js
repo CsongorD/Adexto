@@ -18,12 +18,12 @@ const ImageSlider = ({
         {/* Loading overlay */}
         {loading && (
           <div className="absolute inset-0 z-10 flex items-center justify-center rounded-lg bg-white/60 backdrop-blur-sm sm:rounded-2xl">
-            <div className="h-6 w-6 animate-spin rounded-full border-2 border-gray-300 border-t-gray-600 sm:h-8 sm:w-8"></div>
+            <div className="h-6 w-6 animate-spin rounded-full border-2 border-primary-300 border-t-primary-600 sm:h-8 sm:w-8"></div>
           </div>
         )}
 
         {/* Image container */}
-        <div className="aspect-[16/9] overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm sm:rounded-2xl">
+        <div className="aspect-[16/9] overflow-hidden rounded-lg border border-primary-100 bg-white shadow-sm sm:rounded-2xl">
           <Image
             src={path}
             small={small}
@@ -37,17 +37,17 @@ const ImageSlider = ({
         <button
           onClick={showPrevImage}
           disabled={loading}
-          className="absolute left-2 top-1/2 flex h-8 w-8 -translate-y-1/2 transform items-center justify-center rounded-full border border-gray-200 bg-white/80 opacity-0 backdrop-blur-sm transition-all duration-200 hover:scale-105 hover:bg-white disabled:cursor-not-allowed disabled:opacity-40 group-hover:opacity-100 sm:left-4 sm:h-10 sm:w-10"
+          className="absolute left-2 top-1/2 flex h-8 w-8 -translate-y-1/2 transform items-center justify-center rounded-full border border-primary-200 bg-white/80 opacity-0 backdrop-blur-sm transition-all duration-200 hover:scale-105 hover:bg-white disabled:cursor-not-allowed disabled:opacity-40 group-hover:opacity-100 sm:left-4 sm:h-10 sm:w-10"
         >
-          <PrevIcon className="h-3 w-3 text-gray-700 sm:h-4 sm:w-4" />
+          <PrevIcon className="h-3 w-3 text-primary-700 sm:h-4 sm:w-4" />
         </button>
 
         <button
           onClick={showNextImage}
           disabled={loading}
-          className="absolute right-2 top-1/2 flex h-8 w-8 -translate-y-1/2 transform items-center justify-center rounded-full border border-gray-200 bg-white/80 opacity-0 backdrop-blur-sm transition-all duration-200 hover:scale-105 hover:bg-white disabled:cursor-not-allowed disabled:opacity-40 group-hover:opacity-100 sm:right-4 sm:h-10 sm:w-10"
+          className="absolute right-2 top-1/2 flex h-8 w-8 -translate-y-1/2 transform items-center justify-center rounded-full border border-primary-200 bg-white/80 opacity-0 backdrop-blur-sm transition-all duration-200 hover:scale-105 hover:bg-white disabled:cursor-not-allowed disabled:opacity-40 group-hover:opacity-100 sm:right-4 sm:h-10 sm:w-10"
         >
-          <NextIcon className="h-3 w-3 text-gray-700 sm:h-4 sm:w-4" />
+          <NextIcon className="h-3 w-3 text-primary-700 sm:h-4 sm:w-4" />
         </button>
       </div>
     </div>

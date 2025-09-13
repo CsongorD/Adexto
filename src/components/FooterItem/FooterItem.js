@@ -6,7 +6,7 @@ const FooterItem = ({ icon, title, info }) => {
       </div>
       <div className="space-y-1">
         <h4 className="font-semibold text-white">{title}</h4>
-        <p className="text-sm leading-relaxed text-gray-400">{info}</p>
+        <p className="text-sm leading-relaxed text-primary-300">{info}</p>
       </div>
     </div>
   );

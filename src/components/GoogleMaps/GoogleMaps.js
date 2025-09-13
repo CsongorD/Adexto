@@ -4,7 +4,7 @@ const GoogleMaps = () => {
 
   return (
     <div className="h-full">
-      <div className="h-64 min-h-[300px] w-full overflow-hidden rounded-lg border border-gray-100 shadow-sm sm:h-80 sm:min-h-[400px] sm:rounded-xl md:h-96 lg:h-full lg:min-h-[500px]">
+      <div className="h-64 min-h-[300px] w-full overflow-hidden rounded-lg border border-primary-100 shadow-sm sm:h-80 sm:min-h-[400px] sm:rounded-xl md:h-96 lg:h-full lg:min-h-[500px]">
         <iframe
           title="Google Maps - Adexto lokacija"
           className="h-full w-full"

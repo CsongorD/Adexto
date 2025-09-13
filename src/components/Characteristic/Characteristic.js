@@ -17,7 +17,7 @@ const Characteristic = ({ characteristic }) => {
       <div className="sm:w-18 sm:h-18 mx-auto mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-primary-50 transition-all duration-300 group-hover:scale-110 group-hover:bg-primary-100 sm:mb-4 lg:h-20 lg:w-20">
         <IconComponent className="h-8 w-8 text-primary-600 sm:h-9 sm:w-9 lg:h-10 lg:w-10" />
       </div>
-      <p className="text-xs font-medium leading-relaxed text-gray-700 sm:text-sm">
+      <p className="text-xs font-medium leading-relaxed text-primary-700 sm:text-sm">
         {text}
       </p>
     </div>
