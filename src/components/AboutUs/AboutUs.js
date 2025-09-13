@@ -1,8 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import useImages from "../../hooks/useImages";
 import ImageLoading from "../ImageLoading/ImageLoading";
-
 const AboutUs = () => {
   const [medals, error] = useImages("medal");
 
@@ -89,10 +89,12 @@ const AboutUs = () => {
                   {medals.map((medal, index) => (
                     <div key={index} className="group cursor-pointer">
                       <div className="aspect-square w-full overflow-hidden rounded border border-primary-100 bg-white p-0 shadow-sm transition-all duration-300 hover:border-primary-200 hover:shadow-md group-hover:scale-105 sm:rounded-lg sm:p-2">
-                        <img
+                        <Image
                           src={medal.path}
                           alt={`medal-${index}`}
                           className="h-full w-full object-contain"
+                          width={150}
+                          height={150}
                         />
                       </div>
                     </div>
