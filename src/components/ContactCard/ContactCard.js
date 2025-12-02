@@ -5,15 +5,13 @@ const ContactCard = () => {
     <div className="space-y-6 sm:space-y-8">
       <div className="card p-4 sm:p-6 lg:p-8">
         <h2 className="mb-4 text-xl font-bold text-primary-800 sm:mb-6 sm:text-2xl">
-          ADEXTO DOO
+          Company Name
         </h2>
 
         <div className="space-y-3 text-primary-700 sm:space-y-4">
           <div className="flex items-start space-x-3">
             <MapPin className="mt-1 h-4 w-4 flex-shrink-0 text-primary-500 sm:h-5 sm:w-5" />
-            <p className="text-sm sm:text-base">
-              Servo Mihalja BB, 23206 Zrenjanin (Mužlja)
-            </p>
+            <p className="text-sm sm:text-base">Company Location</p>
           </div>
 
           <div className="flex items-start space-x-3">
@@ -25,7 +23,7 @@ const ContactCard = () => {
                   href="tel:+381668822339"
                   className="font-bold text-primary-800 transition-colors duration-300 hover:text-primary-900"
                 >
-                  +381 66 8822 339
+                  Company Phone Number
                 </a>
               </p>
             </div>
@@ -40,7 +38,7 @@ const ContactCard = () => {
                   href="mailto:info@adexto.com"
                   className="font-bold text-primary-800 transition-colors duration-300 hover:text-primary-900"
                 >
-                  info@adexto.com
+                  company@gmail.com
                 </a>
               </p>
             </div>
@@ -48,10 +46,12 @@ const ContactCard = () => {
 
           <div className="space-y-1 border-t border-primary-200 pt-3 sm:space-y-2 sm:pt-4">
             <p className="text-sm sm:text-base">
-              <span className="font-medium">Matični broj:</span> 20289635
+              <span className="font-medium">Company Number:</span> company
+              number
             </p>
             <p className="text-sm sm:text-base">
-              <span className="font-medium">PIB:</span> 105002449
+              <span className="font-medium">Tax number:</span> company tax
+              number
             </p>
           </div>
         </div>
@@ -92,9 +92,10 @@ const ContactCard = () => {
         </h3>
 
         <p className="text-sm leading-relaxed text-primary-700 sm:text-base">
-          Krenite prema Mužlji iz Zrenjanina. Kod Gomexa skrenite desno u ulicu
-          Servo Mihalja. Vozite 2.5 km dok ne vidite žuti objekat sa leve
-          strane.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
         </p>
       </div>
     </div>

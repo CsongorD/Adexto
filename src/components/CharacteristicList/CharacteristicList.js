@@ -14,7 +14,7 @@ const CharacteristicList = () => {
       <div className="container-custom">
         <div className="mb-8 text-center sm:mb-12 lg:mb-16">
           <h2 className="mb-4 text-2xl font-bold text-primary-800 sm:text-3xl lg:text-4xl">
-            Zašto odabrati <span className="text-gradient">Adexto</span>?
+            Zašto odabrati <span className="text-gradient">Company Name</span>?
           </h2>
           <p className="mx-auto max-w-3xl px-4 text-base text-primary-600 sm:text-lg lg:text-xl">
             Naše betonske ograde kombinuju funkcionalnost, estetiku i

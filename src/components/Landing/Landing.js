@@ -16,15 +16,17 @@ const Landing = () => {
           <div className="animate-fade-in space-y-8">
             <div className="space-y-4 sm:space-y-6">
               <h1 className="text-3xl font-bold leading-tight text-primary-800 sm:text-4xl md:text-5xl lg:text-7xl">
-                <span className="text-primary-800">ADEXTO</span>
-                <span className="ml-2 text-lg font-light text-primary-500 sm:ml-3 sm:text-xl md:text-2xl lg:text-3xl">
+                <span className="text-primary-800">Company Name</span>
+                {/* <span className="ml-2 text-lg font-light text-primary-500 sm:ml-3 sm:text-xl md:text-2xl lg:text-3xl">
                   d.o.o.
-                </span>
+                </span> */}
               </h1>
 
               <p className="max-w-2xl text-base leading-relaxed text-primary-700 sm:text-lg lg:text-xl">
                 Firma{" "}
-                <span className="font-semibold text-primary-600">ADEXTO</span>{" "}
+                <span className="font-semibold text-primary-600">
+                  Company Name
+                </span>{" "}
                 nudi vam betonske ograde sa ugradnjom vrhunskog kvaliteta i
                 velikim izborom dezena.
               </p>

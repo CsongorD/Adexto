@@ -31,16 +31,12 @@ const AboutUs = () => {
               <p className="text-base leading-relaxed text-primary-800 sm:text-lg">
                 Preduzeće{" "}
                 <span className="font-semibold text-primary-500">
-                  Adexto d.o.o
+                  "Company Name"
                 </span>{" "}
-                osnovano je 2007 godine u Zrenjaninu. Naša firma je prva na
-                teritoriji Balkana počela sa izradom betonskih proizvoda novom
-                tehnologijom—
-                <span className="font-semibold text-primary-500">
-                  armirani vibro beton
-                </span>
-                , izuzetne izdržljivosti i trajnosti. Takođe, jedini smo
-                dobitnici sertifikata{" "}
+                osnovano je 2007 godine u "Location". Naša firma je prva na
+                teritoriji "Location" počela sa izradom betonskih proizvoda
+                novom tehnologijom— , izuzetne izdržljivosti i trajnosti.
+                Takođe, jedini smo dobitnici sertifikata{" "}
                 <span className="font-semibold text-primary-600">
                   &quot;FIRMA OD POVERENJA&quot;
                 </span>
@@ -55,8 +51,8 @@ const AboutUs = () => {
                   Poslovni koncept
                 </h4>
                 <p className="text-sm leading-relaxed text-primary-700 sm:text-base">
-                  Adexto će na jednostavan način ponuditi prodaju i postavljanje
-                  betonskih ograda.
+                  "Company Name" će na jednostavan način ponuditi prodaju i
+                  postavljanje betonskih ograda.
                 </p>
               </div>
 

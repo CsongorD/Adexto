@@ -7,17 +7,17 @@ const footerData = [
   {
     icon: <LocationIcon className="h-6 w-6 text-primary-400" />,
     title: "Lokacija",
-    info: "Servo Mihalja BB, 23206 Zrenjanin (Mužlja)",
+    info: "Company Location",
   },
   {
     icon: <PhoneIcon className="h-6 w-6 text-primary-400" />,
     title: "Telefon",
-    info: "+381 66 8822 339",
+    info: "Company Phone Number",
   },
   {
     icon: <MailIcon className="h-6 w-6 text-primary-400" />,
     title: "Email",
-    info: "info@adexto.com",
+    info: "company@gmail.com",
   },
 ];
 
@@ -27,7 +27,7 @@ const Footer = () => {
       <div className="container-custom section-padding">
         <div className="grid items-center gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="md:col-span-2 lg:col-span-1">
-            <h3 className="mb-2 text-2xl font-bold text-white">ADEXTO D.O.O</h3>
+            <h3 className="mb-2 text-2xl font-bold text-white">Company Name</h3>
             <p className="text-primary-300">
               Vrhunski kvalitet betonskih ograda
             </p>
@@ -49,7 +49,7 @@ const Footer = () => {
 
         <div className="mt-12 border-t border-primary-700 pt-8 text-center">
           <p className="text-primary-300">
-            ©2025 Adexto D.O.O. Sva prava zadržana.
+            ©2025 Company Name. Sva prava zadržana.
           </p>
         </div>
       </div>

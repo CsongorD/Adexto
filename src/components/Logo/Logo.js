@@ -1,7 +1,5 @@
 "use client";
 import useImages from "../../hooks/useImages";
-import Image from "../Image/Image";
-import ImageLoading from "../ImageLoading/ImageLoading";
 import NavButton from "../NavButton/NavButton";
 
 const Logo = () => {
@@ -16,7 +14,7 @@ const Logo = () => {
         to="/"
         text={
           <>
-            <div className="relative h-8 w-8 sm:h-10 sm:w-10">
+            {/* <div className="relative h-8 w-8 sm:h-10 sm:w-10">
               {!logo ? (
                 <ImageLoading />
               ) : (
@@ -28,9 +26,9 @@ const Logo = () => {
                   className="brightness-0 invert filter"
                 />
               )}
-            </div>
+            </div> */}
             <h2 className="text-lg font-bold tracking-tight text-white sm:text-xl lg:text-2xl">
-              ADEXTO
+              Company Name
             </h2>
           </>
         }
